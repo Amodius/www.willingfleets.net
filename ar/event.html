@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="ar" class="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="eYrMxOIx6GVKmirLLzR2sMldshFfTvjiPViICTGo">
+                                        <link rel="icon" type="image/png" href="https://www.lambula.net/uploads/0000/1/2022/07/28/fav.png" />
+            
+    <title>Event Booking - Lambula Uganda - Lambula Uganda</title>
+    <meta name="description" content="Book Events Online On Lambula Uganda"/>
+    
+    <meta property="og:url" content="https://www.lambula.net/ar/event"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="Event Booking - Lambula Uganda"/>
+    <meta property="og:description" content="Book Events Online On Lambula Uganda"/>
+    <meta property="og:image" content="https://www.lambula.net/uploads/0000/1/2022/07/29/events-in-uganda-lambula-uganda.jpg"/>
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Event Booking - Lambula Uganda">
+    <meta name="twitter:description" content="Book Events Online On Lambula Uganda">
+    <meta name="twitter:image" content="https://www.lambula.net/uploads/0000/1/2022/07/29/events-in-uganda-lambula-uganda.jpg">
+    <link rel="canonical" href="https://www.lambula.net/ar/event"/>
+    <link href="https://www.lambula.net/libs/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="https://www.lambula.net/libs/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="https://www.lambula.net/libs/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="https://www.lambula.net/libs/icofont/icofont.min.css" rel="stylesheet">
+    <link href="https://www.lambula.net/libs/select2/css/select2.min.css" rel="stylesheet">
+    <link href="https://www.lambula.net/dist/frontend/css/notification.css" rel="newest stylesheet">
+    <link href="https://www.lambula.net/dist/frontend/css/app.css?_ver=3.4.0" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://www.lambula.net/libs/daterange/daterangepicker.css" >
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel='stylesheet' id='google-font-css-css'  href='https://fonts.googleapis.com/css?family=Poppins%3A300%2C400%2C500%2C600&display=swap' type='text/css' media='all' />
+
+    
+    
+    
+    <script>
+    var bookingCore = {
+        url:'https://www.lambula.net/ar',
+        url_root:'https://www.lambula.net',
+        admin_url:'https://www.lambula.net/admin',
+        booking_decimals:0,
+        thousand_separator:'.',
+        decimal_separator:',',
+        currency_position:'left',
+        currency_symbol:'',
+        currency_rate:'1',
+        date_format:'MM/DD/YYYY',
+        map_provider:'osm',
+        map_gmap_key:'1',
+        map_options:{
+            map_lat_default:'0.347596',
+            map_lng_default:'32.582520',
+            map_clustering:'on',
+            map_fit_bounds:'on',
+        },
+        routes:{
+            login:'https://www.lambula.net/ar/login',
+            register:'https://www.lambula.net/ar/register',
+            checkout:'https://www.lambula.net/ar/booking/doCheckout'
+        },
+        currentUser: 0,
+        isAdmin : 0,
+        rtl: false,
+        markAsRead:'https://www.lambula.net/ar/notify/markAsRead',
+        markAllAsRead:'https://www.lambula.net/ar/notify/markAllAsRead',
+        loadNotify : 'https://www.lambula.net/ar/notify/notifications',
+        pusher_api_key : '1',
+        pusher_cluster : '1',
+        language: 'ar',
+        module:{}
+    };
+                            bookingCore.module.hotel = 'https://www.lambula.net/ar/hotel';
+                                bookingCore.module.space = 'https://www.lambula.net/ar/space';
+                                bookingCore.module.car = 'https://www.lambula.net/ar/car';
+                                bookingCore.module.event = 'https://www.lambula.net/ar/event';
+                                bookingCore.module.tour = 'https://www.lambula.net/ar/tour';
+                                bookingCore.module.boat = 'https://www.lambula.net/ar/boat';
+                var i18n = {
+        warning:"Warning",
+        success:"Success",
+        confirm_delete:"Do you want to delete?",
+        confirm:"Confirm",
+        cancel:"Cancel",
+    };
+    var daterangepickerLocale = {
+        "applyLabel": "Apply",
+        "cancelLabel": "Cancel",
+        "fromLabel": "From",
+        "toLabel": "To",
+        "customRangeLabel": "Custom",
+        "weekLabel": "W",
+        "first_day_of_week": 1,
+        "daysOfWeek": [
+            "Su",
+            "Mo",
+            "Tu",
+            "We",
+            "Th",
+            "Fr",
+            "Sa"
+        ],
+        "monthNames": [
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"
+        ],
+    };
+    window.currentUrl = 'https://www.lambula.net/ar/event';
+</script>
+    <!-- Styles -->
+        <link href="https://www.lambula.net/dist/frontend/module/event/css/event.css?_ver=3.4.0" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://www.lambula.net/libs/ion_rangeslider/css/ion.rangeSlider.min.css"/>
+    
+    <link href="https://www.lambula.net/ar/custom-css" rel="stylesheet">
+    <link href="https://www.lambula.net/libs/carousel-2/owl.carousel.css" rel="stylesheet">
+                
+        
+    
+</head>
+<body class="frontend-page header-normal   ">
+            
+        
+        <div class="bravo_wrap">
+                    <div class="bravo_topbar">
+    <div class="container">
+        <div class="content">
+            <div class="topbar-left">
+
+                <div class="socials">
+<a href="https://www.facebook.com/LambulaUganda"><i class="fa fa-facebook"></i></a>
+<a href="https://www.instagram.com/lambulauganda1/"><i class="fa fa-instagram"></i></a>
+<a href="https://twitter.com/LambulaUganda1"><i class="fa fa-twitter"></i></a>
+</div>
+<span class="line"></span>
+<a href="mailto:hello@lambula.net">hello@lambula.net</a>
+
+
+            </div>
+            <div class="topbar-right">
+                <ul class="topbar-items">
+                    <li class="dropdown">
+                                                        <a href="#" data-toggle="dropdown" class="is_login">
+                    UGX
+                    <i class="fa fa-angle-down"></i>
+                </a>
+                            <ul class="dropdown-menu text-left width-auto">
+                                                <li>
+                        <a href="https://www.lambula.net/ar/event?set_currency=usd" class="is_login">
+                            USD
+                        </a>
+                    </li>
+                                                                </ul>
+    </li>
+                    <li class="dropdown">
+                                                                            <a href="#" data-toggle="dropdown" class="is_login">
+                                            <span class="flag-icon flag-icon-sa"></span>
+                                        Arabic
+                    <i class="fa fa-angle-down"></i>
+                </a>
+                            <ul class="dropdown-menu text-left">
+                                                <li>
+                        <a href="https://www.lambula.net/ar/event?set_lang=en" class="is_login">
+                                                            <span class="flag-icon flag-icon-gb"></span>
+                                                        English
+                        </a>
+                    </li>
+                                                                <li>
+                        <a href="https://www.lambula.net/ar/event?set_lang=fr" class="is_login">
+                                                            <span class="flag-icon flag-icon-fr"></span>
+                                                        French
+                        </a>
+                    </li>
+                                                                </ul>
+    </li>
+                                        <li class="login-item">
+                            <a href="#login" data-toggle="modal" data-target="#login" class="login">Login</a>
+                        </li>
+                                                    <li class="signup-item">
+                                <a href="#register" data-toggle="modal" data-target="#register" class="signup">Sign Up</a>
+                            </li>
+                                                            </ul>
+            </div>
+        </div>
+    </div>
+</div>
+            <div class="bravo_header">
+    <div class="container">
+        <div class="content">
+            <div class="header-left">
+                <a href="https://www.lambula.net/ar" class="bravo-logo">
+                                                                                        <img src="https://www.lambula.net/uploads/0000/1/2022/07/28/lambula-uganda.png" alt="Lambula Uganda">
+                                    </a>
+                <div class="bravo-menu">
+                    <ul class="main-menu menu-generated"><li class=" depth-0"><a  target="" href="/" >Home</a></li><li class=" depth-0"><a  target="" href="/hotel" >Hotel</a></li><li class=" depth-0"><a  target="" href="/tour" >Tours</a></li><li class=" depth-0"><a  target="" href="/space" >Space</a></li><li class=" depth-0"><a  target="" href="/car" >Cars</a></li><li class=" depth-0"><a  target="" href="/event" >Events</a></li><li class=" depth-0"><a  target="" href="/boat" >Boat Cruise</a></li><li class=" depth-0"><a  target="" href="/news" >News</a></li></ul>                </div>
+            </div>
+            <div class="header-right">
+                                <button class="bravo-more-menu">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="bravo-menu-mobile" style="display:none;">
+        <div class="user-profile">
+            <div class="b-close"><i class="icofont-scroll-left"></i></div>
+            <div class="avatar"></div>
+            <ul>
+                                    <li>
+                        <a href="#login" data-toggle="modal" data-target="#login" class="login">Login</a>
+                    </li>
+                                            <li>
+                            <a href="#register" data-toggle="modal" data-target="#register" class="signup">Sign Up</a>
+                        </li>
+                                                </ul>
+            <ul class="multi-lang">
+                <li class="dropdown">
+                                                        <a href="#" data-toggle="dropdown" class="is_login">
+                    UGX
+                    <i class="fa fa-angle-down"></i>
+                </a>
+                            <ul class="dropdown-menu text-left width-auto">
+                                                <li>
+                        <a href="https://www.lambula.net/ar/event?set_currency=usd" class="is_login">
+                            USD
+                        </a>
+                    </li>
+                                                                </ul>
+    </li>
+            </ul>
+            <ul class="multi-lang">
+                <li class="dropdown">
+                                                                            <a href="#" data-toggle="dropdown" class="is_login">
+                                            <span class="flag-icon flag-icon-sa"></span>
+                                        Arabic
+                    <i class="fa fa-angle-down"></i>
+                </a>
+                            <ul class="dropdown-menu text-left">
+                                                <li>
+                        <a href="https://www.lambula.net/ar/event?set_lang=en" class="is_login">
+                                                            <span class="flag-icon flag-icon-gb"></span>
+                                                        English
+                        </a>
+                    </li>
+                                                                <li>
+                        <a href="https://www.lambula.net/ar/event?set_lang=fr" class="is_login">
+                                                            <span class="flag-icon flag-icon-fr"></span>
+                                                        French
+                        </a>
+                    </li>
+                                                                </ul>
+    </li>
+            </ul>
+        </div>
+        <div class="g-menu">
+            <ul class="main-menu menu-generated"><li class=" depth-0"><a  target="" href="/" >Home</a></li><li class=" depth-0"><a  target="" href="/hotel" >Hotel</a></li><li class=" depth-0"><a  target="" href="/tour" >Tours</a></li><li class=" depth-0"><a  target="" href="/space" >Space</a></li><li class=" depth-0"><a  target="" href="/car" >Cars</a></li><li class=" depth-0"><a  target="" href="/event" >Events</a></li><li class=" depth-0"><a  target="" href="/boat" >Boat Cruise</a></li><li class=" depth-0"><a  target="" href="/news" >News</a></li></ul>        </div>
+    </div>
+</div>
+        
+            <div class="bravo_search_event">
+        <div class="bravo_banner"  style="background-image: url(https://www.lambula.net/uploads/demo/event/banner-search.jpg)"  >
+            <div class="container">
+                <h1>
+                    Search for event
+                </h1>
+            </div>
+        </div>
+        <div class="bravo_form_search">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12">
+                        <form action="https://www.lambula.net/ar/event" class="form bravo_form" method="get">
+    <div class="g-field-search">
+        <div class="row">
+                                                                                <div class="col-md-6 border-right">
+                                                        <div class="form-group">
+    <i class="field-icon fa icofont-map"></i>
+    <div class="form-content">
+        <label>Location</label>
+                        <div class="smart-search">
+            <input type="text" class="smart-search-location parent_text form-control" readonly placeholder="Where are you going?" value="" data-onLoad="Loading..."
+                   data-default="[{&quot;id&quot;:9,&quot;title&quot;:&quot; Kampala&quot;},{&quot;id&quot;:18,&quot;title&quot;:&quot;- Bunga&quot;},{&quot;id&quot;:11,&quot;title&quot;:&quot; Wakiso&quot;},{&quot;id&quot;:10,&quot;title&quot;:&quot;- Kyaliwajalla, Namugongo&quot;},{&quot;id&quot;:12,&quot;title&quot;:&quot;- Entebbe Municipalilty&quot;},{&quot;id&quot;:13,&quot;title&quot;:&quot;- Kiira&quot;},{&quot;id&quot;:14,&quot;title&quot;:&quot;- Naalya&quot;},{&quot;id&quot;:19,&quot;title&quot;:&quot;- Bussi Island&quot;},{&quot;id&quot;:22,&quot;title&quot;:&quot;- Matugga&quot;},{&quot;id&quot;:15,&quot;title&quot;:&quot; Mayuge&quot;},{&quot;id&quot;:16,&quot;title&quot;:&quot; Kisoro District&quot;},{&quot;id&quot;:17,&quot;title&quot;:&quot;- Lake Mutanda&quot;},{&quot;id&quot;:20,&quot;title&quot;:&quot; Mukono&quot;},{&quot;id&quot;:21,&quot;title&quot;:&quot;- Bulago Island&quot;},{&quot;id&quot;:23,&quot;title&quot;:&quot;-- ZMskyuza&quot;},{&quot;id&quot;:24,&quot;title&quot;:&quot; Mbarara&quot;},{&quot;id&quot;:25,&quot;title&quot;:&quot;- Mbarara City&quot;},{&quot;id&quot;:26,&quot;title&quot;:&quot; Jinja&quot;},{&quot;id&quot;:27,&quot;title&quot;:&quot; Kabale&quot;},{&quot;id&quot;:28,&quot;title&quot;:&quot;- Lake Bunyonyi&quot;}]">
+            <input type="hidden" class="child_id" name="location_id" value="">
+        </div>
+                </div>
+</div>
+                                                </div>
+                                                        <div class="col-md-6 border-right">
+                                                        <div class="form-group">
+    <i class="field-icon icofont-wall-clock"></i>
+    <div class="form-content">
+        <div class="form-date-search">
+            <div class="date-wrapper">
+                <div class="check-in-wrapper">
+                    <label>From - To</label>
+                    <div class="render check-in-render">11/21/2023</div>
+                    <span> - </span>
+                    <div class="render check-out-render">11/22/2023</div>
+                </div>
+            </div>
+            <input type="hidden" class="check-in-input" value="11/21/2023" name="start">
+            <input type="hidden" class="check-out-input" value="11/22/2023" name="end">
+            <input type="text" class="check-in-out" name="date" value="2023-11-21 - 2023-11-22">
+        </div>
+    </div>
+</div>                                                </div>
+                                    </div>
+    </div>
+    <div class="g-button-submit">
+        <button class="btn btn-primary btn-search" type="submit">Search</button>
+    </div>
+</form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+    <div class="col-lg-3 col-md-12">
+        <div class="bravo_filter">
+    <form action="https://www.lambula.net/ar/event" class="bravo_form_filter">
+        <div class="filter-title">
+            FILTER BY
+        </div>
+        <div class="g-filter-item">
+            <div class="item-title">
+                <h3>Filter Price</h3>
+                <i class="fa fa-angle-up" aria-hidden="true"></i>
+            </div>
+            <div class="item-content">
+                <div class="bravo-filter-price">
+                                        <input type="hidden" class="filter-price irs-hidden-input" name="price_range"
+                           data-symbol=" "
+                           data-min="1"
+                           data-max="1"
+                           data-from="1"
+                           data-to="1"
+                           readonly="" value="">
+                    <button type="submit" class="btn btn-link btn-apply-price-range">APPLY</button>
+                </div>
+            </div>
+        </div>
+        <div class="g-filter-item">
+            <div class="item-title">
+                <h3>Review Score</h3>
+                <i class="fa fa-angle-up" aria-hidden="true"></i>
+            </div>
+            <div class="item-content">
+                <ul>
+                                            <li>
+                            <div class="bravo-checkbox">
+                                <label>
+                                    <input name="review_score[]" type="checkbox" value="5" >
+                                    <span class="checkmark"></span>
+                                                                            <i class="fa fa-star"></i>
+                                                                            <i class="fa fa-star"></i>
+                                                                            <i class="fa fa-star"></i>
+                                                                            <i class="fa fa-star"></i>
+                                                                            <i class="fa fa-star"></i>
+                                                                    </label>
+                            </div>
+                        </li>
+                                            <li>
+                            <div class="bravo-checkbox">
+                                <label>
+                                    <input name="review_score[]" type="checkbox" value="4" >
+                                    <span class="checkmark"></span>
+                                                                            <i class="fa fa-star"></i>
+                                                                            <i class="fa fa-star"></i>
+                                                                            <i class="fa fa-star"></i>
+                                                                            <i class="fa fa-star"></i>
+                                                                    </label>
+                            </div>
+                        </li>
+                                            <li>
+                            <div class="bravo-checkbox">
+                                <label>
+                                    <input name="review_score[]" type="checkbox" value="3" >
+                                    <span class="checkmark"></span>
+                                                                            <i class="fa fa-star"></i>
+                                                                            <i class="fa fa-star"></i>
+                                                                            <i class="fa fa-star"></i>
+                                                                    </label>
+                            </div>
+                        </li>
+                                            <li>
+                            <div class="bravo-checkbox">
+                                <label>
+                                    <input name="review_score[]" type="checkbox" value="2" >
+                                    <span class="checkmark"></span>
+                                                                            <i class="fa fa-star"></i>
+                                                                            <i class="fa fa-star"></i>
+                                                                    </label>
+                            </div>
+                        </li>
+                                            <li>
+                            <div class="bravo-checkbox">
+                                <label>
+                                    <input name="review_score[]" type="checkbox" value="1" >
+                                    <span class="checkmark"></span>
+                                                                            <i class="fa fa-star"></i>
+                                                                    </label>
+                            </div>
+                        </li>
+                                    </ul>
+            </div>
+        </div>
+        <div class="g-filter-item">
+            <div class="item-title">
+                <h3> Event Type </h3>
+                <i class="fa fa-angle-up" aria-hidden="true"></i>
+            </div>
+            <div class="item-content">
+                <ul>
+                                                                    <li >
+                            <div class="bravo-checkbox">
+                                <label>
+                                    <input  type="checkbox" name="attrs[11][]" value="75"> Field Day
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </li>
+                                                                    <li >
+                            <div class="bravo-checkbox">
+                                <label>
+                                    <input  type="checkbox" name="attrs[11][]" value="76"> Glastonbury
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </li>
+                                                                    <li >
+                            <div class="bravo-checkbox">
+                                <label>
+                                    <input  type="checkbox" name="attrs[11][]" value="77"> Green Man
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </li>
+                                                                    <li  class="hide" >
+                            <div class="bravo-checkbox">
+                                <label>
+                                    <input  type="checkbox" name="attrs[11][]" value="78"> Latitude
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </li>
+                                                                    <li  class="hide" >
+                            <div class="bravo-checkbox">
+                                <label>
+                                    <input  type="checkbox" name="attrs[11][]" value="79"> Boomtown
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </li>
+                                                                    <li  class="hide" >
+                            <div class="bravo-checkbox">
+                                <label>
+                                    <input  type="checkbox" name="attrs[11][]" value="80"> Wilderness
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </li>
+                                                                    <li  class="hide" >
+                            <div class="bravo-checkbox">
+                                <label>
+                                    <input  type="checkbox" name="attrs[11][]" value="81"> Exit Festival
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </li>
+                                                                    <li  class="hide" >
+                            <div class="bravo-checkbox">
+                                <label>
+                                    <input  type="checkbox" name="attrs[11][]" value="82"> Primavera Sound
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </li>
+                                    </ul>
+                                    <button type="button" class="btn btn-link btn-more-item">More <i class="fa fa-caret-down"></i></button>
+                            </div>
+        </div>
+        </form>
+</div>
+
+
+    </div>
+    <div class="col-lg-9 col-md-12">
+        <div class="bravo-list-item">
+            <div class="topbar-search">
+                <h2 class="text result-count">
+                                            6 events found
+                                    </h2>
+                <div class="control bc-form-order">
+                    <div class="item">
+    <a href="https://www.lambula.net/ar/event?_layout=map">Show on the map</a>
+</div>
+<div class="item orderby">
+        <div class="item-title">
+        Sort by:
+    </div>
+    <input type="hidden" name="orderby" value="">
+    <div class="dropdown ">
+        <span class=" dropdown-toggle"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Recommended
+                    </span>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#" data-value="">Recommended</a>
+            <a class="dropdown-item" href="#" data-value="price_low_high">Price (Low to high)</a>
+            <a class="dropdown-item" href="#" data-value="price_high_low">Price (High to low)</a>
+            <a class="dropdown-item" href="#" data-value="rate_high_low">Rating (High to low)</a>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+            <div class="ajax-search-result">
+                <div class="list-item">
+    <div class="row">
+                                    <div class="col-lg-4 col-md-6">
+                    <div class="item-loop item-loop-wrap ">
+        <div class="thumb-image ">
+        <a  href="https://www.lambula.net/ar/event/mr-5">
+                                                <img class='img-responsive lazy'  data-src=https://www.lambula.net/uploads/demo/general/avatar.jpg  alt='Mr.'>
+                                    </a>
+        <div class="service-wishlist " data-id="18" data-type="event">
+            <i class="fa fa-heart-o"></i>
+        </div>
+            </div>
+    <div class="location">
+            </div>
+    <div class="item-title">
+        <a  href="https://www.lambula.net/ar/event/mr-5">
+                            Mr.
+        </a>
+    </div>
+                <div class="service-review">
+            <span class="rate">
+                 <span class="rate-text">Not rated</span>
+            </span>
+            <span class="review">
+                                 0 Review
+                            </span>
+        </div>
+                <div class="start-time">
+            Start Time: 07:10:00
+        </div>
+        <div class="info">
+        <div class="duration">
+            1H
+        </div>
+        <div class="g-price">
+            <div class="prefix">
+                <span class="fr_text">from</span>
+            </div>
+            <div class="price">
+                <span class="onsale"></span>
+                <span class="text-price">1</span>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+                            <div class="col-lg-4 col-md-6">
+                    <div class="item-loop item-loop-wrap ">
+        <div class="thumb-image ">
+        <a  href="https://www.lambula.net/ar/event/mr-4">
+                                                <img class='img-responsive lazy'  data-src=https://www.lambula.net/uploads/demo/general/avatar.jpg  alt='Mr.'>
+                                    </a>
+        <div class="service-wishlist " data-id="17" data-type="event">
+            <i class="fa fa-heart-o"></i>
+        </div>
+            </div>
+    <div class="location">
+            </div>
+    <div class="item-title">
+        <a  href="https://www.lambula.net/ar/event/mr-4">
+                            Mr.
+        </a>
+    </div>
+                <div class="service-review">
+            <span class="rate">
+                 <span class="rate-text">Not rated</span>
+            </span>
+            <span class="review">
+                                 0 Review
+                            </span>
+        </div>
+                <div class="start-time">
+            Start Time: 07:10:00
+        </div>
+        <div class="info">
+        <div class="duration">
+            1H
+        </div>
+        <div class="g-price">
+            <div class="prefix">
+                <span class="fr_text">from</span>
+            </div>
+            <div class="price">
+                <span class="onsale"></span>
+                <span class="text-price">1</span>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+                            <div class="col-lg-4 col-md-6">
+                    <div class="item-loop item-loop-wrap ">
+        <div class="thumb-image ">
+        <a  href="https://www.lambula.net/ar/event/mr-3">
+                                                <img class='img-responsive lazy'  data-src=https://www.lambula.net/uploads/demo/general/avatar.jpg  alt='Mr.'>
+                                    </a>
+        <div class="service-wishlist " data-id="16" data-type="event">
+            <i class="fa fa-heart-o"></i>
+        </div>
+            </div>
+    <div class="location">
+            </div>
+    <div class="item-title">
+        <a  href="https://www.lambula.net/ar/event/mr-3">
+                            Mr.
+        </a>
+    </div>
+                <div class="service-review">
+            <span class="rate">
+                 <span class="rate-text">Not rated</span>
+            </span>
+            <span class="review">
+                                 0 Review
+                            </span>
+        </div>
+                <div class="start-time">
+            Start Time: 07:10:00
+        </div>
+        <div class="info">
+        <div class="duration">
+            1H
+        </div>
+        <div class="g-price">
+            <div class="prefix">
+                <span class="fr_text">from</span>
+            </div>
+            <div class="price">
+                <span class="onsale"></span>
+                <span class="text-price">1</span>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+                            <div class="col-lg-4 col-md-6">
+                    <div class="item-loop item-loop-wrap ">
+        <div class="thumb-image ">
+        <a  href="https://www.lambula.net/ar/event/mr-2">
+                                                <img class='img-responsive lazy'  data-src=https://www.lambula.net/uploads/demo/general/avatar.jpg  alt='Mr.'>
+                                    </a>
+        <div class="service-wishlist " data-id="15" data-type="event">
+            <i class="fa fa-heart-o"></i>
+        </div>
+            </div>
+    <div class="location">
+            </div>
+    <div class="item-title">
+        <a  href="https://www.lambula.net/ar/event/mr-2">
+                            Mr.
+        </a>
+    </div>
+                <div class="service-review">
+            <span class="rate">
+                 <span class="rate-text">Not rated</span>
+            </span>
+            <span class="review">
+                                 0 Review
+                            </span>
+        </div>
+                <div class="start-time">
+            Start Time: 07:10:00
+        </div>
+        <div class="info">
+        <div class="duration">
+            1H
+        </div>
+        <div class="g-price">
+            <div class="prefix">
+                <span class="fr_text">from</span>
+            </div>
+            <div class="price">
+                <span class="onsale"></span>
+                <span class="text-price">1</span>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+                            <div class="col-lg-4 col-md-6">
+                    <div class="item-loop item-loop-wrap ">
+        <div class="thumb-image ">
+        <a  href="https://www.lambula.net/ar/event/mr-1">
+                                                <img class='img-responsive lazy'  data-src=https://www.lambula.net/uploads/demo/general/avatar.jpg  alt='Mr.'>
+                                    </a>
+        <div class="service-wishlist " data-id="14" data-type="event">
+            <i class="fa fa-heart-o"></i>
+        </div>
+            </div>
+    <div class="location">
+            </div>
+    <div class="item-title">
+        <a  href="https://www.lambula.net/ar/event/mr-1">
+                            Mr.
+        </a>
+    </div>
+                <div class="service-review">
+            <span class="rate">
+                 <span class="rate-text">Not rated</span>
+            </span>
+            <span class="review">
+                                 0 Review
+                            </span>
+        </div>
+                <div class="start-time">
+            Start Time: 07:10:00
+        </div>
+        <div class="info">
+        <div class="duration">
+            1H
+        </div>
+        <div class="g-price">
+            <div class="prefix">
+                <span class="fr_text">from</span>
+            </div>
+            <div class="price">
+                <span class="onsale"></span>
+                <span class="text-price">1</span>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+                            <div class="col-lg-4 col-md-6">
+                    <div class="item-loop item-loop-wrap ">
+        <div class="thumb-image ">
+        <a  href="https://www.lambula.net/ar/event/mr">
+                                                <img class='img-responsive lazy'  data-src=https://www.lambula.net/uploads/demo/general/avatar.jpg  alt='Mr.'>
+                                    </a>
+        <div class="service-wishlist " data-id="13" data-type="event">
+            <i class="fa fa-heart-o"></i>
+        </div>
+            </div>
+    <div class="location">
+            </div>
+    <div class="item-title">
+        <a  href="https://www.lambula.net/ar/event/mr">
+                            Mr.
+        </a>
+    </div>
+                <div class="service-review">
+            <span class="rate">
+                 <span class="rate-text">Not rated</span>
+            </span>
+            <span class="review">
+                                 0 Review
+                            </span>
+        </div>
+                <div class="start-time">
+            Start Time: 07:10:00
+        </div>
+        <div class="info">
+        <div class="duration">
+            1H
+        </div>
+        <div class="g-price">
+            <div class="prefix">
+                <span class="fr_text">from</span>
+            </div>
+            <div class="price">
+                <span class="onsale"></span>
+                <span class="text-price">1</span>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+                        </div>
+</div>
+<div class="bravo-pagination">
+    
+            <span class="count-string">Showing 1 - 6 of 6 Events</span>
+    </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+
+        <div class="bravo_footer">
+		<div class="mailchimp">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-lg-10 col-lg-offset-1">
+						<div class="row">
+							<div class="col-xs-12  col-md-7 col-lg-6">
+								<div class="media ">
+									<div class="media-left hidden-xs">
+										<i class="icofont-island-alt"></i>
+									</div>
+									<div class="media-body">
+										<h4 class="media-heading">Get Updates &amp; More</h4>
+										<p>Thoughtful thoughts to your inbox</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-md-5 col-lg-6">
+								<form action="https://www.lambula.net/ar/newsletter/subscribe" class="subcribe-form bravo-subscribe-form bravo-form">
+									<input type="hidden" name="_token" value="eYrMxOIx6GVKmirLLzR2sMldshFfTvjiPViICTGo">									<div class="form-group">
+										<input type="text" name="email" class="form-control email-input" placeholder="Your Email">
+										<button type="submit" class="btn-submit">Subscribe
+											<i class="fa fa-spinner fa-pulse fa-fw"></i>
+										</button>
+									</div>
+									<div class="form-mess"></div>
+								</form>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main-footer">
+			<div class="container">
+				<div class="row">
+					                        													<div class="col-lg-3 col-md-6">
+								<div class="nav-footer">
+									<div class="title">
+										NEED HELP?
+									</div>
+									<div class="context">
+										<div class="contact">
+        <div class="c-title">
+            Call Us
+        </div>
+        <div class="sub">
+            +256 200 902274
+        </div>
+    </div>
+    <div class="contact">
+        <div class="c-title">
+            Email for Us
+        </div>
+        <div class="sub">
+            hello@lambula.net
+        </div>
+    </div>
+    <div class="contact">
+        <div class="c-title">
+            Follow Us
+        </div>
+        <div class="sub">
+            <a href="https://www.facebook.com/LambulaUganda">
+                <i class="icofont-facebook"></i>
+            </a>
+            <a href="https://twitter.com/lambulauganda1">
+               <i class="icofont-twitter"></i>
+            </a>
+            <a href="https://www.youtube.com/channel/UCeW9x-VCVESn9HceUTQAxjg">
+                <i class="icofont-youtube-play"></i>
+            </a>
+        </div>
+    </div>
+									</div>
+								</div>
+							</div>
+													<div class="col-lg-3 col-md-6">
+								<div class="nav-footer">
+									<div class="title">
+										COMPANY
+									</div>
+									<div class="context">
+										<ul>
+    <li><a href="https://lambula.net/page/about-us">About Us</a></li>
+    <li><a href="https://lambula.net/news">Blog</a></li>
+    <li><a href="#">Rewards</a></li>
+    <li><a href="#">Work with Us</a></li>
+    <li><a href="#">Meet the Team</a></li>
+</ul>
+									</div>
+								</div>
+							</div>
+													<div class="col-lg-3 col-md-6">
+								<div class="nav-footer">
+									<div class="title">
+										SUPPORT
+									</div>
+									<div class="context">
+										<ul>
+    <li><a href="https://lambula.net/user/profile">Account</a></li>
+    <li><a href="https://lambula.net/page/terms-of-use">Terms Of Use</a></li>
+    <li><a href="https://lambula.net/contact">Contact</a></li>
+    <li><a href="https://lambula.net/page/privacy-policy">Privacy Policy</a></li>
+</ul>
+									</div>
+								</div>
+							</div>
+													<div class="col-lg-3 col-md-6">
+								<div class="nav-footer">
+									<div class="title">
+										Quick Links
+									</div>
+									<div class="context">
+										<ul>
+<li><a href="https://lambula.net/page/become-a-vendor">Register Business</a></li>
+<li><a href="https://lambula.net/contact">Contact Us</a></li>
+</ul>
+									</div>
+								</div>
+							</div>
+															</div>
+			</div>
+		</div>
+		<div class="copy-right">
+			<div class="container context">
+				<div class="row">
+					<div class="col-md-12">
+						<p>Copyright © 2023 Lambula Uganda</p>
+						<div class="f-visa">
+							<p>Powered by <a title="Host256.com" href="https://Host256.com">Host256.com</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<div class="modal fade login" id="login" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content relative">
+            <div class="modal-header">
+                <h4 class="modal-title">Log In</h4>
+                <span class="c-pointer" data-dismiss="modal" aria-label="Close">
+                    <i class="input-icon field-icon fa">
+                        <img src="https://www.lambula.net/images/ico_close.svg" alt="close">
+                    </i>
+                </span>
+            </div>
+            <div class="modal-body relative">
+                <form class="bravo-form-login" method="POST" action="https://www.lambula.net/ar/login">
+    <input type="hidden" name="redirect" value="">
+    <input type="hidden" name="_token" value="eYrMxOIx6GVKmirLLzR2sMldshFfTvjiPViICTGo">    <div class="form-group">
+        <input type="text" class="form-control" name="email" autocomplete="off" placeholder="Email address">
+        <i class="input-icon icofont-mail"></i>
+        <span class="invalid-feedback error error-email"></span>
+    </div>
+    <div class="form-group">
+        <input type="password" class="form-control" name="password" autocomplete="off"  placeholder="Password">
+        <i class="input-icon icofont-ui-password"></i>
+        <span class="invalid-feedback error error-password"></span>
+    </div>
+    <div class="form-group">
+        <div class="d-flex justify-content-between">
+            <label for="remember-me" class="mb0">
+                <input type="checkbox" name="remember" id="remember-me" value="1"> Remember me <span class="checkmark fcheckbox"></span>
+            </label>
+            <a href="https://www.lambula.net/ar/forgot-password">Forgot Password?</a>
+        </div>
+    </div>
+            <div class="form-group">
+            
+        </div>
+        <div class="error message-error invalid-feedback"></div>
+    <div class="form-group">
+        <button class="btn btn-primary form-submit" type="submit">
+            Login
+            <span class="spinner-grow spinner-grow-sm icon-loading" role="status" aria-hidden="true"></span>
+        </button>
+    </div>
+                <div class="c-grey font-medium f14 text-center"> Do not have an account? <a href="" data-target="#register" data-toggle="modal">Sign Up</a></div>
+    </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade login" id="register" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content relative">
+            <div class="modal-header">
+                <h4 class="modal-title">Sign Up</h4>
+                <span class="c-pointer" data-dismiss="modal" aria-label="Close">
+                    <i class="input-icon field-icon fa">
+                        <img src="https://www.lambula.net/images/ico_close.svg" alt="close">
+                    </i>
+                </span>
+            </div>
+            <div class="modal-body">
+                <form class="form bravo-form-register" method="post" action="https://www.lambula.net/ar/register">
+    <input type="hidden" name="_token" value="eYrMxOIx6GVKmirLLzR2sMldshFfTvjiPViICTGo">    <div class="row">
+        <div class="col-lg-6 col-md-12">
+            <div class="form-group">
+                <input type="text" class="form-control" name="first_name" autocomplete="off" placeholder="First Name">
+                <i class="input-icon field-icon icofont-waiter-alt"></i>
+                <span class="invalid-feedback error error-first_name"></span>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+            <div class="form-group">
+                <input type="text" class="form-control" name="last_name" autocomplete="off" placeholder="Last Name">
+                <i class="input-icon field-icon icofont-waiter-alt"></i>
+                <span class="invalid-feedback error error-last_name"></span>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control" name="phone" autocomplete="off" placeholder="Phone">
+        <i class="input-icon field-icon icofont-ui-touch-phone"></i>
+        <span class="invalid-feedback error error-phone"></span>
+    </div>
+    <div class="form-group">
+        <input type="email" class="form-control" name="email" autocomplete="off" placeholder="Email address">
+        <i class="input-icon field-icon icofont-mail"></i>
+        <span class="invalid-feedback error error-email"></span>
+    </div>
+    <div class="form-group">
+        <input type="password" class="form-control" name="password" autocomplete="off" placeholder="Password">
+        <i class="input-icon field-icon icofont-ui-password"></i>
+        <span class="invalid-feedback error error-password"></span>
+    </div>
+    <div class="form-group">
+        <label for="term">
+            <input id="term" type="checkbox" name="term" class="mr5">
+            I have read and accept the <a href='https://www.lambula.net/ar/page/terms-of-use' target='_blank'>Terms and Privacy Policy</a>
+            <span class="checkmark fcheckbox"></span>
+        </label>
+        <div><span class="invalid-feedback error error-term"></span></div>
+    </div>
+            <div class="form-group">
+            
+        </div>
+        <div><span class="invalid-feedback error error-g-recaptcha-response"></span></div>
+        <div class="error message-error invalid-feedback"></div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary form-submit">
+            Sign Up
+            <span class="spinner-grow spinner-grow-sm icon-loading" role="status" aria-hidden="true"></span>
+        </button>
+    </div>
+        <div class="c-grey f14 text-center">
+        Already have an account?
+        <a href="#" data-target="#login" data-toggle="modal">Log In</a>
+    </div>
+</form>
+            </div>
+        </div>
+    </div>
+</div><link rel="stylesheet" href="https://www.lambula.net/libs/flags/css/flag-icon.min.css">
+
+
+
+
+<script src="https://www.lambula.net/libs/lazy-load/intersection-observer.js"></script>
+<script async src="https://www.lambula.net/libs/lazy-load/lazyload.min.js"></script>
+<script>
+    // Set the options to make LazyLoad self-initialize
+    window.lazyLoadOptions = {
+        elements_selector: ".lazy",
+        // ... more custom settings?
+    };
+
+    // Listen to the initialization event and get the instance of LazyLoad
+    window.addEventListener('LazyLoad::Initialized', function (event) {
+        window.lazyLoadInstance = event.detail.instance;
+    }, false);
+
+
+</script>
+<script src="https://www.lambula.net/libs/lodash.min.js"></script>
+<script src="https://www.lambula.net/libs/jquery-3.6.3.min.js"></script>
+<script src="https://www.lambula.net/libs/vue/vue.min.js"></script>
+<script src="https://www.lambula.net/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="https://www.lambula.net/libs/bootbox/bootbox.min.js"></script>
+<script src="https://www.lambula.net/libs/carousel-2/owl.carousel.min.js"></script>
+<script type="text/javascript" src="https://www.lambula.net/libs/daterange/moment.min.js"></script>
+<script type="text/javascript" src="https://www.lambula.net/libs/daterange/daterangepicker.min.js"></script>
+<script src="https://www.lambula.net/libs/select2/js/select2.min.js"></script>
+<script src="https://www.lambula.net/js/functions.js?_ver=3.4.0"></script>
+
+<script src="https://www.lambula.net/libs/pusher.min.js"></script>
+<script src="https://www.lambula.net/js/home.js?_ver=3.4.0"></script>
+
+
+
+
+
+
+
+    <script type="text/javascript" src="https://www.lambula.net/libs/ion_rangeslider/js/ion.rangeSlider.min.js"></script>
+    <script type="text/javascript" src="https://www.lambula.net/js/filter.js?_ver=3.4.0"></script>
+    <script type="text/javascript" src="https://www.lambula.net/module/event/js/event.js?_ver=3.4.0"></script>
+    </div>
+            
+        
+    
+</body>
+</html>
