@@ -124,6 +124,8 @@
         
     <link href="https://www.lambula.net/custom-css" rel="stylesheet">
     <link href="https://www.lambula.net/libs/carousel-2/owl.carousel.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
                 
         
     
@@ -264,7 +266,7 @@
             </ul>
         </div>
         <div class="g-menu">
-            <ul class="main-menu menu-generated"><li class=" depth-0"><a  target="" href="/" >Home</a></li><li class=" depth-0"><a  target="" href="/hotel" >Hotel</a></li><li class=" depth-0"><a  target="" href="/tour" >Tours</a></li><li class=" depth-0"><a  target="" href="/space" >Space</a></li><li class=" depth-0"><a  target="" href="/car" >Cars</a></li><li class=" depth-0"><a  target="" href="/event" >Events</a></li><li class=" depth-0"><a  target="" href="/boat" >Boat Cruise</a></li><li class=" depth-0"><a  target="" href="/news" >News</a></li></ul>        </div>
+            <ul class="main-menu menu-generated"><li class=" depth-0"><a  target="" href="/index.html" >Home</a></li><li class=" depth-0"><a  target="" href="/hotel.html" >Hotel</a></li><li class=" depth-0"><a  target="" href="/tour.html" >Tours</a></li><li class=" depth-0"><a  target="" href="/space.html" >Space</a></li><li class=" depth-0"><a  target="" href="/car.html" >Cars</a></li><li class=" depth-0"><a  target="" href="/event.html" >Events</a></li><li class=" depth-0"><a  target="" href="/boat.html" >Boat Cruise</a></li><li class=" depth-0"><a  target="" href="/news.html" >News</a></li></ul>        </div>
     </div>
 </div>
         
@@ -1998,7 +2000,34 @@ A bird sanctuary has been opened at the Uganda Wildlife Education Centre (UWEC),
 <script src="https://www.lambula.net/libs/pusher.min.js"></script>
 <script src="https://www.lambula.net/js/home.js?_ver=3.4.0"></script>
 
+<!-- Include jQuery and Owl Carousel JS -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
+<!-- Owl Carousel Initialization Script -->
+<script>
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+            items: 3,
+            loop: true,
+            margin: 10,
+            nav: true,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:2
+                },
+                1000:{
+                    items:3
+                }
+            }
+        });
+    });
+</script>
 
 
 
