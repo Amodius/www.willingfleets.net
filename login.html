@@ -551,6 +551,66 @@
                     </div>
                 
                     <div class="form-group">
+                        <label for="tourType">Tour Type:</label>
+                        <select id="tourType" name="tourType">
+                            <option value="sightseeing">Sightseeing</option>
+                            <option value="adventure">Adventure</option>
+                            <option value="cultural">Cultural</option>
+                            <option value="beach">Beach</option>
+                        </select>
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="groupSize">Group Size:</label>
+                        <input type="number" id="groupSize" name="groupSize" min="1">
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="specialRequests">Special Requests:</label>
+                        <textarea id="specialRequests" name="specialRequests" rows="3" placeholder="Any special requests or preferences"></textarea>
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="travelDate">Preferred Travel Date:</label>
+                        <input type="date" id="travelDate" name="travelDate">
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="transportation">Preferred Transportation:</label>
+                        <select id="transportation" name="transportation">
+                            <option value="car">Car</option>
+                            <option value="bus">Bus</option>
+                            <option value="plane">Plane</option>
+                            <option value="boat">Boat</option>
+                        </select>
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="accommodation">Preferred Accommodation:</label>
+                        <select id="accommodation" name="accommodation">
+                            <option value="hotel">Hotel</option>
+                            <option value="resort">Resort</option>
+                            <option value="guesthouse">Guesthouse</option>
+                            <option value="camping">Camping</option>
+                        </select>
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="excursions">Preferred Excursions:</label>
+                        <input type="text" id="excursions" name="excursions" placeholder="List preferred excursions, separated by commas">
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="dietaryPreferences">Dietary Preferences:</label>
+                        <input type="text" id="dietaryPreferences" name="dietaryPreferences" placeholder="Any dietary preferences or restrictions">
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="additionalNotes">Additional Notes:</label>
+                        <textarea id="additionalNotes" name="additionalNotes" rows="3" placeholder="Any additional notes or comments"></textarea>
+                    </div>
+                
+                    <div class="form-group">
                         <label for="images">Upload Images:</label>
                         <input type="file" id="images" name="images" accept="image/*">
                     </div>
