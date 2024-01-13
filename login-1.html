@@ -326,6 +326,7 @@
 									<div class="form-mess"></div>
 								</form>
 
+
 							</div>
 						</div>
 					</div>
@@ -497,62 +498,91 @@
                 </span>
             </div>
             <div class="modal-body">
-                <form class="form bravo-form-register" method="post" action="https://www.lambula.net/register">
-    <input type="hidden" name="_token" value="eYrMxOIx6GVKmirLLzR2sMldshFfTvjiPViICTGo">    <div class="row">
-        <div class="col-lg-6 col-md-12">
-            <div class="form-group">
-                <input type="text" class="form-control" name="first_name" autocomplete="off" placeholder="First Name">
-                <i class="input-icon field-icon icofont-waiter-alt"></i>
-                <span class="invalid-feedback error error-first_name"></span>
-            </div>
-        </div>
-        <div class="col-lg-6 col-md-12">
-            <div class="form-group">
-                <input type="text" class="form-control" name="last_name" autocomplete="off" placeholder="Last Name">
-                <i class="input-icon field-icon icofont-waiter-alt"></i>
-                <span class="invalid-feedback error error-last_name"></span>
-            </div>
-        </div>
-    </div>
-    <div class="form-group">
-        <input type="text" class="form-control" name="phone" autocomplete="off" placeholder="Phone">
-        <i class="input-icon field-icon icofont-ui-touch-phone"></i>
-        <span class="invalid-feedback error error-phone"></span>
-    </div>
-    <div class="form-group">
-        <input type="email" class="form-control" name="email" autocomplete="off" placeholder="Email address">
-        <i class="input-icon field-icon icofont-mail"></i>
-        <span class="invalid-feedback error error-email"></span>
-    </div>
-    <div class="form-group">
-        <input type="password" class="form-control" name="password" autocomplete="off" placeholder="Password">
-        <i class="input-icon field-icon icofont-ui-password"></i>
-        <span class="invalid-feedback error error-password"></span>
-    </div>
-    <div class="form-group">
-        <label for="term">
-            <input id="term" type="checkbox" name="term" class="mr5">
-            I have read and accept the <a href='/page/terms-of-use.html' target='_blank'>Terms and Privacy Policy</a>
-            <span class="checkmark fcheckbox"></span>
-        </label>
-        <div><span class="invalid-feedback error error-term"></span></div>
-    </div>
-            <div class="form-group">
-            
-        </div>
-        <div><span class="invalid-feedback error error-g-recaptcha-response"></span></div>
-        <div class="error message-error invalid-feedback"></div>
-    <div class="form-group">
-        <button type="submit" class="btn btn-primary form-submit">
-            Sign Up
-            <span class="spinner-grow spinner-grow-sm icon-loading" role="status" aria-hidden="true"></span>
-        </button>
-    </div>
-        <div class="c-grey f14 text-center">
-        Already have an account?
-        <a href="#" data-target="#login" data-toggle="modal">Log In</a>
-    </div>
-</form>
+                <!-- <form class="form bravo-form-register" method="post" action="https://www.lambula.net/register"> -->
+                    <form class="form bravo-form-register" method="post" action="https://www.lambula.net/register">
+                        <input type="hidden" name="_token" value="eYrMxOIx6GVKmirLLzR2sMldshFfTvjiPViICTGo">
+                    
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="first_name" autocomplete="off" placeholder="First Name">
+                                    <i class="input-icon field-icon icofont-waiter-alt"></i>
+                                    <span class="invalid-feedback error error-first_name"></span>
+                                </div>
+                            </div>
+                    
+                            <div class="col-lg-6 col-md-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="last_name" autocomplete="off" placeholder="Last Name">
+                                    <i class="input-icon field-icon icofont-waiter-alt"></i>
+                                    <span class="invalid-feedback error error-last_name"></span>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="phone" autocomplete="off" placeholder="Phone">
+                            <i class="input-icon field-icon icofont-ui-touch-phone"></i>
+                            <span class="invalid-feedback error error-phone"></span>
+                        </div>
+                    
+                        <div class="form-group">
+                            <input type="email" class="form-control" name="email" autocomplete="off" placeholder="Email address">
+                            <i class="input-icon field-icon icofont-mail"></i>
+                            <span class="invalid-feedback error error-email"></span>
+                        </div>
+                    
+                        <div class="form-group">
+                            <input type="password" class="form-control" name="password" autocomplete="off" placeholder="Password">
+                            <i class="input-icon field-icon icofont-ui-password"></i>
+                            <span class="invalid-feedback error error-password"></span>
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="serviceType">Service Type:</label>
+                            <select id="serviceType" name="serviceType" required>
+                                <option value="driver">Driver</option>
+                                <option value="guide">Guide</option>
+                                <option value="carHireProvider">Car Hire Provider</option>
+                                <option value="hotel">Hotel</option>
+                                <option value="tourGuide">Tour Guide</option>
+                            </select>
+                        </div>
+                    
+                        <div class="form-group service-type-fields" style="display:none;">
+                            <!-- Additional fields based on service type selection -->
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="images">Upload Images:</label>
+                            <input type="file" id="images" name="images" accept="image/*">
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="price">Price or Price Range:</label>
+                            <input type="text" id="price" name="price" required>
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="term">
+                                <input id="term" type="checkbox" name="term" class="mr5"> I have read and accept the
+                                <a href='/page/terms-of-use.html' target='_blank'>Terms and Privacy Policy</a>
+                                <span class="checkmark fcheckbox"></span>
+                            </label>
+                            <div><span class="invalid-feedback error error-term"></span></div>
+                        </div>
+                    
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary form-submit">
+                                Sign Up <span class="spinner-grow spinner-grow-sm icon-loading" role="status" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                    
+                        <div class="c-grey f14 text-center">
+                            Already have an account? <a href="#" data-target="#login" data-toggle="modal">Log In</a>
+                        </div>
+                    </form>
+                    
             </div>
         </div>
     </div>
