@@ -118,7 +118,7 @@
             "December"
         ],
     };
-    window.currentUrl = 'https://www.lambula.net/location/entebbe-municipalilty';
+    window.currentUrl = 'location/entebbe-municipalilty.html';
 </script>
     <!-- Styles -->
         <link href="https://www.lambula.net/dist/frontend/module/location/css/location.css?_ver=3.4.0" rel="stylesheet">
@@ -204,9 +204,95 @@
                 <a href="/index.html" class="bravo-logo">
                     <img src="https://i.postimg.cc/MH7gkLjp/lambula-uganda-3.png" alt="Willing Fleets" width="200" height="auto">                                    </a>
                                     </a>
-                <div class="bravo-menu">
-                    <ul class="main-menu menu-generated"><li class=" depth-0"><a  target="" href="/" >Home</a></li><li class=" depth-0"><a  target="" href="/hotel" >Hotel</a></li><li class=" depth-0"><a  target="" href="/tour" >Tours</a></li><li class=" depth-0"><a  target="" href="/space" >Space</a></li><li class=" depth-0"><a  target="" href="/car" >Cars</a></li><li class=" depth-0"><a  target="" href="/event" >Events</a></li><li class=" depth-0"><a  target="" href="/boat" >Boat Cruise</a></li><li class=" depth-0"><a  target="" href="/news" >News</a></li></ul>                </div>
-            </div>
+                                    <!-- starts -->
+                                    <style>
+                                        .bravo-menu .sub-menu {
+                                            display: none;
+                                            position: absolute;
+                                            z-index: 1;
+                                            background-color: lightblue; /* Set background color */
+                                        }
+                                    
+                                        .bravo-menu .depth-0:hover .sub-menu {
+                                            display: block;
+                                        }
+                                    </style>
+                                    
+                                    <div class="bravo-menu">
+                                        <ul class="main-menu menu-generated">
+                                            <li class="depth-0">
+                                                <a href="/index.html">Home</a>
+                                            </li>
+                                            <li class="depth-0">
+                                                <a href="/hotel.html">Hotel</a>
+                                                <!-- Dropdown for Hotel -->
+                                                <ul class="sub-menu">
+                                                    
+                                                    <li><a href="/hotel/gahiza-island-retreat.html">Gahiza-Island-Retreat</a></li>
+                                                    <li><a href="/hotel/diamonds-lounge.html">Diamonds-Ldounge</a></li>
+                                                    <li><a href="/hotel/ekhaya-crescent-hotel.html">Ekhaya-Crescent-Hotel</a></li>
+                                                    <li><a href="/hotel/hotel-horizon-entebbe.html">Hotel-Horizon-Entebbe</a></li>
+                                                    <li><a href="/hotel/martyrs-motel.html">Martyrs-Motel</a></li>
+                                                    <li><a href="/hotel/lake-bunyonyi-rock-resort.html">Lake-Bunyonyi-Rock-Resort</a></li>
+                                                    <li><a href="/hotel/mutanda-lake-resort.html">Mutanda-Lake-Resort</a></li>
+                                                    <li><a href="/hotel/naalya-motel.html">Naalya-Motel</a></li>
+                                                    <li><a href="/hotel/sea-ville-resort-hotel-and-spa.html">Sea-ville-Resort-Hotel-and-Spa</a></li>
+                                                </ul>
+                                            </li>
+                                            
+                                            <li class="depth-0">
+                                                <a href="/tour">Tours</a>
+                                                <!-- Dropdown for Tours -->
+                                                <ul class="sub-menu">
+                                                    <li><a href="#/tour/packages">Packages</a></li>
+                                                    <li><a href="#/tour/bookings">Bookings</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="depth-0">
+                                                <a href="/space">Space</a>
+                                                <!-- Dropdown for Tours -->
+                                                <ul class="sub-menu">
+                                                    <li><a href="#/tour/packages">Packages</a></li>
+                                                    <li><a href="#/tour/bookings">Bookings</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="depth-0">
+                                                <a href="/car-1.html">Cars</a>
+                                                <!-- Dropdown for Tours -->
+                                                <ul class="sub-menu">
+                                                    <li><a href="#/tour/packages">Packages</a></li>
+                                                    <li><a href="#/tour/bookings">Bookings</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="depth-0">
+                                                <a href="/event.html">Events</a>
+                                                <!-- Dropdown for Tours -->
+                                                <ul class="sub-menu">
+                                                    <li><a href="#/tour/packages">Packages</a></li>
+                                                    <li><a href="#/tour/bookings">Bookings</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="depth-0">
+                                                <a href="/boat.html">Boat-Cruise</a>
+                                                <!-- Dropdown for Tours -->
+                                                <ul class="sub-menu">
+                                                    <li><a href="#/tour/packages">Packages</a></li>
+                                                    <li><a href="#/tour/bookings">Bookings</a></li>
+                                                </ul>
+                                            </li>
+                                            <!-- Repeat the same pattern for other menu items... -->
+                                            <li class="depth-0">
+                                                <a href="/news.html">News</a>
+                                                <!-- Dropdown for News -->
+                                                <ul class="sub-menu">
+                                                    <li><a href="#/news/latest">Latest News</a></li>
+                                                    <li><a href="#/news/archive">Archive</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <!-- End -->
             <div class="header-right">
                                 <button class="bravo-more-menu">
                     <i class="fa fa-bars"></i>
@@ -271,7 +357,7 @@
 </div>
         
             <div class="bravo_detail_location">
-        <div class="bravo_banner" style="background-image: linear-gradient(0deg,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.2)),url('https://www.lambula.net/uploads/0000/1/2022/09/15/muzinga-entebbe.png') !important"></div>
+        <div class="bravo_banner" style="background-image: linear-gradient(0deg,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.2)),url('https://i.postimg.cc/br0jfTwn/Entebbe.png') !important"></div>
 
         <div class="bravo_content">
             <div class="container">
@@ -281,7 +367,7 @@
                                             </div>
                     <div class="col-md-12 col-lg-4">
                                                     <div class="g-thumbnail m-3">
-                                <img data-src="https://www.lambula.net/uploads/0000/1/2022/09/15/muzinga-entebbe.png" class="img-fluid lazy" alt="Entebbe Municipalilty">
+                                <img data-src="/uploads/0000/1/2022/09/15/muzinga-entebbe.png" class="img-fluid lazy" alt="Entebbe Municipalilty">
                             </div>
                                             </div>
                 </div>
