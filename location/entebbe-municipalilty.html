@@ -6,7 +6,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="eYrMxOIx6GVKmirLLzR2sMldshFfTvjiPViICTGo">
                                         <link rel="icon" type="image/png" href="https://i.postimg.cc/3rmsDkbQ/fav.png" />
-            
+                                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">      
     <title>Entebbe Municipalilty - Willing Fleets</title>
     <meta name="description" content="Willing Fleets is a Platform that helps promote Tourism based services and Tourism Service Providers such as Tour Companies, Hotels, Car Hire Operators and many others"/>
     
@@ -33,7 +33,8 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link rel='stylesheet' id='google-font-css-css'  href='https://fonts.googleapis.com/css?family=Poppins%3A300%2C400%2C500%2C600&display=swap' type='text/css' media='all' />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-xGsfa4SElU0f9MgyTkoz4JazVNE7TWDFK4vHbLLoxoTE7s/n/7oVRwuiv4pnuS3C4EhY2SUHZ/Tt5UeOLoAgCA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
     
     
     
@@ -206,91 +207,161 @@
                                     </a>
                                     <!-- starts -->
                                     <style>
-                                        .bravo-menu .sub-menu {
-                                            display: none;
-                                            position: absolute;
-                                            z-index: 1;
-                                            background-color: lightblue; /* Set background color */
-                                        }
+                                        @media only screen and (max-width: 600px) 
+                                            .navbar {
+                                                overflow: hidden;
+                                                background-color: #fafafa;
+                                            }
                                     
-                                        .bravo-menu .depth-0:hover .sub-menu {
-                                            display: block;
-                                        }
+                                            .navbar a {
+                                                float: left;
+                                                font-size: 16px;
+                                                color: rgb(0, 0, 0);
+                                                text-align: center;
+                                                padding: 14px 16px;
+                                                text-decoration: none;
+                                            }
+                                    
+                                            .subnav {
+                                                float: left;
+                                                overflow: hidden;
+                                            }
+                                    
+                                            .subnav .subnavbtn {
+                                                font-size: 16px;
+                                                border: none;
+                                                outline: none;
+                                                color: rgb(3, 0, 0);
+                                                padding: 14px 16px;
+                                                background-color: inherit;
+                                                font-family: inherit;
+                                                margin: 0;
+                                            }
+                                    
+                                            .navbar a:hover,
+                                            .subnav:hover .subnavbtn {
+                                                background-color: rgb(17, 196, 55);
+                                            }
+                                    
+                                            .subnav-content {
+                                                display: none;
+                                                position: absolute;
+                                                left: 0;
+                                                top: 70%; /* Adjust top position */
+                                                background-color: rgb(25, 196, 76);
+                                                width: auto; /* Adjust width as needed */
+                                                z-index: 10;
+                                                margin-top: 0;
+                                                padding-top: 10px; /* Adjust padding for better spacing */
+                                                border-top: 2px solid white; /* Add a border between navbar and dropdown content */
+                                            }
+                                    
+                                            .subnav-content a {
+                                                float: left; /* Change float to left for horizontal layout */
+                                                color: rgb(5, 0, 0);
+                                                text-decoration: none;
+                                                padding: 12px 16px; /* Adjust padding for better spacing */
+                                                display: block;
+                                                text-align: left;
+                                            }
+                                    
+                                            .subnav-content a:hover {
+                                                background-color: #eee;
+                                                color: black;
+                                            }
+                                            .subnav:hover .subnav-content,
+                                            .subnav-content:hover {
+                                                display: block;
+                                            }
+                                
+                                                                       
                                     </style>
+                                   
+                                    <div class="navbar">
+                                        <a href="/index">Home</a>
+                                        <div class="subnav">
+                                          <button class="subnavbtn">Hotel <i class="fa fa-caret-down"></i></button>
+                                          <div class="subnav-content">
+                                              <a href="/hotel/gahiza-island-retreat.html">Gahiza-Island-Retreat</a>
+                                              <a href="/hotel/diamonds-lounge.html">Diamonds-Ldounge</a>
+                                              <a href="/hotel/ekhaya-crescent-hotel.html">Ekhaya-Crescent-Hotel</a>
+                                              <a href="/hotel/hotel-horizon-entebbe.html">Hotel-Horizon-Entebbe</a>
+                                              <a href="/hotel/martyrs-motel.html">Martyrs-Motel</a></li>
+                                              <a href="/hotel/lake-bunyonyi-rock-resort.html">Lake-Bunyonyi-Rock-Resort</a>
+                                              <a href="/hotel/mutanda-lake-resort.html">Mutanda-Lake-Resort</a>
+                                              <a href="/hotel/naalya-motel.html">Naalya-Motel</a>
+                                              <a href="/hotel/sea-ville-resort-hotel-and-spa.html">Sea-ville-Resort-Hotel-and-Spa</a>
+                                      
+                                          </div>
+                                        </div> 
+                                        <div class="subnav">
+                                          <button class="subnavbtn">Tours <i class="fa fa-caret-down"></i></button>
+                                          <div class="subnav-content">
+                                            <a href="/tour/fishing-trips-on-lake-victoria.html">Fishing-trips-on-lake-victoria</a>
+                                            <a href="/tour/kampala-city-tours.html">Kampala-city-tours</a>
+                                            <a href="#package">Package</a>
+                                            <a href="#express">Express</a>
+                                          </div>
+                                        </div> 
+                                        <div class="subnav">
+                                          <button class="subnavbtn">Space <i class="fa fa-caret-down"></i></button>
+                                          <div class="subnav-content">
+                                            <a href="/space/belleview-apartments-naalya.html">Belleview-apartments-naalya</a>
+                                            <a href="/space/furnished-1-bedroom-apartment.html">Furnished-1-bedroom-apartment</a>
+                                            <a href="/space/monalisa-homes-furnished-apartments.html">Monalisa-homes-furnished-apartments</a>
+                                            <a href="#express">Express</a>
+                                          </div>
+                                        </div>
+                                        <div class="subnav">51`
+                                          <button class="subnavbtn">Cars <i class="fa fa-caret-down"></i></button>
+                                          <div class="subnav-content">
+                                            <a href="/ar/car/martyrs-motel.html>Bring</a>
+                                            <a href="/ar/car/tour-">Deliver</a>
+                                            <a href="/ar/car/tour-bus-entebbe-hire-with-fuel.html">Package</a>
+                                            <a href="/ar/car/tour-bus-jinja-hire-with-fuel.html">Express</a>
+                                            <a href="/ar/car/tour-bus-kampala-hire-with-fuel.html">Express</a>
+                                            <a href="/ar/car/tour-bus-kampala-hire-with-fuel.html">Express</a>
+                                            <a href="/ar/car/tour-car-stretcher.html">Express</a>
+                                          </div>
+                                        </div>
+                                        <div class="subnav">
+                                          <button class="subnavbtn">Events <i class="fa fa-caret-down"></i></button>
+                                          <div class="subnav-content">
+                                            <a href="/event/mr-1.html">Bring</a>
+                                            <a href="/event/mr-2.html">Deliver</a>
+                                            <a href="/event/mr-3.html">Package</a>
+                                            <a href="/event/mr-4.html">Express</a>
+                                            <a href="/event/mr-5.html">Express</a> 
+                                            <a href="/event/mr.html">Express</a> 
+                                            <a href="#express">Express</a> 
+                                          </div>
+                                        </div>
+                                      
+                                        <div class="subnav">
+                                          <button class="subnavbtn">Boat-Cruise <i class="fa fa-caret-down"></i></button>
+                                          <div class="subnav-content">
+                                            <a href="/boat-1.html">Bring</a>
+                                            <a href="#deliver">Deliver</a>
+                                            <a href="#package">Package</a>
+                                            <a href="#express">Express</a>
+                                          </div>
+                                        </div>
+                                        <div class="subnav">
+                                          <button class="subnavbtn">News <i class="fa fa-caret-down"></i></button>
+                                          <div class="subnav-content">
+                                            <a href="/news/10-enchanting-places-to-visit-in-uganda-a-hidden-gem-of-east-africa.html">Link 1</a>
+                                            <a href="/news/bird-lovers-welcome-bird-sanctuary-opened-in-entebbe-to-rehabilitate-endangered-species.html">Link 2</a>
+                                            <a href="/news/cnn-names-uganda-among-the-best-destinations-to-visit-in-2023.html">Link 3</a>
+                                            <a href="/news/uganda-safe-for-tourism-despite-global-media-misinformation.html">Link 4</a>
+                                            <a href="/news/uganda-to-leverage-on-mtn-kampala-marathon-to-market-tourism.html">Link 2</a>
+                                            <a href="/news/utb-boss-urges-rotarians-to-invest-in-tourism.html">Link 3</a>
+                                            <a href="/news/visit-queen-elizabeth-national-park.html">Link 4</a>
+                                            <a href="/news/">Link 2</a>
+                                            <a href="/news/">Link 3</a>
+                                            <a href="/news/">Link 4</a>
+                                          </div>
+                                        </div>
                                     
-                                    <div class="bravo-menu">
-                                        <ul class="main-menu menu-generated">
-                                            <li class="depth-0">
-                                                <a href="/index.html">Home</a>
-                                            </li>
-                                            <li class="depth-0">
-                                                <a href="/hotel.html">Hotel</a>
-                                                <!-- Dropdown for Hotel -->
-                                                <ul class="sub-menu">
-                                                    
-                                                    <li><a href="/hotel/gahiza-island-retreat.html">Gahiza-Island-Retreat</a></li>
-                                                    <li><a href="/hotel/diamonds-lounge.html">Diamonds-Ldounge</a></li>
-                                                    <li><a href="/hotel/ekhaya-crescent-hotel.html">Ekhaya-Crescent-Hotel</a></li>
-                                                    <li><a href="/hotel/hotel-horizon-entebbe.html">Hotel-Horizon-Entebbe</a></li>
-                                                    <li><a href="/hotel/martyrs-motel.html">Martyrs-Motel</a></li>
-                                                    <li><a href="/hotel/lake-bunyonyi-rock-resort.html">Lake-Bunyonyi-Rock-Resort</a></li>
-                                                    <li><a href="/hotel/mutanda-lake-resort.html">Mutanda-Lake-Resort</a></li>
-                                                    <li><a href="/hotel/naalya-motel.html">Naalya-Motel</a></li>
-                                                    <li><a href="/hotel/sea-ville-resort-hotel-and-spa.html">Sea-ville-Resort-Hotel-and-Spa</a></li>
-                                                </ul>
-                                            </li>
-                                            
-                                            <li class="depth-0">
-                                                <a href="/tour">Tours</a>
-                                                <!-- Dropdown for Tours -->
-                                                <ul class="sub-menu">
-                                                    <li><a href="#/tour/packages">Packages</a></li>
-                                                    <li><a href="#/tour/bookings">Bookings</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="depth-0">
-                                                <a href="/space">Space</a>
-                                                <!-- Dropdown for Tours -->
-                                                <ul class="sub-menu">
-                                                    <li><a href="#/tour/packages">Packages</a></li>
-                                                    <li><a href="#/tour/bookings">Bookings</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="depth-0">
-                                                <a href="/car-1.html">Cars</a>
-                                                <!-- Dropdown for Tours -->
-                                                <ul class="sub-menu">
-                                                    <li><a href="#/tour/packages">Packages</a></li>
-                                                    <li><a href="#/tour/bookings">Bookings</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="depth-0">
-                                                <a href="/event.html">Events</a>
-                                                <!-- Dropdown for Tours -->
-                                                <ul class="sub-menu">
-                                                    <li><a href="#/tour/packages">Packages</a></li>
-                                                    <li><a href="#/tour/bookings">Bookings</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="depth-0">
-                                                <a href="/boat.html">Boat-Cruise</a>
-                                                <!-- Dropdown for Tours -->
-                                                <ul class="sub-menu">
-                                                    <li><a href="#/tour/packages">Packages</a></li>
-                                                    <li><a href="#/tour/bookings">Bookings</a></li>
-                                                </ul>
-                                            </li>
-                                            <!-- Repeat the same pattern for other menu items... -->
-                                            <li class="depth-0">
-                                                <a href="/news.html">News</a>
-                                                <!-- Dropdown for News -->
-                                                <ul class="sub-menu">
-                                                    <li><a href="#/news/latest">Latest News</a></li>
-                                                    <li><a href="#/news/archive">Archive</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </div>
                                     
                                     <!-- End -->
             <div class="header-right">
