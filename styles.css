@@ -1,0 +1,99 @@
+/* styles.css */
+
+.bravo-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bravo-logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.header-left {
+    order: -1;
+}
+
+@media only screen and (max-width: 600px) {
+    .bravo-logo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .bravo-menu {
+        display: block;
+    }
+
+    .bravo-more-menu {
+        display: none;
+    }
+
+    .navbar {
+        overflow: hidden;
+        background-color: #fafafa;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        font-size: 16px;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .subnav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .subnav .subnavbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: rgb(3, 0, 0);
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .subnav-content {
+        display: none;
+        position: static;
+        background-color: #319fda;
+        width: 100%;
+        z-index: 10;
+        padding-top: 10px;
+        border-top: 2px solid rgba(252, 246, 246, 0.995);
+    }
+
+    .subnav-content a {
+        color: rgb(254, 251, 251);
+        text-decoration: none;
+        padding: 12px 16px;
+        display: block;
+        text-align: left;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .navbar a:hover,
+    .subnav:hover .subnavbtn {
+        background-color: #319fda;
+    }
+
+    .subnav:hover .subnav-content,
+    .subnav-content:hover {
+        display: flex;
+        flex-direction: column;
+    }
+}
