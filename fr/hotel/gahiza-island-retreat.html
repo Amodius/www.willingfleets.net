@@ -28,6 +28,10 @@
     <link href="https://www.lambula.net/libs/select2/css/select2.min.css" rel="stylesheet">
     <link href="https://www.lambula.net/dist/frontend/css/notification.css" rel="newest stylesheet">
     <link href="https://www.lambula.net/dist/frontend/css/app.css?_ver=3.4.0" rel="stylesheet">
+    <!-- Include FontAwesome CSS from CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Include IcoFont CSS from CDN -->
+   <link rel="stylesheet" type="text/css" href="https://www.lambula.net/libs/daterange/daterangepicker.css" >
 <!-- Include FontAwesome CSS from CDN -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  <!-- Include IcoFont CSS from CDN -->
@@ -210,6 +214,7 @@
                                     </a>
                 <!-- <div class="bravo-menu"> -->
                     <!-- <ul class="main-menu menu-generated"><li class=" depth-0"><a  target="" href="/" >Home</a></li><li class=" depth-0"><a  target="" href="/hotel" >Hotel</a></li><li class=" depth-0"><a  target="" href="/tour" >Tours</a></li><li class=" depth-0"><a  target="" href="/space" >Space</a></li><li class=" depth-0"><a  target="" href="/car" >Cars</a></li><li class=" depth-0"><a  target="" href="/event" >Events</a></li><li class=" depth-0"><a  target="" href="/boat" >Boat Cruise</a></li><li class=" depth-0"><a  target="" href="/news" >News</a></li></ul>                </div> -->
+            </div>
             <!-- </div> -->
                         <!-- starts -->
                         <style>
@@ -284,6 +289,9 @@
                         </style>
                        
                         <div class="navbar">
+                            <a href="/index.html">Home</a>
+                            <div class="subnav">
+                                <a href="/hotel.html" class="subnavbtn">Hotel <i class="fa fa-caret-down"></i></a>
                             <a href="/index">Home</a>
                             <div class="subnav">
                               <button class="subnavbtn">Hotel <i class="fa fa-caret-down"></i></button>
@@ -301,6 +309,7 @@
                               </div>
                             </div> 
                             <div class="subnav">
+                                <a href="/tour.html" class="subnavbtn">Tour <i class="fa fa-caret-down"></i></a>
                               <button class="subnavbtn">Tours <i class="fa fa-caret-down"></i></button>
                               <div class="subnav-content">
                                 <a href="/tour/fishing-trips-on-lake-victoria.html">Fishing-trips-on-lake-victoria</a>
@@ -310,6 +319,7 @@
                               </div>
                             </div> 
                             <div class="subnav">
+                                <a href="/space.html" class="subnavbtn">Space <i class="fa fa-caret-down"></i></a>
                               <button class="subnavbtn">Space <i class="fa fa-caret-down"></i></button>
                               <div class="subnav-content">
                                 <a href="/space/belleview-apartments-naalya.html">Belleview-apartments-naalya</a>
@@ -319,6 +329,7 @@
                               </div>
                             </div>
                             <div class="subnav">
+                                <a href="/car.html" class="subnavbtn">Car <i class="fa fa-caret-down"></i></a>
                               <button class="subnavbtn">Cars <i class="fa fa-caret-down"></i></button>
                               <div class="subnav-content">
                                 <a href="/ar/car/martyrs-motel-self-drive.html">martyrs-motel-self-drive</a>                                        
@@ -330,6 +341,7 @@
                               </div>
                             </div>
                             <div class="subnav">
+                                <a href="/event.html" class="subnavbtn">Event <i class="fa fa-caret-down"></i></a>
                               <button class="subnavbtn">Events <i class="fa fa-caret-down"></i></button>
                               <div class="subnav-content">
                                 <a href="/event/mr-1.html">mr-1</a>
@@ -337,6 +349,13 @@
                                 <a href="/event/mr-3.html">Mr-3</a>
                                 <a href="/event/mr-4.html">Mr-4</a>
                                 <a href="/event/mr-5.html">Mr-5</a> 
+                                <a href="/event/mr.html">Mr</a>   
+                              
+                                </div>
+                            </div>
+                          
+                            <div class="subnav">
+                                <a href="/boat.html" class="subnavbtn">Boat-Cruise <i class="fa fa-caret-down"></i></a>
                                 <a href="/event/mr.html"Mr</a> 
                                  
                               </div>
@@ -344,6 +363,7 @@
                           
                             <div class="subnav">
                               <button class="subnavbtn">Boat-Cruise <i class="fa fa-caret-down"></i></button>
+
                                <div class="subnav-content">
                                 <a href="/boat-1.html">Bring</a>
                                 <a href="#deliver">Deliver</a>
@@ -352,6 +372,7 @@
                               </div> 
                             </div>
                             <div class="subnav">
+                                <a href="/news.html" class="subnavbtn">News <i class="fa fa-caret-down"></i></a>
                               <button class="subnavbtn">News <i class="fa fa-caret-down"></i></button>
                               <div class="subnav-content">
                                 <a href="/news/10-enchanting-places-to-visit-in-uganda-a-hidden-gem-of-east-africa.html">10-enchancing-places</a>
@@ -363,6 +384,7 @@
                                 <a href="/news/visit-queen-elizabeth-national-park.html">visit-queen-elizabeth-national-park</a>
             
                               </div>
+                            </div>
                             </div>
                         <!-- ends -->
             <div class="header-right">
@@ -432,18 +454,18 @@
         <div class="blog-breadcrumb hidden-xs">
         <div class="container">
             <ol class="ul" itemscope itemtype="https://schema.org/BreadcrumbList">
-                <li class="" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="https://www.lambula.net" itemprop="item"><span itemprop="name">Home</span></a>
+                <li class="" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/index.html" itemprop="item"><span itemprop="name">Home</span></a>
                     <meta itemprop="position" content="1" /></li>
                                     <li class=" " itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                                                    <a href="https://www.lambula.net/fr/hotel" itemscope itemtype="https://schema.org/WebPage" itemprop="item" itemid="https://www.lambula.net/fr/hotel"><span itemprop="name">Hotel</span></a>
+                                                    <a href="/hotel.html" itemscope itemtype="https://schema.org/WebPage" itemprop="item" itemid="/hotel.html"><span itemprop="name">Hotel</span></a>
                                                 <meta itemprop="position" content="2" />
                     </li>
                                     <li class=" " itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                                                    <a href="https://www.lambula.net/fr/location/kisoro-district" itemscope itemtype="https://schema.org/WebPage" itemprop="item" itemid="https://www.lambula.net/fr/location/kisoro-district"><span itemprop="name">Kisoro District</span></a>
+                                                    <a href="/location/kisoro-district.html" itemscope itemtype="https://schema.org/WebPage" itemprop="item" itemid="/location/kisoro-district.html"><span itemprop="name">Kisoro District</span></a>
                                                 <meta itemprop="position" content="3" />
                     </li>
                                     <li class=" " itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                                                    <a href="https://www.lambula.net/fr/location/lake-mutanda" itemscope itemtype="https://schema.org/WebPage" itemprop="item" itemid="https://www.lambula.net/fr/location/lake-mutanda"><span itemprop="name">Lake Mutanda</span></a>
+                                                    <a href="/location/lake-mutanda.html" itemscope itemtype="https://schema.org/WebPage" itemprop="item" itemid="/location/lake-mutanda.html"><span itemprop="name">Lake Mutanda</span></a>
                                                 <meta itemprop="position" content="4" />
                     </li>
                                     <li class=" active" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
@@ -1043,12 +1065,14 @@
                                             <div class="item">
                     <div class="media">
                         <div class="media-left">
+                            <a href="/fr/hotel/mutanda-lake-resort.html">
                             <a href="/hotel/mutanda-lake-resort.html">
                                                                                                             <img class='img-responsive lazy'  data-src=https://www.lambula.net/uploads/0000/31/2022/10/08/standardroomdouble4-150.jpg  alt='Mutanda Lake Resort'>
                                                                                                 </a>
                         </div>
                         <div class="media-body">
                                                         <h4 class="media-heading">
+                                <a href="/fr/hotel/mutanda-lake-resort.html">
                                 <a href="/hotel/mutanda-lake-resort.html">
                                     Mutanda Lake Resort
                                 </a>
@@ -1295,6 +1319,7 @@
             <label for="remember-me" class="mb0">
                 <input type="checkbox" name="remember" id="remember-me" value="1"> Remember me <span class="checkmark fcheckbox"></span>
             </label>
+            <a href="/fr/forgot-password.html">Forgot Password?</a>
             <a href="/forgot-password.html">Forgot Password?</a>
         </div>
     </div>
@@ -1361,6 +1386,7 @@
     <div class="form-group">
         <label for="term">
             <input id="term" type="checkbox" name="term" class="mr5">
+            I have read and accept the <a href='/fr/page/terms-of-use.html' target='_blank'>Terms and Privacy Policy</a>
             I have read and accept the <a href='/page/terms-of-use.html' target='_blank'>Terms and Privacy Policy</a>
             <span class="checkmark fcheckbox"></span>
         </label>
