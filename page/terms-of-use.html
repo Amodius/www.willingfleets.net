@@ -7,18 +7,18 @@
     <meta name="csrf-token" content="eYrMxOIx6GVKmirLLzR2sMldshFfTvjiPViICTGo">
                                         <link rel="icon" type="image/png" href="https://i.postimg.cc/3rmsDkbQ/fav.png" />
             
-    <title>Terms of Use - Willing Fleets</title>
+    <title>Terms of Use - Lambula Uganda</title>
     <meta name="description" content="These are the general terms and conditions governing your use the Lambula.net website and our services. By accessing, using or signing up for this website or any other services"/>
     
-    <meta property="og:url" content="https://www.lambula.net/page/terms-of-use"/>
+    <meta property="og:url" content="/page/terms-of-use.html"/>
     <meta property="og:type" content="article"/>
     <meta property="og:title" content="Terms of Use"/>
-    <meta property="og:description" content="These are the general terms and conditions governing your use the Lambula.net website and our services. By accessing, using or signing up for this website or any other services"/>
+    <meta property="og:description" content="These are the general terms and conditions governing your use the Willingfleets.net website and our services. By accessing, using or signing up for this website or any other services"/>
     <meta property="og:image" content="https://www.lambula.net/uploads/0000/1/2022/10/18/lambula-uganda-visit-uganda-explore-uganda.jpg"/>
     
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Terms of Use">
-    <meta name="twitter:description" content="These are the general terms and conditions governing your use the Lambula.net website and our services. By accessing, using or signing up for this website or any other services">
+    <meta name="twitter:description" content="These are the general terms and conditions governing your use the Willingfleets.net website and our services. By accessing, using or signing up for this website or any other services">
     <meta name="twitter:image" content="https://www.lambula.net/uploads/0000/1/2022/10/18/lambula-uganda-visit-uganda-explore-uganda.jpg">
     <link rel="canonical" href="https://www.lambula.net/page/terms-of-use"/>
     <link href="https://www.lambula.net/libs/bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -28,7 +28,9 @@
     <link href="https://www.lambula.net/libs/select2/css/select2.min.css" rel="stylesheet">
     <link href="https://www.lambula.net/dist/frontend/css/notification.css" rel="newest stylesheet">
     <link href="https://www.lambula.net/dist/frontend/css/app.css?_ver=3.4.0" rel="stylesheet">
-
+<!-- Include FontAwesome CSS from CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <!-- Include IcoFont CSS from CDN -->
     <link rel="stylesheet" type="text/css" href="https://www.lambula.net/libs/daterange/daterangepicker.css" >
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -201,9 +203,163 @@
                 <a href="/index.html" class="bravo-logo">
                     <img src="https://i.postimg.cc/MH7gkLjp/lambula-uganda-3.png" alt="Willing Fleets" width="200" height="auto">                                    </a>
                                     </a>
-                <div class="bravo-menu">
+                <!-- <div class="bravo-menu">
                     <ul class="main-menu menu-generated"><li class=" depth-0"><a  target="" href="/" >Home</a></li><li class=" depth-0"><a  target="" href="/hotel" >Hotel</a></li><li class=" depth-0"><a  target="" href="/tour" >Tours</a></li><li class=" depth-0"><a  target="" href="/space" >Space</a></li><li class=" depth-0"><a  target="" href="/car" >Cars</a></li><li class=" depth-0"><a  target="" href="/event" >Events</a></li><li class=" depth-0"><a  target="" href="/boat" >Boat Cruise</a></li><li class=" depth-0"><a  target="" href="/news" >News</a></li></ul>                </div>
-            </div>
+            </div> -->
+            <!-- starts -->
+            <style>
+                @media only screen and (max-width: 600px) 
+                    .navbar {
+                        overflow: hidden;
+                        background-color: #fafafa;
+                    }
+            
+                    .navbar a {
+                        float: left;
+                        font-size: 16px;
+                        color: rgb(0, 0, 0);
+                        text-align: center;
+                        padding: 14px 16px;
+                        text-decoration: none;
+                    }
+            
+                    .subnav {
+                        float: left;
+                        overflow: hidden;
+                    }
+            
+                    .subnav .subnavbtn {
+                        font-size: 16px;
+                        border: none;
+                        outline: none;
+                        color: rgb(3, 0, 0);
+                        padding: 14px 16px;
+                        background-color: inherit;
+                        font-family: inherit;
+                        margin: 0;
+                    }
+            
+                    .navbar a:hover,
+                    .subnav:hover .subnavbtn {
+                        background-color: #319fda ;
+                    }
+            
+                    .subnav-content {
+                        display: none;
+                        position: absolute;
+                        left: 0;
+                        top: 70%; /* Adjust top position */
+                        background-color: #319fda ;
+                        width: auto; /* Adjust width as needed */
+                        z-index: 10;
+                        margin-top: 0;
+                        padding-top: 10px; /* Adjust padding for better spacing */
+                        border-top: 2px solid rgba(252, 246, 246, 0.995); /* Add a border between navbar and dropdown content */
+                    }
+            
+                    .subnav-content a {
+                        float: left; /* Change float to left for horizontal layout */
+                        color: rgb(254, 251, 251);
+                        text-decoration: none;
+                        padding: 12px 16px; /* Adjust padding for better spacing */
+                        display: block;
+                        text-align: left;
+                    }
+            
+                    .subnav-content a:hover {
+                        background-color: #eee;
+                        color: black;
+                    }
+                    .subnav:hover .subnav-content,
+                    .subnav-content:hover {
+                        display: block;
+                    }
+        
+                                               
+            </style>
+           
+            <div class="navbar">
+                <a href="/index">Home</a>
+                <div class="subnav">
+                  <button class="subnavbtn">Hotel <i class="fa fa-caret-down"></i></button>
+                  <div class="subnav-content">
+                      <a href="/hotel/gahiza-island-retreat.html">Gahiza-Island-Retreat</a>
+                      <a href="/hotel/diamonds-lounge.html">Diamonds-Ldounge</a>
+                      <a href="/hotel/ekhaya-crescent-hotel.html">Ekhaya-Crescent-Hotel</a>
+                      <a href="/hotel/hotel-horizon-entebbe.html">Hotel-Horizon-Entebbe</a>
+                      <a href="/hotel/martyrs-motel.html">Martyrs-Motel</a></li>
+                      <a href="/hotel/lake-bunyonyi-rock-resort.html">Lake-Bunyonyi-Rock-Resort</a>
+                      <a href="/hotel/mutanda-lake-resort.html">Mutanda-Lake-Resort</a>
+                      <a href="/hotel/naalya-motel.html">Naalya-Motel</a>
+                      <a href="/hotel/sea-ville-resort-hotel-and-spa.html">Sea-ville-Resort-Hotel-and-Spa</a>
+              
+                  </div>
+                </div> 
+                <div class="subnav">
+                  <button class="subnavbtn">Tours <i class="fa fa-caret-down"></i></button>
+                  <div class="subnav-content">
+                    <a href="/tour/fishing-trips-on-lake-victoria.html">Fishing-trips-on-lake-victoria</a>
+                    <a href="/tour/kampala-city-tours.html">Kampala-city-tours</a>
+                    <a href="#package">Package</a>
+                    <a href="#express">Express</a>
+                  </div>
+                </div> 
+                <div class="subnav">
+                  <button class="subnavbtn">Space <i class="fa fa-caret-down"></i></button>
+                  <div class="subnav-content">
+                    <a href="/space/belleview-apartments-naalya.html">Belleview-apartments-naalya</a>
+                    <a href="/space/furnished-1-bedroom-apartment.html">Furnished-1-bedroom-apartment</a>
+                    <a href="/space/monalisa-homes-furnished-apartments.html">Monalisa-homes-furnished-apartments</a>
+                    <a href="#express">Express</a>
+                  </div>
+                </div>
+                <div class="subnav">
+                  <button class="subnavbtn">Cars <i class="fa fa-caret-down"></i></button>
+                  <div class="subnav-content">
+                    <a href="/ar/car/martyrs-motel-self-drive.html">martyrs-motel-self-drive</a>                                        
+                    <a href="/ar/car/tour-bus-entebbe-hire-with-fuel.html">Tour-bus-entebbe-hire-with-fuel</a>
+                    <a href="/ar/car/tour-bus-jinja-hire-with-fuel.html"Tour-bus-jinja-hire-with-fuel</a>
+                    <a href="/ar/car/tour-bus-kampala-hire-with-fuel.html">Tour-bus-kampala-hire-with-fuel</a>
+                    <a href="/ar/car/tour-bus-kampala-hire-with-fuel.html">Tour-car-stretcher</a>
+                    <a href="/ar/car/tour-car-stretcher.html">Tour-car-stretcher</a>
+                  </div>
+                </div>
+                <div class="subnav">
+                  <button class="subnavbtn">Events <i class="fa fa-caret-down"></i></button>
+                  <div class="subnav-content">
+                    <a href="/event/mr-1.html">mr-1</a>
+                    <a href="/event/mr-2.html">Mr-2</a>
+                    <a href="/event/mr-3.html">Mr-3</a>
+                    <a href="/event/mr-4.html">Mr-4</a>
+                    <a href="/event/mr-5.html">Mr-5</a> 
+                    <a href="/event/mr.html"Mr</a> 
+                     
+                  </div>
+                </div>
+              
+                <div class="subnav">
+                  <button class="subnavbtn">Boat-Cruise <i class="fa fa-caret-down"></i></button>
+                   <div class="subnav-content">
+                    <a href="/boat-1.html">Bring</a>
+                    <a href="#deliver">Deliver</a>
+                    <a href="#package">Package</a>
+                    <a href="#express">Express</a>
+                  </div> 
+                </div>
+                <div class="subnav">
+                  <button class="subnavbtn">News <i class="fa fa-caret-down"></i></button>
+                  <div class="subnav-content">
+                    <a href="/news/10-enchanting-places-to-visit-in-uganda-a-hidden-gem-of-east-africa.html">10-enchancing-places</a>
+                    <a href="/news/bird-lovers-welcome-bird-sanctuary-opened-in-entebbe-to-rehabilitate-endangered-species.html">Bird-lovers</a>
+                    <a href="/news/cnn-names-uganda-among-the-best-destinations-to-visit-in-2023.html">cnn-names</a>
+                    <a href="/news/uganda-safe-for-tourism-despite-global-media-misinformation.html">uganda-safe-tourism</a>
+                    <a href="/news/uganda-to-leverage-on-mtn-kampala-marathon-to-market-tourism.html">uganda-to-leverage-on-mtn</a>
+                    <a href="/news/utb-boss-urges-rotarians-to-invest-in-tourism.html">utb-boss</a>
+                    <a href="/news/visit-queen-elizabeth-national-park.html">visit-queen-elizabeth-national-park</a>
+
+                  </div>
+                </div>
+            <!-- ends -->
             <div class="header-right">
                                 <button class="bravo-more-menu">
                     <i class="fa fa-bars"></i>
@@ -295,7 +451,7 @@
 <p class="MsoNormal">You agree not to submit, post or otherwise make available to or through our website any personally identifiable information about other people and/or abusive, obscene, vulgar, slanderous, hateful, threatening, sexually-orientated user content or any other material. You represent and warrant to us that such user content is not confidential and that you have all necessary permission to submit, post and otherwise make available such user content. You agree not to submit, post or otherwise make available to or through our website any commercial, advertising, promotional or spam-like user content or any other material. You also agree not to submit, post or otherwise make available to or through our website any user content that may violate any laws be it of your country, the Netherlands, any other country or international law. Violating any of these conditions may lead to you being immediately and permanently banned- with notification to your Internet Service Provider if deemed required by us, and we could decide to take other legal action. You agree that we have the right to remove, edit, move or close your account and/or any user content at any time should we see fit.</p>
 <p class="MsoNormal"> </p>
 <p class="MsoNormal"><strong>OWNERSHIP AND INTELLECTUAL PROPERTY RIGHTS</strong></p>
-<p class="MsoNormal">This website is owned by Lambula Digital Solutions (LAMBULA). All rights and interest in the content available via the website, the website's look and feel , the designs, trademarks, service marks and trade names displayed on the website and the website URL are the property of Lambula or its licensors, and are protected by copyrights, trademarks, patents or other proprietary rights and laws. You may not use any content available via the website in any manner or for any purpose without the prior written permission of us or, if applicable, our licensors. All rights not expressly granted in this Agreement are expressly reserved to Lambula and its licensors.</p>
+<p class="MsoNormal">This website is owned by Willing Fleets Solutions (WILLING FLEETS). All rights and interest in the content available via the website, the website's look and feel , the designs, trademarks, service marks and trade names displayed on the website and the website URL are the property of Willing Fleets or its licensors, and are protected by copyrights, trademarks, patents or other proprietary rights and laws. You may not use any content available via the website in any manner or for any purpose without the prior written permission of us or, if applicable, our licensors. All rights not expressly granted in this Agreement are expressly reserved to Willing Fleets and its licensors.</p>
 <p class="MsoNormal"> </p>
 <p class="MsoNormal"><strong>YOUR CONTACT WITH ADVERTISERS OR OTHER THIRD PARTIES</strong></p>
 <p class="MsoNormal">Your dealings with advertisers or other third parties found on or accessible through our website are solely between you and the third party. These dealings include, but are not limited to, your participation in promotions, the payment for and delivery of items such as safari tours if any, and any terms, conditions, warranties, or representations associated with such dealings. You access and use of such sites, including the content, items, or services on those sites, is solely at your own risk. We do not make any representations or warranties with respect to any content or privacy practices, or otherwise with respect to such third parties or any items or services that may be obtained from such third parties, and you agree that we will have no liability with respect to any loss or damage of any kind incurred as a result of any dealings between you and any third party, or as a result of the presence of such third parties on our website.</p>
@@ -304,15 +460,15 @@
 <p class="MsoNormal">Our website is directed to adults and is not intended for children under the age of 18. Creating an account on our website, including but not limited to an account for our message boards, submitting a user review, other user content or enquiring about a tours, hotels, lodges, cars, boat cruises etc is not allowed for children under the age of 18. If we learn that such actions were taken by a child under the age of 18, we will delete that account, any user content posted on our website as quickly as possible. If you believe an account was created by a child under the age of 18, please contact us by sending an email to hello@willingfleets.net</p>
 <p class="MsoNormal"> </p>
 <p class="MsoNormal"><strong>DISCLAIMER OF WARRANTIES</strong></p>
-<p class="MsoNormal">the website is provided on an "as is" and "as available" basis. Lambula expressly disclaims all warranties of any kind, whether express or implied, including, without limitation, any warranties of merchantability, fitness for a particular purpose, and noninfringement.</p>
-<p class="MsoNormal">Lambula does not make any warranty that the website will meet your requirements, or that access to the website will be uninterrupted, timely, secure, or error-free, or that defects, if any, will be corrected. Lambula makes no warranties as to the results that may be obtained from the use of the website or as to the accuracy, quality, or reliability of any information obtained through the website.</p>
+<p class="MsoNormal">the website is provided on an "as is" and "as available" basis. Willing Fleets expressly disclaims all warranties of any kind, whether express or implied, including, without limitation, any warranties of merchantability, fitness for a particular purpose, and noninfringement.</p>
+<p class="MsoNormal">Willing Fleets does not make any warranty that the website will meet your requirements, or that access to the website will be uninterrupted, timely, secure, or error-free, or that defects, if any, will be corrected. Willing Fleets makes no warranties as to the results that may be obtained from the use of the website or as to the accuracy, quality, or reliability of any information obtained through the website.</p>
 <p class="MsoNormal"> </p>
 <p class="MsoNormal"><strong>LIMITATIONS OF LIABILITY</strong></p>
-<p class="MsoNormal">Lambula and its affiliates assume no responsibility for any consequence relating directly or indirectly to any action or inaction you take based on the content available via the website. you must evaluate, and bear all risks associated with, the use of any content, including any reliance on the accuracy, completeness, or usefulness of such content. you specifically acknowledge that Lambula is not liable for the defamatory, offensive or illegal conduct of users or third parties.</p>
-<p class="MsoNormal">Additionally, in no event will Lambula or its affiliates be liable for any special, indirect, incidental, punitive, or consequential damages, including, without limitation, any loss of use, loss of profits, loss of data, cost of procurement of substitute products or services, or any other such damages, howsoever caused, and on any theory of liability, whether for breach of contract, tort (including negligence and strict liability), or otherwise resulting from (1) the use of, or the inability to use the website; (2) the cost of procurement of substitute services, items, or websites; (3) unauthorized access to or alteration of your transmissions or data; (4) the statements or conduct of any third party on the website; or (5) any other matter relating to the website. these limitations will apply whether or not Lambula has been advised of the possibility of such damages and notwithstanding any failure of essential purpose of any limited remedy.</p>
+<p class="MsoNormal">Willing Fleets and its affiliates assume no responsibility for any consequence relating directly or indirectly to any action or inaction you take based on the content available via the website. you must evaluate, and bear all risks associated with, the use of any content, including any reliance on the accuracy, completeness, or usefulness of such content. you specifically acknowledge that Willing Fleets is not liable for the defamatory, offensive or illegal conduct of users or third parties.</p>
+<p class="MsoNormal">Additionally, in no event will Willing Fleets or its affiliates be liable for any special, indirect, incidental, punitive, or consequential damages, including, without limitation, any loss of use, loss of profits, loss of data, cost of procurement of substitute products or services, or any other such damages, howsoever caused, and on any theory of liability, whether for breach of contract, tort (including negligence and strict liability), or otherwise resulting from (1) the use of, or the inability to use the website; (2) the cost of procurement of substitute services, items, or websites; (3) unauthorized access to or alteration of your transmissions or data; (4) the statements or conduct of any third party on the website; or (5) any other matter relating to the website. these limitations will apply whether or not Willing Fleets has been advised of the possibility of such damages and notwithstanding any failure of essential purpose of any limited remedy.</p>
 <p class="MsoNormal"> </p>
 <p class="MsoNormal"><strong>INDEMNIFICATION</strong></p>
-<p class="MsoNormal">You agree to indemnify and hold harmless Lambula, its directors, officers, employees, owners, agents, and affiliates, from and against any and all liability, damages, losses, claims, expenses of any kind (including, without limitation, reasonable attorneys' fees) directly or indirectly related to (1) your breach of the Agreement; or (2) the user content you submit, post, or transmit through the website.</p>
+<p class="MsoNormal">You agree to indemnify and hold harmless Willing Fleets, its directors, officers, employees, owners, agents, and affiliates, from and against any and all liability, damages, losses, claims, expenses of any kind (including, without limitation, reasonable attorneys' fees) directly or indirectly related to (1) your breach of the Agreement; or (2) the user content you submit, post, or transmit through the website.</p>
 <p class="MsoNormal"> </p>
 <p class="MsoNormal"><strong>USE OF YOUR ACCOUNT</strong></p>
 <p class="MsoNormal">You are responsible for maintaining the confidentiality of any passwords associated with your account on our website, monitor all activity under the account, and assume full responsibility for all activities that occur under your account.</p>
@@ -428,8 +584,8 @@
 									</div>
 									<div class="context">
 										<ul>
-    <li><a href="https://lambula.net/page/about-us">About Us</a></li>
-    <li><a href="https://lambula.net/news">Blog</a></li>
+    <li><a href="/page/about-us.html">About Us</a></li>
+    <li><a href="/news.html">Blog</a></li>
     <li><a href="#">Rewards</a></li>
     <li><a href="#">Work with Us</a></li>
     <li><a href="#">Meet the Team</a></li>
@@ -444,10 +600,10 @@
 									</div>
 									<div class="context">
 										<ul>
-    <li><a href="https://lambula.net/user/profile">Account</a></li>
-    <li><a href="https://lambula.net/page/terms-of-use">Terms Of Use</a></li>
-    <li><a href="https://lambula.net/contact">Contact</a></li>
-    <li><a href="https://lambula.net/page/privacy-policy">Privacy Policy</a></li>
+    <li><a href="/login.html">Account</a></li>
+    <li><a href="/page/terms-of-use.html">Terms Of Use</a></li>
+    <li><a href="/contact.html">Contact</a></li>
+    <li><a href="/page/privacy-policy.html">Privacy Policy</a></li>
 </ul>
 									</div>
 								</div>
@@ -459,8 +615,8 @@
 									</div>
 									<div class="context">
 										<ul>
-<li><a href="https://lambula.net/page/become-a-vendor">Register Business</a></li>
-<li><a href="https://lambula.net/contact">Contact Us</a></li>
+<li><a href="/page/become-a-vendor.html">Register Business</a></li>
+<li><a href="/contact.html">Contact Us</a></li>
 </ul>
 									</div>
 								</div>
@@ -472,9 +628,9 @@
 			<div class="container context">
 				<div class="row">
 					<div class="col-md-12">
-						<p>Copyright © 2023 Willing Fleets</p>
+						<p>Copyright © 2023 Lambula Uganda</p>
 						<div class="f-visa">
-							<p>Powered by <a title="Host256.com" href="https://Host256.com">Host256.com</a></p>
+							<p>Powered by <a title="Icradle Innovations Ltd" href="https://www.icradle.dev">Icradle Innovations Ltd</a></p>
 						</div>
 					</div>
 				</div>
@@ -494,7 +650,7 @@
                 </span>
             </div>
             <div class="modal-body relative">
-                <form class="bravo-form-login" method="POST" action="https://www.lambula.net/login">
+                <form class="bravo-form-login" method="POST" action="/login.html">
     <input type="hidden" name="redirect" value="">
     <input type="hidden" name="_token" value="eYrMxOIx6GVKmirLLzR2sMldshFfTvjiPViICTGo">    <div class="form-group">
         <input type="text" class="form-control" name="email" autocomplete="off" placeholder="Email address">
@@ -511,7 +667,7 @@
             <label for="remember-me" class="mb0">
                 <input type="checkbox" name="remember" id="remember-me" value="1"> Remember me <span class="checkmark fcheckbox"></span>
             </label>
-            <a href="https://www.lambula.net/forgot-password">Forgot Password?</a>
+            <a href="/forgot-password.html">Forgot Password?</a>
         </div>
     </div>
             <div class="form-group">
@@ -542,7 +698,7 @@
                 </span>
             </div>
             <div class="modal-body">
-                <form class="form bravo-form-register" method="post" action="https://www.lambula.net/register">
+                <form class="form bravo-form-register" method="post" action="/register.html">
     <input type="hidden" name="_token" value="eYrMxOIx6GVKmirLLzR2sMldshFfTvjiPViICTGo">    <div class="row">
         <div class="col-lg-6 col-md-12">
             <div class="form-group">
@@ -577,7 +733,7 @@
     <div class="form-group">
         <label for="term">
             <input id="term" type="checkbox" name="term" class="mr5">
-            I have read and accept the <a href='https://www.lambula.net/page/terms-of-use' target='_blank'>Terms and Privacy Policy</a>
+            I have read and accept the <a href='/page/terms-of-use.html' target='_blank'>Terms and Privacy Policy</a>
             <span class="checkmark fcheckbox"></span>
         </label>
         <div><span class="invalid-feedback error error-term"></span></div>
