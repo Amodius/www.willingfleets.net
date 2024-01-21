@@ -3,6 +3,58 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .bravo-logo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .bravo-logo img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .header-left {
+            order: -1;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .bravo-logo {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .bravo-menu {
+                display: block;
+            }
+
+            .bravo-more-menu {
+                display: none;
+            }
+
+            .navbar {
+                flex-direction: column;
+            }
+
+            .navbar a, .subnavbtn {
+                text-align: left;
+                width: auto;
+                margin-right: 10px;
+            }
+
+            .subnav-content {
+                position: static;
+                display: none;
+                width: 100%;
+            }
+
+            .subnav:hover .subnav-content,
+            .subnav-content:hover {
+                display: block;
+            }
+        }
+    </style>
     <!-- CSRF Token -->
     <meta name="csrf-token" content="eYrMxOIx6GVKmirLLzR2sMldshFfTvjiPViICTGo">
                                         <link rel="icon" type="image/png" href="https://i.postimg.cc/3rmsDkbQ/fav.png" />
@@ -28,7 +80,12 @@
     <link href="https://www.lambula.net/libs/select2/css/select2.min.css" rel="stylesheet">
     <link href="https://www.lambula.net/dist/frontend/css/notification.css" rel="newest stylesheet">
     <link href="https://www.lambula.net/dist/frontend/css/app.css?_ver=3.4.0" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-xGsfa4SElU0f9MgyTkoz4JazVNE7TWDFK4vHbLLoxoTE7s/n/7oVRwuiv4pnuS3C4EhY2SUHZ/Tt5UeOLoAgCA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- Include FontAwesome CSS from CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <!-- Include IcoFont CSS from CDN -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/icofont/3.0.0/icofont.min.css">
     <link rel="stylesheet" type="text/css" href="https://www.lambula.net/libs/daterange/daterangepicker.css" >
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -124,6 +181,8 @@
         
     <link href="https://www.lambula.net/custom-css" rel="stylesheet">
     <link href="https://www.lambula.net/libs/carousel-2/owl.carousel.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
                 
         
     
@@ -198,13 +257,171 @@
     <div class="container">
         <div class="content">
             <div class="header-left">
-                <a href="/index.html" class="bravo-logo" style="display: block; margin: auto; max-width: 100%; max-height: 100%;">
-                    <img src="https://i.postimg.cc/MH7gkLjp/lambula-uganda-3.png" alt="Willing Fleets" style="max-width: 100%; max-height: 100%;">
+
+                <a href="/index.html" class="bravo-logo">
+                    <img src="https://i.postimg.cc/pL11KCDJ/willing-fleets.png" alt="Willings Fleets Uganda" width="150" height="auto">
+
                 </a>
+            
+                <!-- <div class="bravo-menu">
+                    <ul class="main-menu menu-generated"><li class=" depth-0"><a  target="" href="/index.html" >Home</a></li><li class=" depth-0"><a  target="" href="/hotel.html" >Hotel</a></li><li class=" depth-0"><a  target="" href="/tour.html" >Tours</a></li><li class=" depth-0"><a  target="" href="/space.html" >Space</a></li><li class=" depth-0"><a  target="" href="/car.html" >Cars</a></li><li class=" depth-0"><a  target="" href="/event.html" >Events</a></li><li class=" depth-0"><a  target="" href="/boat.html" >Boat Cruise</a></li><li class=" depth-0"><a  target="" href="/news.html" >News</a></li></ul>                </div> -->
+                   <!-- starts -->
+                   <style>
+                        @media only screen and (max-width: 600px) 
+                            .navbar {
+                                overflow: hidden;
+                                background-color: #fafafa;
+                            }
+                    
+                            .navbar a {
+                                float: left;
+                                font-size: 16px;
+                                color: rgb(0, 0, 0);
+                                text-align: center;
+                                padding: 14px 16px;
+                                text-decoration: none;
+                            }
+                    
+                            .subnav {
+                                float: left;
+                                overflow: hidden;
+                            }
+                    
+                            .subnav .subnavbtn {
+                                font-size: 16px;
+                                border: none;
+                                outline: none;
+                                color: rgb(3, 0, 0);
+                                padding: 14px 16px;
+                                background-color: inherit;
+                                font-family: inherit;
+                                margin: 0;
+                            }
+                    
+                            .navbar a:hover,
+                            .subnav:hover .subnavbtn {
+                                background-color: #319fda ;
+                            }
+                    
+                            .subnav-content {
+                                display: none;
+                                position: absolute;
+                                left: 0;
+                                top: 70%; /* Adjust top position */
+                                background-color: #319fda ;
+                                width: auto; /* Adjust width as needed */
+                                z-index: 10;
+                                margin-top: 0;
+                                padding-top: 10px; /* Adjust padding for better spacing */
+                                border-top: 2px solid rgba(252, 246, 246, 0.995); /* Add a border between navbar and dropdown content */
+                            }
+                    
+                            .subnav-content a {
+                                float: left; /* Change float to left for horizontal layout */
+                                color: rgb(254, 251, 251);
+                                text-decoration: none;
+                                padding: 12px 16px; /* Adjust padding for better spacing */
+                                display: block;
+                                text-align: left;
+                            }
+                    
+                            .subnav-content a:hover {
+                                background-color: #eee;
+                                color: black;
+                            }
+                            .subnav:hover .subnav-content,
+                            .subnav-content:hover {
+                                display: block;
+                            }
                 
-                <div class="bravo-menu">
-                    <ul class="main-menu menu-generated"><li class=" depth-0"><a  target="" href="/index.html" >Home</a></li><li class=" depth-0"><a  target="" href="/hotel.html" >Hotel</a></li><li class=" depth-0"><a  target="" href="/tour.html" >Tours</a></li><li class=" depth-0"><a  target="" href="/space.html" >Space</a></li><li class=" depth-0"><a  target="" href="/car.html" >Cars</a></li><li class=" depth-0"><a  target="" href="/event.html" >Events</a></li><li class=" depth-0"><a  target="" href="/boat.html" >Boat Cruise</a></li><li class=" depth-0"><a  target="" href="/news.html" >News</a></li></ul>                </div>
-            </div>
+                                                       
+                    </style>
+                   
+                    <div class="navbar">
+                        <a href="/index">Home</a>
+                        <div class="subnav">
+                          <button class="subnavbtn">Hotel <i class="fa fa-caret-down"></i></button>
+                          <div class="subnav-content">
+                              <a href="/hotel/gahiza-island-retreat.html">Gahiza-Island-Retreat</a>
+                              <a href="/hotel/diamonds-lounge.html">Diamonds-Ldounge</a>
+                              <a href="/hotel/ekhaya-crescent-hotel.html">Ekhaya-Crescent-Hotel</a>
+                              <a href="/hotel/hotel-horizon-entebbe.html">Hotel-Horizon-Entebbe</a>
+                              <a href="/hotel/martyrs-motel.html">Martyrs-Motel</a></li>
+                              <a href="/hotel/lake-bunyonyi-rock-resort.html">Lake-Bunyonyi-Rock-Resort</a>
+                              <a href="/hotel/mutanda-lake-resort.html">Mutanda-Lake-Resort</a>
+                              <a href="/hotel/naalya-motel.html">Naalya-Motel</a>
+                              <a href="/hotel/sea-ville-resort-hotel-and-spa.html">Sea-ville-Resort-Hotel-and-Spa</a>
+                      
+                          </div>
+                        </div> 
+                        <div class="subnav">
+                          <button class="subnavbtn">Tours <i class="fa fa-caret-down"></i></button>
+                          <div class="subnav-content">
+                            <a href="/tour/fishing-trips-on-lake-victoria.html">Fishing-trips-on-lake-victoria</a>
+                            <a href="/tour/kampala-city-tours.html">Kampala-city-tours</a>
+                            <a href="#package">Package</a>
+                            <a href="#express">Express</a>
+                          </div>
+                        </div> 
+                        <div class="subnav">
+                          <button class="subnavbtn">Space <i class="fa fa-caret-down"></i></button>
+                          <div class="subnav-content">
+                            <a href="/space/belleview-apartments-naalya.html">Belleview-apartments-naalya</a>
+                            <a href="/space/furnished-1-bedroom-apartment.html">Furnished-1-bedroom-apartment</a>
+                            <a href="/space/monalisa-homes-furnished-apartments.html">Monalisa-homes-furnished-apartments</a>
+                            <a href="#express">Express</a>
+                          </div>
+                        </div>
+                        <div class="subnav">
+                          <button class="subnavbtn">Cars <i class="fa fa-caret-down"></i></button>
+                          <div class="subnav-content">
+                            <a href="/ar/car/martyrs-motel-self-drive.html">martyrs-motel-self-drive</a>                                        
+                            <a href="/ar/car/tour-bus-entebbe-hire-with-fuel.html">Tour-bus-entebbe-hire-with-fuel</a>
+                            <a href="/ar/car/tour-bus-jinja-hire-with-fuel.html"Tour-bus-jinja-hire-with-fuel</a>
+                            <a href="/ar/car/tour-bus-kampala-hire-with-fuel.html">Tour-bus-kampala-hire-with-fuel</a>
+                            <a href="/ar/car/tour-bus-kampala-hire-with-fuel.html">Tour-car-stretcher</a>
+                            <a href="/ar/car/tour-car-stretcher.html">Tour-car-stretcher</a>
+                          </div>
+                        </div>
+                        <div class="subnav">
+                          <button class="subnavbtn">Events <i class="fa fa-caret-down"></i></button>
+                          <div class="subnav-content">
+                            <a href="/event/mr-1.html">mr-1</a>
+                            <a href="/event/mr-2.html">Mr-2</a>
+                            <a href="/event/mr-3.html">Mr-3</a>
+                            <a href="/event/mr-4.html">Mr-4</a>
+                            <a href="/event/mr-5.html">Mr-5</a> 
+                            <a href="/event/mr.html"></a>Mr</a> 
+                             
+                          </div>
+                        </div>
+                      
+                        <div class="subnav">
+                          <button class="subnavbtn">Boat-Cruise <i class="fa fa-caret-down"></i></button>
+                           <div class="subnav-content">
+                            <a href="/boat-1.html">Bring</a>
+                            <a href="#deliver">Deliver</a>
+                            <a href="#package">Package</a>
+                            <a href="#express">Express</a>
+                          </div> 
+                        </div>
+                        <div class="subnav">
+                          <button class="subnavbtn">News <i class="fa fa-caret-down"></i></button>
+                          <div class="subnav-content">
+                            <a href="/news/10-enchanting-places-to-visit-in-uganda-a-hidden-gem-of-east-africa.html">10-enchancing-places</a>
+                            <a href="/news/bird-lovers-welcome-bird-sanctuary-opened-in-entebbe-to-rehabilitate-endangered-species.html">Bird-lovers</a>
+                            <a href="/news/cnn-names-uganda-among-the-best-destinations-to-visit-in-2023.html">cnn-names</a>
+                            <a href="/news/uganda-safe-for-tourism-despite-global-media-misinformation.html">uganda-safe-tourism</a>
+                            <a href="/news/uganda-to-leverage-on-mtn-kampala-marathon-to-market-tourism.html">uganda-to-leverage-on-mtn</a>
+                            <a href="/news/utb-boss-urges-rotarians-to-invest-in-tourism.html">utb-boss</a>
+                            <a href="/news/visit-queen-elizabeth-national-park.html">visit-queen-elizabeth-national-park</a>
+        
+                          </div>
+                        </div>
+                    <!-- ends -->
+                </div>
+             
+             
             <div class="header-right">
                                 <button class="bravo-more-menu">
                     <i class="fa fa-bars"></i>
@@ -264,7 +481,7 @@
             </ul>
         </div>
         <div class="g-menu">
-            <ul class="main-menu menu-generated"><li class=" depth-0"><a  target="" href="/" >Home</a></li><li class=" depth-0"><a  target="" href="/hotel" >Hotel</a></li><li class=" depth-0"><a  target="" href="/tour" >Tours</a></li><li class=" depth-0"><a  target="" href="/space" >Space</a></li><li class=" depth-0"><a  target="" href="/car" >Cars</a></li><li class=" depth-0"><a  target="" href="/event" >Events</a></li><li class=" depth-0"><a  target="" href="/boat" >Boat Cruise</a></li><li class=" depth-0"><a  target="" href="/news" >News</a></li></ul>        </div>
+            <ul class="main-menu menu-generated"><li class=" depth-0"><a  target="" href="/index.html" >Home</a></li><li class=" depth-0"><a  target="" href="/hotel.html" >Hotel</a></li><li class=" depth-0"><a  target="" href="/tour.html" >Tours</a></li><li class=" depth-0"><a  target="" href="/space.html" >Space</a></li><li class=" depth-0"><a  target="" href="/car.html" >Cars</a></li><li class=" depth-0"><a  target="" href="/event.html" >Events</a></li><li class=" depth-0"><a  target="" href="/boat.html" >Boat Cruise</a></li><li class=" depth-0"><a  target="" href="/news.html" >News</a></li></ul>        </div>
     </div>
 </div>
         
@@ -728,7 +945,7 @@ better.</p>
             Featured
         </div>
         <div class="thumb-image ">
-        <a  href="https://www.lambula.net/hotel/sea-ville-resort-hotel-and-spa">
+        <a  href="/hotel/sea-ville-resort-hotel-and-spa.html">
                                                 <img class='img-responsive lazy'  data-src=https://www.lambula.net/uploads/0000/22/2022/09/15/sea-ville-resort-hotel-and-spa-2-600.jpeg  alt='Sea-Ville Resort Hotel and Spa'>
                                     </a>
                 <div class="service-wishlist " data-id="12" data-type="hotel">
@@ -736,7 +953,7 @@ better.</p>
         </div>
     </div>
     <div class="item-title">
-        <a  href="https://www.lambula.net/hotel/sea-ville-resort-hotel-and-spa">
+        <a  href="/hotel/sea-ville-resort-hotel-and-spa.html">
                             Sea-Ville Resort Hotel and Spa
         </a>
             </div>
@@ -767,7 +984,7 @@ better.</p>
             Featured
         </div>
         <div class="thumb-image ">
-        <a  href="https://www.lambula.net/hotel/hotel-horizon-entebbe">
+        <a  href="/hotel/hotel-horizon-entebbe.html">
                                                 <img class='img-responsive lazy'  data-src=https://www.lambula.net/uploads/0000/29/2022/10/07/lake-victoria-view-hotel-horizon-entebbe-600.jpg  alt='Hotel Horizon Entebbe'>
                                     </a>
                     <div class="star-rate">
@@ -786,7 +1003,7 @@ better.</p>
         </div>
     </div>
     <div class="item-title">
-        <a  href="https://www.lambula.net/hotel/hotel-horizon-entebbe">
+        <a  href="/hotel/hotel-horizon-entebbe.html">
                             Hotel Horizon Entebbe
         </a>
             </div>
@@ -817,7 +1034,7 @@ better.</p>
             Featured
         </div>
         <div class="thumb-image ">
-        <a  href="https://www.lambula.net/hotel/gahiza-island-retreat">
+        <a  href="/hotel/gahiza-island-retreat.html">
                                                 <img class='img-responsive lazy'  data-src=https://www.lambula.net/uploads/0000/30/2022/10/08/gahiza-island7-600.jpg  alt='Gahiza Island Retreat'>
                                     </a>
                 <div class="service-wishlist " data-id="14" data-type="hotel">
@@ -825,7 +1042,7 @@ better.</p>
         </div>
     </div>
     <div class="item-title">
-        <a  href="https://www.lambula.net/hotel/gahiza-island-retreat">
+        <a  href="/hotel/gahiza-island-retreat.html">
                             Gahiza Island Retreat
         </a>
             </div>
@@ -856,7 +1073,7 @@ better.</p>
             Featured
         </div>
         <div class="thumb-image ">
-        <a  href="https://www.lambula.net/hotel/mutanda-lake-resort">
+        <a  href="/hotel/mutanda-lake-resort.html">
                                                 <img class='img-responsive lazy'  data-src=https://www.lambula.net/uploads/0000/31/2022/10/08/standardroomdouble4-600.jpg  alt='Mutanda Lake Resort'>
                                     </a>
                 <div class="service-wishlist " data-id="15" data-type="hotel">
@@ -864,7 +1081,7 @@ better.</p>
         </div>
     </div>
     <div class="item-title">
-        <a  href="https://www.lambula.net/hotel/mutanda-lake-resort">
+        <a  href="/hotel/mutanda-lake-resort.html">
                             Mutanda Lake Resort
         </a>
             </div>
@@ -910,13 +1127,13 @@ better.</p>
             <div class="content">
                 <h4 class="title">Kampala</h4>
                                                             <div class="desc">
-                                                                                                                                                                                                                                                                    <a href="https://www.lambula.net/hotel?location_id=9" target="_blank">
+                                                                                                                                                                                                                                                                    <a href="/hotel.html?location_id=9" target="_blank">
                                             1 Hotel
                                         </a>
-                                                                                                                                                                                                                                            <a href="https://www.lambula.net/tour?location_id=9" target="_blank">
+                                                                                                                                                                                                                                            <a href="/tour.html?location_id=9" target="_blank">
                                             1 Tour
                                         </a>
-                                                                                                                                                                                                                                            <a href="https://www.lambula.net/car?location_id=9" target="_blank">
+                                                                                                                                                                                                                                            <a href="/car.html?location_id=9" target="_blank">
                                             3 Cars
                                         </a>
                                                                                                                                                                                                                     </div>
@@ -931,7 +1148,7 @@ better.</p>
             <div class="content">
                 <h4 class="title">Kyaliwajalla, Namugongo</h4>
                                                             <div class="desc">
-                                                                                                                                                                        <a href="https://www.lambula.net/space?location_id=10" target="_blank">
+                                                                                                                                                                        <a href="/space.html?location_id=10" target="_blank">
                                             2 Spaces
                                         </a>
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         </div>
@@ -946,13 +1163,13 @@ better.</p>
             <div class="content">
                 <h4 class="title">Wakiso</h4>
                                                             <div class="desc">
-                                                                                                                                                                        <a href="https://www.lambula.net/space?location_id=11" target="_blank">
+                                                                                                                                                                        <a href="/space.html?location_id=11" target="_blank">
                                             3 Spaces
                                         </a>
-                                                                                                                                                                                                                                            <a href="https://www.lambula.net/hotel?location_id=11" target="_blank">
+                                                                                                                                                                                                                                            <a href="/hotel.html?location_id=11" target="_blank">
                                             5 Hotels
                                         </a>
-                                                                                                                                                                                                                                                                                                                                        <a href="https://www.lambula.net/car?location_id=11" target="_blank">
+                                                                                                                                                                                                                                                                                                                                        <a href="/car.html?location_id=11" target="_blank">
                                             1 Car
                                         </a>
                                                                                                                                                                                                                     </div>
@@ -967,7 +1184,7 @@ better.</p>
             <div class="content">
                 <h4 class="title">Entebbe Municipalilty</h4>
                                                             <div class="desc">
-                                                                                                                                                                                                                                                                    <a href="https://www.lambula.net/hotel?location_id=12" target="_blank">
+                                                                                                                                                                                                                                                                    <a href="/hotel.html?location_id=12" target="_blank">
                                             1 Hotel
                                         </a>
                                                                                                                                                                                                                                                                                                                                                                                                             </div>
@@ -982,10 +1199,10 @@ better.</p>
             <div class="content">
                 <h4 class="title">Naalya</h4>
                                                             <div class="desc">
-                                                                                                                                                                        <a href="https://www.lambula.net/space?location_id=14" target="_blank">
+                                                                                                                                                                        <a href="/space.html?location_id=14" target="_blank">
                                             1 Space
                                         </a>
-                                                                                                                                                                                                                                            <a href="https://www.lambula.net/hotel?location_id=14" target="_blank">
+                                                                                                                                                                                                                                            <a href="/hotel.html?location_id=14" target="_blank">
                                             1 Hotel
                                         </a>
                                                                                                                                                                                                                                                                                                                                                                                                             </div>
@@ -1000,7 +1217,7 @@ better.</p>
             <div class="content">
                 <h4 class="title">Lake Mutanda</h4>
                                                             <div class="desc">
-                                                                                                                                                                                                                                                                    <a href="https://www.lambula.net/hotel?location_id=17" target="_blank">
+                                                                                                                                                                                                                                                                    <a href="/hotel.html?location_id=17" target="_blank">
                                             2 Hotels
                                         </a>
                                                                                                                                                                                                                                                                                                                                                                                                             </div>
@@ -1026,7 +1243,7 @@ better.</p>
             Featured
         </div>
         <div class="thumb-image">
-                <a  href="https://www.lambula.net/tour/kampala-city-tours">
+                <a  href="/tour/kampala-city-tours.html">
                                                 <img class='img-responsive lazy'  data-src=https://www.lambula.net/uploads/0000/42/2022/10/24/promote-uganda-bus-3-600.jpeg  alt='Kampala City Tours'>
                                     </a>
         <div class="service-wishlist " data-id="17" data-type="tour">
@@ -1038,7 +1255,7 @@ better.</p>
             Kampala
             </div>
     <div class="item-title">
-        <a  href="https://www.lambula.net/tour/kampala-city-tours">
+        <a  href="/tour/kampala-city-tours.html">
             Kampala City Tours
         </a>
     </div>
@@ -1087,7 +1304,7 @@ better.</p>
             Featured
         </div>
         <div class="thumb-image">
-                <a  href="https://www.lambula.net/tour/fishing-trips-on-lake-victoria">
+                <a  href="/tour/fishing-trips-on-lake-victoria.html">
                                                 <img class='img-responsive lazy'  data-src=https://www.lambula.net/uploads/0000/66/2023/09/21/fishing-safaris-in-uganda.jpg  alt='Fishing Trips on Lake Victoria'>
                                     </a>
         <div class="service-wishlist " data-id="19" data-type="tour">
@@ -1099,7 +1316,7 @@ better.</p>
             Jinja
             </div>
     <div class="item-title">
-        <a  href="https://www.lambula.net/tour/fishing-trips-on-lake-victoria">
+        <a  href="/tour/fishing-trips-on-lake-victoria.html">
             Fishing Trips on Lake Victoria
         </a>
     </div>
@@ -1157,7 +1374,7 @@ better.</p>
                                         <div class="owl-carousel">
                                             <div class="item-loop item-loop-wrap ">
         <div class="thumb-image ">
-        <a  href="https://www.lambula.net/space/monalisa-homes-furnished-apartments">
+        <a  href="/space/monalisa-homes-furnished-apartments.html">
                                                 <img class='img-responsive lazy'  data-src=https://www.lambula.net/uploads/0000/46/2022/11/24/monalisa-homes-furnished-apartments-11-600.jpg  alt='Monalisa Homes - Furnished Apartments'>
                                     </a>
         <div class="price-wrapper">
@@ -1174,7 +1391,7 @@ better.</p>
         </div>
     </div>
     <div class="item-title">
-        <a  href="https://www.lambula.net/space/monalisa-homes-furnished-apartments">
+        <a  href="/space/monalisa-homes-furnished-apartments.html">
                             Monalisa Homes - Furnished Apartments
         </a>
             </div>
@@ -1203,7 +1420,7 @@ better.</p>
 </div>
                                             <div class="item-loop item-loop-wrap ">
         <div class="thumb-image ">
-        <a  href="https://www.lambula.net/space/belleview-apartments-naalya">
+        <a  href="/space/belleview-apartments-naalya.html">
                                                 <img class='img-responsive lazy'  data-src=https://www.lambula.net/uploads/0000/21/2022/09/15/belleview-apartments-naalya-5-600.jpeg  alt='Belleview Apartments Naalya'>
                                     </a>
         <div class="price-wrapper">
@@ -1220,7 +1437,7 @@ better.</p>
         </div>
     </div>
     <div class="item-title">
-        <a  href="https://www.lambula.net/space/belleview-apartments-naalya">
+        <a  href="/space/belleview-apartments-naalya.html">
                             Belleview Apartments Naalya
         </a>
             </div>
@@ -1249,7 +1466,7 @@ better.</p>
             Featured
         </div>
         <div class="thumb-image ">
-        <a  href="https://www.lambula.net/space/furnished-1-bedroom-apartment">
+        <a  href="/space/furnished-1-bedroom-apartment.html">
                                                 <img class='img-responsive lazy'  data-src=https://www.lambula.net/uploads/0000/1/2022/08/22/whatsapp-image-2022-08-22-at-10325-pm1-600.jpeg  alt='Furnished 1 Bedroom Apartment'>
                                     </a>
         <div class="price-wrapper">
@@ -1266,7 +1483,7 @@ better.</p>
         </div>
     </div>
     <div class="item-title">
-        <a  href="https://www.lambula.net/space/furnished-1-bedroom-apartment">
+        <a  href="/space/furnished-1-bedroom-apartment.html">
                             Furnished 1 Bedroom Apartment
         </a>
             </div>
@@ -1309,7 +1526,7 @@ better.</p>
                                             <div class="col-lg-3 col-md-6">
                             <div class="item-loop item-loop-wrap ">
         <div class="thumb-image ">
-        <a  href="https://www.lambula.net/car/martyrs-motel-self-drive">
+        <a  href="/car/martyrs-motel-self-drive.html">
                                                 <img class='img-responsive lazy'  data-src=https://i.postimg.cc/MKxPQvVN/safari-land-cruiser.jpg  alt='Martyrs Motel - Self Drive'>
                                     </a>
         <div class="service-wishlist " data-id="18" data-type="car">
@@ -1317,7 +1534,7 @@ better.</p>
         </div>
     </div>
     <div class="item-title">
-        <a  href="https://www.lambula.net/car/martyrs-motel-self-drive">
+        <a  href="/car/martyrs-motel-self-drive.html">
                             Martyrs Motel - Self Drive
         </a>
             </div>
@@ -1342,7 +1559,7 @@ better.</p>
                                             <div class="col-lg-3 col-md-6">
                             <div class="item-loop item-loop-wrap ">
         <div class="thumb-image ">
-        <a  href="https://www.lambula.net/car/tour-car-stretcher">
+        <a  href="/car/tour-car-stretcher.html">
                                                 <img class='img-responsive lazy'  data-src=https://i.postimg.cc/MKxPQvVN/safari-land-cruiser.jpg  alt='Tour car stretcher'>
                                     </a>
         <div class="service-wishlist " data-id="17" data-type="car">
@@ -1350,7 +1567,7 @@ better.</p>
         </div>
     </div>
     <div class="item-title">
-        <a  href="https://www.lambula.net/car/tour-car-stretcher">
+        <a  href="/car/tour-car-stretcher.html">
                             Tour car stretcher
         </a>
             </div>
@@ -1386,7 +1603,7 @@ better.</p>
                                             <div class="col-lg-3 col-md-6">
                             <div class="item-loop item-loop-wrap ">
         <div class="thumb-image ">
-        <a  href="https://www.lambula.net/car/tour-bus-jinja-hire-with-fuel">
+        <a  href="/car/tour-bus-jinja-hire-with-fuel.html">
                                                 <img class='img-responsive lazy'  data-src=https://www.lambula.net/uploads/0000/42/2022/10/24/promote-uganda-bus-3-600.jpeg  alt='Tour Bus - Jinja Hire Without Fuel'>
                                     </a>
         <div class="service-wishlist " data-id="16" data-type="car">
@@ -1394,7 +1611,7 @@ better.</p>
         </div>
     </div>
     <div class="item-title">
-        <a  href="https://www.lambula.net/car/tour-bus-jinja-hire-with-fuel">
+        <a  href="/car/tour-bus-jinja-hire-with-fuel.html">
                             Tour Bus - Jinja Hire Without Fuel
         </a>
             </div>
@@ -1419,7 +1636,7 @@ better.</p>
                                             <div class="col-lg-3 col-md-6">
                             <div class="item-loop item-loop-wrap ">
         <div class="thumb-image ">
-        <a  href="https://www.lambula.net/car/tour-bus-entebbe-hire-with-fuel">
+        <a  href="/car/tour-bus-entebbe-hire-with-fuel.html">
                                                 <img class='img-responsive lazy'  data-src=https://www.lambula.net/uploads/0000/42/2022/10/24/promote-uganda-bus-2-600.jpeg  alt='Tour Bus - Entebbe Hire Without Fuel'>
                                     </a>
         <div class="service-wishlist " data-id="15" data-type="car">
@@ -1427,7 +1644,7 @@ better.</p>
         </div>
     </div>
     <div class="item-title">
-        <a  href="https://www.lambula.net/car/tour-bus-entebbe-hire-with-fuel">
+        <a  href="/car/tour-bus-entebbe-hire-with-fuel.html">
                             Tour Bus - Entebbe Hire Without Fuel
         </a>
             </div>
@@ -1452,7 +1669,7 @@ better.</p>
                                             <div class="col-lg-3 col-md-6">
                             <div class="item-loop item-loop-wrap ">
         <div class="thumb-image ">
-        <a  href="https://www.lambula.net/car/tour-bus-kampala-hire-with-fuel">
+        <a  href="/car/tour-bus-kampala-hire-with-fuel.html">
                                                 <img class='img-responsive lazy'  data-src=https://www.lambula.net/uploads/0000/42/2022/10/24/promote-uganda-bus-3-600.jpeg  alt='Tour Bus - Kampala Hire Without Fuel'>
                                     </a>
         <div class="service-wishlist " data-id="14" data-type="car">
@@ -1460,7 +1677,7 @@ better.</p>
         </div>
     </div>
     <div class="item-title">
-        <a  href="https://www.lambula.net/car/tour-bus-kampala-hire-with-fuel">
+        <a  href="/car/tour-bus-kampala-hire-with-fuel.html">
                             Tour Bus - Kampala Hire Without Fuel
         </a>
             </div>
@@ -1513,7 +1730,7 @@ better.</p>
                                     <div class="col-lg-4 col-md-6">
                         <div class="item-news">
     <div class="thumb-image">
-        <a href="https://www.lambula.net/news/utb-boss-urges-rotarians-to-invest-in-tourism">
+        <a href="/news/utb-boss-urges-rotarians-to-invest-in-tourism.html">
                                                 <img class='img-responsive lazy'  data-src=https://www.lambula.net/uploads/0000/1/2022/10/17/utb-boss1-600.jpg  alt='UTB boss urges Rotarians to invest in tourism'>
                                     </a>
     </div>
@@ -1521,19 +1738,19 @@ better.</p>
         <div class="item-date">
             <ul>
                                                                         <li>
-                        <a href="https://www.lambula.net/news/category/news">
+                        <a href="/news/category/news.html">
                             News
                         </a>
                     </li>
                                 <li class="dot"> 10/17/2022  </li>
             </ul>
         </div>
-        <h3 class="item-title"><a href="https://www.lambula.net/news/utb-boss-urges-rotarians-to-invest-in-tourism"> UTB boss urges Rotarians to invest in tourism </a></h3>
+        <h3 class="item-title"><a href="/news/utb-boss-urges-rotarians-to-invest-in-tourism.html"> UTB boss urges Rotarians to invest in tourism </a></h3>
         <div class="item-desc">
              Uganda is known as the Pearl of Africa because of its diverse natural sights and...
         </div>
         <div class="item-more">
-            <a class="btn-readmore" href="https://www.lambula.net/news/utb-boss-urges-rotarians-to-invest-in-tourism">Read More</a>
+            <a class="btn-readmore" href="/news/utb-boss-urges-rotarians-to-invest-in-tourism.html">Read More</a>
         </div>
     </div>
 </div>
@@ -1541,7 +1758,7 @@ better.</p>
                                     <div class="col-lg-4 col-md-6">
                         <div class="item-news">
     <div class="thumb-image">
-        <a href="https://www.lambula.net/news/bird-lovers-welcome-bird-sanctuary-opened-in-entebbe-to-rehabilitate-endangered-species">
+        <a href="/news/bird-lovers-welcome-bird-sanctuary-opened-in-entebbe-to-rehabilitate-endangered-species.html">
                                                 <img class='img-responsive lazy'  data-src=https://www.lambula.net/uploads/0000/1/2022/10/18/african-grey-parrot-600.jpg  alt='Bird lovers welcome bird sanctuary opened in Entebbe to rehabilitate endangered species'>
                                     </a>
     </div>
@@ -1549,20 +1766,20 @@ better.</p>
         <div class="item-date">
             <ul>
                                                                         <li>
-                        <a href="https://www.lambula.net/news/category/news">
+                        <a href="/news/category/news.html">
                             News
                         </a>
                     </li>
                                 <li class="dot"> 10/18/2022  </li>
             </ul>
         </div>
-        <h3 class="item-title"><a href="https://www.lambula.net/news/bird-lovers-welcome-bird-sanctuary-opened-in-entebbe-to-rehabilitate-endangered-species"> Bird lovers welcome bird sanctuary opened in Entebbe to rehabilitate endangered species </a></h3>
+        <h3 class="item-title"><a href="/news/bird-lovers-welcome-bird-sanctuary-opened-in-entebbe-to-rehabilitate-endangered-species.html"> Bird lovers welcome bird sanctuary opened in Entebbe to rehabilitate endangered species </a></h3>
         <div class="item-desc">
              
 A bird sanctuary has been opened at the Uganda Wildlife Education Centre (UWEC),...
         </div>
         <div class="item-more">
-            <a class="btn-readmore" href="https://www.lambula.net/news/bird-lovers-welcome-bird-sanctuary-opened-in-entebbe-to-rehabilitate-endangered-species">Read More</a>
+            <a class="btn-readmore" href="/news/bird-lovers-welcome-bird-sanctuary-opened-in-entebbe-to-rehabilitate-endangered-species.html">Read More</a>
         </div>
     </div>
 </div>
@@ -1570,7 +1787,7 @@ A bird sanctuary has been opened at the Uganda Wildlife Education Centre (UWEC),
                                     <div class="col-lg-4 col-md-6">
                         <div class="item-news">
     <div class="thumb-image">
-        <a href="https://www.lambula.net/news/uganda-safe-for-tourism-despite-global-media-misinformation">
+        <a href="/news/uganda-safe-for-tourism-despite-global-media-misinformation.html">
                                                 <img class='img-responsive lazy'  data-src=https://www.lambula.net/uploads/0000/1/2022/10/29/uganda-tourism-600.jpg  alt='Uganda safe for tourism, despite global media misinformation'>
                                     </a>
     </div>
@@ -1578,19 +1795,19 @@ A bird sanctuary has been opened at the Uganda Wildlife Education Centre (UWEC),
         <div class="item-date">
             <ul>
                                                                         <li>
-                        <a href="https://www.lambula.net/news/category/news">
+                        <a href="/news/category/news.html">
                             News
                         </a>
                     </li>
                                 <li class="dot"> 10/29/2022  </li>
             </ul>
         </div>
-        <h3 class="item-title"><a href="https://www.lambula.net/news/uganda-safe-for-tourism-despite-global-media-misinformation"> Uganda safe for tourism, despite global media misinformation </a></h3>
+        <h3 class="item-title"><a href="/news/uganda-safe-for-tourism-despite-global-media-misinformation.html"> Uganda safe for tourism, despite global media misinformation </a></h3>
         <div class="item-desc">
              Private tourism industry leaders have slammed global media stories implying that...
         </div>
         <div class="item-more">
-            <a class="btn-readmore" href="https://www.lambula.net/news/uganda-safe-for-tourism-despite-global-media-misinformation">Read More</a>
+            <a class="btn-readmore" href="/news/uganda-safe-for-tourism-despite-global-media-misinformation.html">Read More</a>
         </div>
     </div>
 </div>
@@ -1598,7 +1815,7 @@ A bird sanctuary has been opened at the Uganda Wildlife Education Centre (UWEC),
                                     <div class="col-lg-4 col-md-6">
                         <div class="item-news">
     <div class="thumb-image">
-        <a href="https://www.lambula.net/news/uganda-to-leverage-on-mtn-kampala-marathon-to-market-tourism">
+        <a href="/news/uganda-to-leverage-on-mtn-kampala-marathon-to-market-tourism.html">
                                                 <img class='img-responsive lazy'  data-src=https://www.lambula.net/uploads/0000/1/2022/11/16/mtn-750x500-600.jpg  alt='Uganda to leverage on MTN Kampala marathon to market tourism'>
                                     </a>
     </div>
@@ -1606,19 +1823,19 @@ A bird sanctuary has been opened at the Uganda Wildlife Education Centre (UWEC),
         <div class="item-date">
             <ul>
                                                                         <li>
-                        <a href="https://www.lambula.net/news/category/news">
+                        <a href="/news/category/news.html">
                             News
                         </a>
                     </li>
                                 <li class="dot"> 11/16/2022  </li>
             </ul>
         </div>
-        <h3 class="item-title"><a href="https://www.lambula.net/news/uganda-to-leverage-on-mtn-kampala-marathon-to-market-tourism"> Uganda to leverage on MTN Kampala marathon to market tourism </a></h3>
+        <h3 class="item-title"><a href="/news/uganda-to-leverage-on-mtn-kampala-marathon-to-market-tourism.html"> Uganda to leverage on MTN Kampala marathon to market tourism </a></h3>
         <div class="item-desc">
              Uganda plans to leverage on the Kampala Marathon to market the East African nation...
         </div>
         <div class="item-more">
-            <a class="btn-readmore" href="https://www.lambula.net/news/uganda-to-leverage-on-mtn-kampala-marathon-to-market-tourism">Read More</a>
+            <a class="btn-readmore" href="/news/uganda-to-leverage-on-mtn-kampala-marathon-to-market-tourism.html">Read More</a>
         </div>
     </div>
 </div>
@@ -1626,7 +1843,7 @@ A bird sanctuary has been opened at the Uganda Wildlife Education Centre (UWEC),
                                     <div class="col-lg-4 col-md-6">
                         <div class="item-news">
     <div class="thumb-image">
-        <a href="https://www.lambula.net/news/cnn-names-uganda-among-the-best-destinations-to-visit-in-2023">
+        <a href="/news/cnn-names-uganda-among-the-best-destinations-to-visit-in-2023.html">
                                                 <img class='img-responsive lazy'  data-src=https://www.lambula.net/uploads/0000/1/2022/08/22/lambula-uganda-visit-uganda-explore-uganda-600.jpg  alt='CNN names Uganda among the best destinations to visit in 2023'>
                                     </a>
     </div>
@@ -1634,19 +1851,19 @@ A bird sanctuary has been opened at the Uganda Wildlife Education Centre (UWEC),
         <div class="item-date">
             <ul>
                                                                         <li>
-                        <a href="https://www.lambula.net/news/category/news">
+                        <a href="/news/category/news.html">
                             News
                         </a>
                     </li>
                                 <li class="dot"> 01/03/2023  </li>
             </ul>
         </div>
-        <h3 class="item-title"><a href="https://www.lambula.net/news/cnn-names-uganda-among-the-best-destinations-to-visit-in-2023"> CNN names Uganda among the best destinations to visit in 2023 </a></h3>
+        <h3 class="item-title"><a href="/news/cnn-names-uganda-among-the-best-destinations-to-visit-in-2023.html"> CNN names Uganda among the best destinations to visit in 2023 </a></h3>
         <div class="item-desc">
              US television channel CNN has ranked Uganda as one of the &nbsp;best destinations...
         </div>
         <div class="item-more">
-            <a class="btn-readmore" href="https://www.lambula.net/news/cnn-names-uganda-among-the-best-destinations-to-visit-in-2023">Read More</a>
+            <a class="btn-readmore" href="/news/cnn-names-uganda-among-the-best-destinations-to-visit-in-2023.html">Read More</a>
         </div>
     </div>
 </div>
@@ -1654,7 +1871,7 @@ A bird sanctuary has been opened at the Uganda Wildlife Education Centre (UWEC),
                                     <div class="col-lg-4 col-md-6">
                         <div class="item-news">
     <div class="thumb-image">
-        <a href="https://www.lambula.net/news/visit-queen-elizabeth-national-park">
+        <a href="/news/visit-queen-elizabeth-national-park.html">
                                                 <img class='img-responsive lazy'  data-src=https://www.lambula.net/uploads/0000/1/2023/01/29/queen-elizabeth-national-park-600.jpg  alt='Visit Queen Elizabeth National Park'>
                                     </a>
     </div>
@@ -1662,19 +1879,19 @@ A bird sanctuary has been opened at the Uganda Wildlife Education Centre (UWEC),
         <div class="item-date">
             <ul>
                                                                         <li>
-                        <a href="https://www.lambula.net/news/category/adventure-travel">
+                        <a href="/news/category/adventure-travel.html">
                             Adventure Travel
                         </a>
                     </li>
                                 <li class="dot"> 01/29/2023  </li>
             </ul>
         </div>
-        <h3 class="item-title"><a href="https://www.lambula.net/news/visit-queen-elizabeth-national-park"> Visit Queen Elizabeth National Park </a></h3>
+        <h3 class="item-title"><a href="/news/visit-queen-elizabeth-national-park.html"> Visit Queen Elizabeth National Park </a></h3>
         <div class="item-desc">
              Queen Elizabeth National Park is a wildlife reserve located in western Uganda,...
         </div>
         <div class="item-more">
-            <a class="btn-readmore" href="https://www.lambula.net/news/visit-queen-elizabeth-national-park">Read More</a>
+            <a class="btn-readmore" href="/news/visit-queen-elizabeth-national-park.html">Read More</a>
         </div>
     </div>
 </div>
@@ -1695,8 +1912,8 @@ A bird sanctuary has been opened at the Uganda Wildlife Education Centre (UWEC),
                 </div>
             </div>
             <div class="col-md-4">
-                                    <a class="btn-more" href="https://lambula.net/page/become-a-vendor">
-                        Become a Lambula Expert
+                                    <a class="btn-more" href="/page/become-a-vendor.html">
+                        Become a willing Fleets Expert
                     </a>
                             </div>
         </div>
@@ -1836,7 +2053,9 @@ A bird sanctuary has been opened at the Uganda Wildlife Education Centre (UWEC),
 					<div class="col-md-12">
 						<p>Copyright © 2024 Willings Solutions Company Limited</p>
 						<div class="f-visa">
-							<p>Powered by <a title="Icradle Innovations Ltd" href="https://www.icradle.dev/">Icradle Innovations Ltd</a></p>
+
+							<p>Powered by Icradle Innovations Ltd <a title="Icradle Innovations Ltd" href="https://www.icradle.dev/">Visit Our Website</a></p>
+
 						</div>
 					</div>
 				</div>
@@ -1856,7 +2075,7 @@ A bird sanctuary has been opened at the Uganda Wildlife Education Centre (UWEC),
                 </span>
             </div>
             <div class="modal-body relative">
-                <form class="bravo-form-login" method="POST" action="/login.html">
+                <form class="bravo-form-login" method="POST" action="https://www.lambula.net/login">
     <input type="hidden" name="redirect" value="">
     <input type="hidden" name="_token" value="eYrMxOIx6GVKmirLLzR2sMldshFfTvjiPViICTGo">    <div class="form-group">
         <input type="text" class="form-control" name="email" autocomplete="off" placeholder="Email address">
@@ -1886,7 +2105,7 @@ A bird sanctuary has been opened at the Uganda Wildlife Education Centre (UWEC),
             <span class="spinner-grow spinner-grow-sm icon-loading" role="status" aria-hidden="true"></span>
         </button>
     </div>
-                <div class="c-grey font-medium f14 text-center"> Do not have an account? <a href="" data-target="#register" data-toggle="modal">Sign Up</a></div>
+                <div class="c-grey font-medium f14 text-center"> Do not have an account? <a href="/register.html" data-target="#register" data-toggle="modal">Sign Up</a></div>
     </form>
             </div>
         </div>
@@ -1904,62 +2123,152 @@ A bird sanctuary has been opened at the Uganda Wildlife Education Centre (UWEC),
                 </span>
             </div>
             <div class="modal-body">
-                <form class="form bravo-form-register" method="post" action="https://www.lambula.net/register">
-    <input type="hidden" name="_token" value="eYrMxOIx6GVKmirLLzR2sMldshFfTvjiPViICTGo">    <div class="row">
-        <div class="col-lg-6 col-md-12">
-            <div class="form-group">
-                <input type="text" class="form-control" name="first_name" autocomplete="off" placeholder="First Name">
-                <i class="input-icon field-icon icofont-waiter-alt"></i>
-                <span class="invalid-feedback error error-first_name"></span>
-            </div>
-        </div>
-        <div class="col-lg-6 col-md-12">
-            <div class="form-group">
-                <input type="text" class="form-control" name="last_name" autocomplete="off" placeholder="Last Name">
-                <i class="input-icon field-icon icofont-waiter-alt"></i>
-                <span class="invalid-feedback error error-last_name"></span>
-            </div>
-        </div>
-    </div>
-    <div class="form-group">
-        <input type="text" class="form-control" name="phone" autocomplete="off" placeholder="Phone">
-        <i class="input-icon field-icon icofont-ui-touch-phone"></i>
-        <span class="invalid-feedback error error-phone"></span>
-    </div>
-    <div class="form-group">
-        <input type="email" class="form-control" name="email" autocomplete="off" placeholder="Email address">
-        <i class="input-icon field-icon icofont-mail"></i>
-        <span class="invalid-feedback error error-email"></span>
-    </div>
-    <div class="form-group">
-        <input type="password" class="form-control" name="password" autocomplete="off" placeholder="Password">
-        <i class="input-icon field-icon icofont-ui-password"></i>
-        <span class="invalid-feedback error error-password"></span>
-    </div>
-    <div class="form-group">
-        <label for="term">
-            <input id="term" type="checkbox" name="term" class="mr5">
-            I have read and accept the <a href='https://www.lambula.net/page/terms-of-use' target='_blank'>Terms and Privacy Policy</a>
-            <span class="checkmark fcheckbox"></span>
-        </label>
-        <div><span class="invalid-feedback error error-term"></span></div>
-    </div>
-            <div class="form-group">
-            
-        </div>
-        <div><span class="invalid-feedback error error-g-recaptcha-response"></span></div>
-        <div class="error message-error invalid-feedback"></div>
-    <div class="form-group">
-        <button type="submit" class="btn btn-primary form-submit">
-            Sign Up
-            <span class="spinner-grow spinner-grow-sm icon-loading" role="status" aria-hidden="true"></span>
-        </button>
-    </div>
-        <div class="c-grey f14 text-center">
-        Already have an account?
-        <a href="#" data-target="#login" data-toggle="modal">Log In</a>
-    </div>
-</form>
+                <!-- <form class="form bravo-form-register" method="post" action="https://www.lambula.net/register"> -->
+                    <form class="form bravo-form-register" method="post" action="https://www.lambula.net/register">
+                        <input type="hidden" name="_token" value="eYrMxOIx6GVKmirLLzR2sMldshFfTvjiPViICTGo">
+                    
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="first_name" autocomplete="off" placeholder="First Name">
+                                    <i class="input-icon field-icon icofont-waiter-alt"></i>
+                                    <span class="invalid-feedback error error-first_name"></span>
+                                </div>
+                            </div>
+                    
+                            <div class="col-lg-6 col-md-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="last_name" autocomplete="off" placeholder="Last Name">
+                                    <i class="input-icon field-icon icofont-waiter-alt"></i>
+                                    <span class="invalid-feedback error error-last_name"></span>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="phone" autocomplete="off" placeholder="Phone">
+                            <i class="input-icon field-icon icofont-ui-touch-phone"></i>
+                            <span class="invalid-feedback error error-phone"></span>
+                        </div>
+                    
+                        <div class="form-group">
+                            <input type="email" class="form-control" name="email" autocomplete="off" placeholder="Email address">
+                            <i class="input-icon field-icon icofont-mail"></i>
+                            <span class="invalid-feedback error error-email"></span>
+                        </div>
+                    
+                        <div class="form-group">
+                            <input type="password" class="form-control" name="password" autocomplete="off" placeholder="Password">
+                            <i class="input-icon field-icon icofont-ui-password"></i>
+                            <span class="invalid-feedback error error-password"></span>
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="serviceType">Service Type:</label>
+                            <select id="serviceType" name="serviceType" required>
+                                <option value="driver">Driver</option>
+                                <option value="guide">Guide</option>
+                                <option value="carHireProvider">Car Hire Provider</option>
+                                <option value="hotel">Hotel</option>
+                                <option value="tourGuide">Tour Guide</option>
+                            </select>
+                        </div>
+                    
+                        <div class="form-group service-type-fields" style="display:none;">
+                            <!-- Additional fields based on service type selection -->
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="tourType">Tour Type:</label>
+                            <select id="tourType" name="tourType">
+                                <option value="sightseeing">Sightseeing</option>
+                                <option value="adventure">Adventure</option>
+                                <option value="cultural">Cultural</option>
+                                <option value="beach">Beach</option>
+                            </select>
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="groupSize">Group Size:</label>
+                            <input type="number" id="groupSize" name="groupSize" min="1">
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="specialRequests">Special Requests:</label>
+                            <textarea id="specialRequests" name="specialRequests" rows="3" placeholder="Any special requests or preferences"></textarea>
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="travelDate">Preferred Travel Date:</label>
+                            <input type="date" id="travelDate" name="travelDate">
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="transportation">Preferred Transportation:</label>
+                            <select id="transportation" name="transportation">
+                                <option value="car">Car</option>
+                                <option value="bus">Bus</option>
+                                <option value="plane">Plane</option>
+                                <option value="boat">Boat</option>
+                            </select>
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="accommodation">Preferred Accommodation:</label>
+                            <select id="accommodation" name="accommodation">
+                                <option value="hotel">Hotel</option>
+                                <option value="resort">Resort</option>
+                                <option value="guesthouse">Guesthouse</option>
+                                <option value="camping">Camping</option>
+                            </select>
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="excursions">Preferred Excursions:</label>
+                            <input type="text" id="excursions" name="excursions" placeholder="List preferred excursions, separated by commas">
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="dietaryPreferences">Dietary Preferences:</label>
+                            <input type="text" id="dietaryPreferences" name="dietaryPreferences" placeholder="Any dietary preferences or restrictions">
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="additionalNotes">Additional Notes:</label>
+                            <textarea id="additionalNotes" name="additionalNotes" rows="3" placeholder="Any additional notes or comments"></textarea>
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="images">Upload Images:</label>
+                            <input type="file" id="images" name="images" accept="image/*">
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="price">Price or Price Range:</label>
+                            <input type="text" id="price" name="price" required>
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="term">
+                                <input id="term" type="checkbox" name="term" class="mr5"> I have read and accept the
+                                <a href='/page/terms-of-use.html' target='_blank'>Terms and Privacy Policy</a>
+                                <span class="checkmark fcheckbox"></span>
+                            </label>
+                            <div><span class="invalid-feedback error error-term"></span></div>
+                        </div>
+                    
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary form-submit">
+                                Sign Up <span class="spinner-grow spinner-grow-sm icon-loading" role="status" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                    
+                        <div class="c-grey f14 text-center">
+                            Already have an account? <a href="#" data-target="#login" data-toggle="modal">Log In</a>
+                        </div>
+                    </form>
+                    
+<!-- </form> -->
             </div>
         </div>
     </div>
@@ -1998,7 +2307,34 @@ A bird sanctuary has been opened at the Uganda Wildlife Education Centre (UWEC),
 <script src="https://www.lambula.net/libs/pusher.min.js"></script>
 <script src="https://www.lambula.net/js/home.js?_ver=3.4.0"></script>
 
+<!-- Include jQuery and Owl Carousel JS -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
+<!-- Owl Carousel Initialization Script -->
+<script>
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+            items: 3,
+            loop: true,
+            margin: 10,
+            nav: true,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:2
+                },
+                1000:{
+                    items:3
+                }
+            }
+        });
+    });
+</script>
 
 
 
@@ -2007,6 +2343,28 @@ A bird sanctuary has been opened at the Uganda Wildlife Education Centre (UWEC),
     </div>
             
         
-    
+    document.addEventListener('DOMContentLoaded', function () {
+    const menuToggleBtn = document.querySelector('.menu-toggle-btn');
+    const leftSideMenu = document.querySelector('.left-side-menu');
+    const content = document.querySelector('.bravo_header');
+
+    menuToggleBtn.addEventListener('click', function () {
+        leftSideMenu.classList.toggle('left-side-menu-open');
+        content.classList.toggle('left-side-menu-open');
+    });
+
+    window.addEventListener('resize', function () {
+        if (window.innerWidth > 600) {
+            leftSideMenu.classList.remove('left-side-menu-open');
+            content.classList.remove('left-side-menu-open');
+        }
+    });
+
+    // Display the menu toggle button on small screens
+    if (window.innerWidth <= 600) {
+        menuToggleBtn.style.display = 'block';
+    }
+});
+
 </body>
 </html>

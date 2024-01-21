@@ -8,17 +8,17 @@
                                         <link rel="icon" type="image/png" href="https://i.postimg.cc/3rmsDkbQ/fav.png" />
             
     <title>About Us - Willing Fleets - Willing Fleets</title>
-    <meta name="description" content="Lambula Digital Solutions (Lambula.Net) is a platform that stives to promote Tourism Services, Toursim Sites and Tourism Based Service Providers in Uganda."/>
+    <meta name="description" content="Willings Solutions Company Limited (Willingfleets.Net) is a platform that stives to promote Tourism Services, Toursim Sites and Tourism Based Service Providers in Uganda."/>
     
     <meta property="og:url" content="https://www.lambula.net/page/about-us"/>
     <meta property="og:type" content="article"/>
     <meta property="og:title" content="About Us - Willing Fleets"/>
-    <meta property="og:description" content="Lambula Digital Solutions (Lambula.Net) is a platform that stives to promote Tourism Services, Toursim Sites and Tourism Based Service Providers in Uganda."/>
+    <meta property="og:description" content="Willings Solutions Company Limited (Willingfleets.Net) is a platform that stives to promote Tourism Services, Toursim Sites and Tourism Based Service Providers in Uganda."/>
     <meta property="og:image" content="https://www.lambula.net/uploads/0000/1/2022/10/18/lambula-uganda-visit-uganda-explore-uganda.jpg"/>
     
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="About Us - Willing Fleets">
-    <meta name="twitter:description" content="Lambula Digital Solutions (Lambula.Net) is a platform that stives to promote Tourism Services, Toursim Sites and Tourism Based Service Providers in Uganda.">
+    <meta name="twitter:description" content="Willings Solutions Company Limited (Willingfleets.Net) is a platform that stives to promote Tourism Services, Toursim Sites and Tourism Based Service Providers in Uganda.">
     <meta name="twitter:image" content="https://www.lambula.net/uploads/0000/1/2022/10/18/lambula-uganda-visit-uganda-explore-uganda.jpg">
     <link rel="canonical" href="https://www.lambula.net/page/about-us"/>
     <link href="https://www.lambula.net/libs/bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -28,7 +28,9 @@
     <link href="https://www.lambula.net/libs/select2/css/select2.min.css" rel="stylesheet">
     <link href="https://www.lambula.net/dist/frontend/css/notification.css" rel="newest stylesheet">
     <link href="https://www.lambula.net/dist/frontend/css/app.css?_ver=3.4.0" rel="stylesheet">
-
+<!-- Include FontAwesome CSS from CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <!-- Include IcoFont CSS from CDN -->
     <link rel="stylesheet" type="text/css" href="https://www.lambula.net/libs/daterange/daterangepicker.css" >
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -156,7 +158,7 @@
                 </a>
                                                 <ul class="dropdown-menu text-left width-auto">
                                                                             <li>
-                        <a href="https://www.lambula.net/page/about-us?set_currency=ugx" class="is_login">
+                        <a href="/page/about-us.html?set_currency=ugx" class="is_login">
                             UGX
                         </a>
                     </li>
@@ -170,13 +172,13 @@
                 </a>
                                                                     <ul class="dropdown-menu text-left">
                                                                             <li>
-                        <a href="https://www.lambula.net/page/about-us?set_lang=fr" class="is_login">
+                        <a href="/page/about-us.html?set_lang=fr" class="is_login">
                                                             <span class="flag-icon flag-icon-fr"></span>
                                                         French
                         </a>
                     </li>
                                                                 <li>
-                        <a href="https://www.lambula.net/page/about-us?set_lang=ar" class="is_login">
+                        <a href="/page/about-us.html ?set_lang=ar" class="is_login">
                                                             <span class="flag-icon flag-icon-sa"></span>
                                                         Arabic
                         </a>
@@ -201,9 +203,163 @@
                 <a href="/index.html" class="bravo-logo">
                     <img src="https://i.postimg.cc/MH7gkLjp/lambula-uganda-3.png" alt="Willing Fleets" width="200" height="auto">                                    </a>
                                     </a>
-                <div class="bravo-menu">
+                <!-- <div class="bravo-menu">
                     <ul class="main-menu menu-generated"><li class=" depth-0"><a  target="" href="/" >Home</a></li><li class=" depth-0"><a  target="" href="/hotel" >Hotel</a></li><li class=" depth-0"><a  target="" href="/tour" >Tours</a></li><li class=" depth-0"><a  target="" href="/space" >Space</a></li><li class=" depth-0"><a  target="" href="/car" >Cars</a></li><li class=" depth-0"><a  target="" href="/event" >Events</a></li><li class=" depth-0"><a  target="" href="/boat" >Boat Cruise</a></li><li class=" depth-0"><a  target="" href="/news" >News</a></li></ul>                </div>
-            </div>
+            </div> -->
+            <!-- starts -->
+            <style>
+                @media only screen and (max-width: 600px) 
+                    .navbar {
+                        overflow: hidden;
+                        background-color: #fafafa;
+                    }
+            
+                    .navbar a {
+                        float: left;
+                        font-size: 16px;
+                        color: rgb(0, 0, 0);
+                        text-align: center;
+                        padding: 14px 16px;
+                        text-decoration: none;
+                    }
+            
+                    .subnav {
+                        float: left;
+                        overflow: hidden;
+                    }
+            
+                    .subnav .subnavbtn {
+                        font-size: 16px;
+                        border: none;
+                        outline: none;
+                        color: rgb(3, 0, 0);
+                        padding: 14px 16px;
+                        background-color: inherit;
+                        font-family: inherit;
+                        margin: 0;
+                    }
+            
+                    .navbar a:hover,
+                    .subnav:hover .subnavbtn {
+                        background-color: #319fda ;
+                    }
+            
+                    .subnav-content {
+                        display: none;
+                        position: absolute;
+                        left: 0;
+                        top: 70%; /* Adjust top position */
+                        background-color: #319fda ;
+                        width: auto; /* Adjust width as needed */
+                        z-index: 10;
+                        margin-top: 0;
+                        padding-top: 10px; /* Adjust padding for better spacing */
+                        border-top: 2px solid rgba(252, 246, 246, 0.995); /* Add a border between navbar and dropdown content */
+                    }
+            
+                    .subnav-content a {
+                        float: left; /* Change float to left for horizontal layout */
+                        color: rgb(254, 251, 251);
+                        text-decoration: none;
+                        padding: 12px 16px; /* Adjust padding for better spacing */
+                        display: block;
+                        text-align: left;
+                    }
+            
+                    .subnav-content a:hover {
+                        background-color: #eee;
+                        color: black;
+                    }
+                    .subnav:hover .subnav-content,
+                    .subnav-content:hover {
+                        display: block;
+                    }
+        
+                                               
+            </style>
+           
+            <div class="navbar">
+                <a href="/index">Home</a>
+                <div class="subnav">
+                  <button class="subnavbtn">Hotel <i class="fa fa-caret-down"></i></button>
+                  <div class="subnav-content">
+                      <a href="/hotel/gahiza-island-retreat.html">Gahiza-Island-Retreat</a>
+                      <a href="/hotel/diamonds-lounge.html">Diamonds-Ldounge</a>
+                      <a href="/hotel/ekhaya-crescent-hotel.html">Ekhaya-Crescent-Hotel</a>
+                      <a href="/hotel/hotel-horizon-entebbe.html">Hotel-Horizon-Entebbe</a>
+                      <a href="/hotel/martyrs-motel.html">Martyrs-Motel</a></li>
+                      <a href="/hotel/lake-bunyonyi-rock-resort.html">Lake-Bunyonyi-Rock-Resort</a>
+                      <a href="/hotel/mutanda-lake-resort.html">Mutanda-Lake-Resort</a>
+                      <a href="/hotel/naalya-motel.html">Naalya-Motel</a>
+                      <a href="/hotel/sea-ville-resort-hotel-and-spa.html">Sea-ville-Resort-Hotel-and-Spa</a>
+              
+                  </div>
+                </div> 
+                <div class="subnav">
+                  <button class="subnavbtn">Tours <i class="fa fa-caret-down"></i></button>
+                  <div class="subnav-content">
+                    <a href="/tour/fishing-trips-on-lake-victoria.html">Fishing-trips-on-lake-victoria</a>
+                    <a href="/tour/kampala-city-tours.html">Kampala-city-tours</a>
+                    <a href="#package">Package</a>
+                    <a href="#express">Express</a>
+                  </div>
+                </div> 
+                <div class="subnav">
+                  <button class="subnavbtn">Space <i class="fa fa-caret-down"></i></button>
+                  <div class="subnav-content">
+                    <a href="/space/belleview-apartments-naalya.html">Belleview-apartments-naalya</a>
+                    <a href="/space/furnished-1-bedroom-apartment.html">Furnished-1-bedroom-apartment</a>
+                    <a href="/space/monalisa-homes-furnished-apartments.html">Monalisa-homes-furnished-apartments</a>
+                    <a href="#express">Express</a>
+                  </div>
+                </div>
+                <div class="subnav">
+                  <button class="subnavbtn">Cars <i class="fa fa-caret-down"></i></button>
+                  <div class="subnav-content">
+                    <a href="/ar/car/martyrs-motel-self-drive.html">martyrs-motel-self-drive</a>                                        
+                    <a href="/ar/car/tour-bus-entebbe-hire-with-fuel.html">Tour-bus-entebbe-hire-with-fuel</a>
+                    <a href="/ar/car/tour-bus-jinja-hire-with-fuel.html"Tour-bus-jinja-hire-with-fuel</a>
+                    <a href="/ar/car/tour-bus-kampala-hire-with-fuel.html">Tour-bus-kampala-hire-with-fuel</a>
+                    <a href="/ar/car/tour-bus-kampala-hire-with-fuel.html">Tour-car-stretcher</a>
+                    <a href="/ar/car/tour-car-stretcher.html">Tour-car-stretcher</a>
+                  </div>
+                </div>
+                <div class="subnav">
+                  <button class="subnavbtn">Events <i class="fa fa-caret-down"></i></button>
+                  <div class="subnav-content">
+                    <a href="/event/mr-1.html">mr-1</a>
+                    <a href="/event/mr-2.html">Mr-2</a>
+                    <a href="/event/mr-3.html">Mr-3</a>
+                    <a href="/event/mr-4.html">Mr-4</a>
+                    <a href="/event/mr-5.html">Mr-5</a> 
+                    <a href="/event/mr.html"Mr</a> 
+                     
+                  </div>
+                </div>
+              
+                <div class="subnav">
+                  <button class="subnavbtn">Boat-Cruise <i class="fa fa-caret-down"></i></button>
+                   <div class="subnav-content">
+                    <a href="/boat-1.html">Bring</a>
+                    <a href="#deliver">Deliver</a>
+                    <a href="#package">Package</a>
+                    <a href="#express">Express</a>
+                  </div> 
+                </div>
+                <div class="subnav">
+                  <button class="subnavbtn">News <i class="fa fa-caret-down"></i></button>
+                  <div class="subnav-content">
+                    <a href="/news/10-enchanting-places-to-visit-in-uganda-a-hidden-gem-of-east-africa.html">10-enchancing-places</a>
+                    <a href="/news/bird-lovers-welcome-bird-sanctuary-opened-in-entebbe-to-rehabilitate-endangered-species.html">Bird-lovers</a>
+                    <a href="/news/cnn-names-uganda-among-the-best-destinations-to-visit-in-2023.html">cnn-names</a>
+                    <a href="/news/uganda-safe-for-tourism-despite-global-media-misinformation.html">uganda-safe-tourism</a>
+                    <a href="/news/uganda-to-leverage-on-mtn-kampala-marathon-to-market-tourism.html">uganda-to-leverage-on-mtn</a>
+                    <a href="/news/utb-boss-urges-rotarians-to-invest-in-tourism.html">utb-boss</a>
+                    <a href="/news/visit-queen-elizabeth-national-park.html">visit-queen-elizabeth-national-park</a>
+
+                  </div>
+                </div>
+            <!-- ends -->
             <div class="header-right">
                                 <button class="bravo-more-menu">
                     <i class="fa fa-bars"></i>
@@ -231,7 +387,7 @@
                 </a>
                                                 <ul class="dropdown-menu text-left width-auto">
                                                                             <li>
-                        <a href="https://www.lambula.net/page/about-us?set_currency=ugx" class="is_login">
+                        <a href="/page/about-us.html?set_currency=ugx" class="is_login">
                             UGX
                         </a>
                     </li>
@@ -247,13 +403,13 @@
                 </a>
                                                                     <ul class="dropdown-menu text-left">
                                                                             <li>
-                        <a href="https://www.lambula.net/page/about-us?set_lang=fr" class="is_login">
+                        <a href="/page/about-us.html?set_lang=fr" class="is_login">
                                                             <span class="flag-icon flag-icon-fr"></span>
                                                         French
                         </a>
                     </li>
                                                                 <li>
-                        <a href="https://www.lambula.net/page/about-us?set_lang=ar" class="is_login">
+                        <a href="/page/about-us.html?set_lang=ar" class="is_login">
                                                             <span class="flag-icon flag-icon-sa"></span>
                                                         Arabic
                         </a>
@@ -270,7 +426,7 @@
                     <div class="container " style="padding-top: 40px;padding-bottom: 40px;">
             <h1>About Us</h1>
             <div class="blog-content">
-                <p>Lambula Digital Solutions (<a title="Willing Fleets" href="/">Lambula.Net</a>) is a platform that stives to promote Tourism Services, Toursim Sites and Tourism Based Service Providers in Uganda.</p>
+                <p>Willing Fleets Solutions (<a title="Willing Fleets" href="/">Willing Fleets.Net</a>) is a platform that stives to promote Tourism Services, Toursim Sites and Tourism Based Service Providers in Uganda.</p>
 <p>Our platform enables you to get acces to hundreds of tourism based service providers like Hotels, Furnished Apartments, Car Hire Companies, Boat Cruise Companies, Local Flight Operators &amp; Event Organisers.</p>
 <p>And you can be confident of getting the best price available. All services are offered under a ‘Best Price Guarantee’. To ensure the reliability and high quality of our service, we check the registration papers of all service providers that register with us as well as their personal identification documents like National IDs. <br /><br />Start Your Journey of Exploring and Enjoying Uganda and all that it has to offer. Enjoy the Pearl of Africa</p>
 <p><a title="Willing Fleets Video Profile &amp; Rates" href="https://youtu.be/PfEu3J8R5rc" target="_blank" rel="noreferrer noopener">Click Here to Watch Our Video Profile and Advertising Rates</a></p>
@@ -362,8 +518,8 @@
 									</div>
 									<div class="context">
 										<ul>
-    <li><a href="https://lambula.net/page/about-us">About Us</a></li>
-    <li><a href="https://lambula.net/news">Blog</a></li>
+    <li><a href="/page/about-us.html">About Us</a></li>
+    <li><a href="/news.html">Blog</a></li>
     <li><a href="#">Rewards</a></li>
     <li><a href="#">Work with Us</a></li>
     <li><a href="#">Meet the Team</a></li>
@@ -378,10 +534,10 @@
 									</div>
 									<div class="context">
 										<ul>
-    <li><a href="https://lambula.net/user/profile">Account</a></li>
-    <li><a href="https://lambula.net/page/terms-of-use">Terms Of Use</a></li>
-    <li><a href="https://lambula.net/contact">Contact</a></li>
-    <li><a href="https://lambula.net/page/privacy-policy">Privacy Policy</a></li>
+    <li><a href="/user/profile.html">Account</a></li>
+    <li><a href="/page/terms-of-use.html">Terms Of Use</a></li>
+    <li><a href="/contact.html">Contact</a></li>
+    <li><a href="/page/privacy-policy.html">Privacy Policy</a></li>
 </ul>
 									</div>
 								</div>
@@ -393,8 +549,8 @@
 									</div>
 									<div class="context">
 										<ul>
-<li><a href="https://lambula.net/page/become-a-vendor">Register Business</a></li>
-<li><a href="https://lambula.net/contact">Contact Us</a></li>
+<li><a href="/page/become-a-vendor.html">Register Business</a></li>
+<li><a href="/contact.html">Contact Us</a></li>
 </ul>
 									</div>
 								</div>
@@ -406,9 +562,9 @@
 			<div class="container context">
 				<div class="row">
 					<div class="col-md-12">
-						<p>Copyright © 2023 Willing Fleets</p>
+						<p>Copyright © 2024 Willings Solutions Company Limited</p>
 						<div class="f-visa">
-							<p>Powered by <a title="Host256.com" href="https://Host256.com">Host256.com</a></p>
+							<p>Powered by <a title="Host256.com" href="https://www.icradle.dev/">Icradle Innovations Ltd</a></p>
 						</div>
 					</div>
 				</div>
@@ -428,7 +584,7 @@
                 </span>
             </div>
             <div class="modal-body relative">
-                <form class="bravo-form-login" method="POST" action="https://www.lambula.net/login">
+                <form class="bravo-form-login" method="POST" action="/login.html">
     <input type="hidden" name="redirect" value="">
     <input type="hidden" name="_token" value="eYrMxOIx6GVKmirLLzR2sMldshFfTvjiPViICTGo">    <div class="form-group">
         <input type="text" class="form-control" name="email" autocomplete="off" placeholder="Email address">
@@ -445,7 +601,7 @@
             <label for="remember-me" class="mb0">
                 <input type="checkbox" name="remember" id="remember-me" value="1"> Remember me <span class="checkmark fcheckbox"></span>
             </label>
-            <a href="https://www.lambula.net/forgot-password">Forgot Password?</a>
+            <a href="/forgot-password.html">Forgot Password?</a>
         </div>
     </div>
             <div class="form-group">
@@ -476,7 +632,7 @@
                 </span>
             </div>
             <div class="modal-body">
-                <form class="form bravo-form-register" method="post" action="https://www.lambula.net/register">
+                <form class="form bravo-form-register" method="post" action="/register.html">
     <input type="hidden" name="_token" value="eYrMxOIx6GVKmirLLzR2sMldshFfTvjiPViICTGo">    <div class="row">
         <div class="col-lg-6 col-md-12">
             <div class="form-group">
@@ -511,7 +667,7 @@
     <div class="form-group">
         <label for="term">
             <input id="term" type="checkbox" name="term" class="mr5">
-            I have read and accept the <a href='https://www.lambula.net/page/terms-of-use' target='_blank'>Terms and Privacy Policy</a>
+            I have read and accept the <a href='/page/terms-of-use.html' target='_blank'>Terms and Privacy Policy</a>
             <span class="checkmark fcheckbox"></span>
         </label>
         <div><span class="invalid-feedback error error-term"></span></div>
@@ -568,6 +724,8 @@
 <script src="https://www.lambula.net/js/functions.js?_ver=3.4.0"></script>
 
 <script src="https://www.lambula.net/libs/pusher.min.js"></script>
+
+
 <script src="https://www.lambula.net/js/home.js?_ver=3.4.0"></script>
 
 
