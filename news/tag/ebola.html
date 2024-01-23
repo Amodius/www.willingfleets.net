@@ -28,7 +28,10 @@
     <link href="https://www.lambula.net/libs/select2/css/select2.min.css" rel="stylesheet">
     <link href="https://www.lambula.net/dist/frontend/css/notification.css" rel="newest stylesheet">
     <link href="https://www.lambula.net/dist/frontend/css/app.css?_ver=3.4.0" rel="stylesheet">
-
+<!-- Include FontAwesome CSS from CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <!-- Include IcoFont CSS from CDN -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/icofont/3.0.0/icofont.min.css">
     <link rel="stylesheet" type="text/css" href="https://www.lambula.net/libs/daterange/daterangepicker.css" >
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -161,7 +164,7 @@
                 </a>
                             <ul class="dropdown-menu text-left width-auto">
                                                 <li>
-                        <a href="https://www.lambula.net/news/tag/ebola?set_currency=usd" class="is_login">
+                        <a href="/news/tag/ebola.html?set_currency=usd" class="is_login">
                             USD
                         </a>
                     </li>
@@ -175,13 +178,13 @@
                 </a>
                                                                     <ul class="dropdown-menu text-left">
                                                                             <li>
-                        <a href="https://www.lambula.net/news/tag/ebola?set_lang=fr" class="is_login">
+                        <a href="/news/tag/ebola.html?set_lang=fr" class="is_login">
                                                             <span class="flag-icon flag-icon-fr"></span>
                                                         French
                         </a>
                     </li>
                                                                 <li>
-                        <a href="https://www.lambula.net/news/tag/ebola?set_lang=ar" class="is_login">
+                        <a href="/news/tag/ebola.html?set_lang=ar" class="is_login">
                                                             <span class="flag-icon flag-icon-sa"></span>
                                                         Arabic
                         </a>
@@ -204,11 +207,165 @@
         <div class="content">
             <div class="header-left">
                 <a href="/index.html" class="bravo-logo">
-                                                                                        <img src="https://i.postimg.cc/MH7gkLjp/lambula-uganda-3.png" alt="Willing Fleets" width="200" height="auto">
+                                                                                        <img src="https://i.postimg.cc/MH7gkLjp/lambula-uganda-3.png" alt="Willing Fleets" width="150" height="auto">
                                     </a>
-                <div class="bravo-menu">
+                <!-- <div class="bravo-menu">
                     <ul class="main-menu menu-generated"><li class=" depth-0"><a  target="" href="/" >Home</a></li><li class=" depth-0"><a  target="" href="/hotel" >Hotel</a></li><li class=" depth-0"><a  target="" href="/tour" >Tours</a></li><li class=" depth-0"><a  target="" href="/space" >Space</a></li><li class=" depth-0"><a  target="" href="/car" >Cars</a></li><li class=" depth-0"><a  target="" href="/event" >Events</a></li><li class=" depth-0"><a  target="" href="/boat" >Boat Cruise</a></li><li class=" depth-0"><a  target="" href="/news" >News</a></li></ul>                </div>
-            </div>
+            </div> -->
+             <!-- starts -->
+             <style>
+                @media only screen and (max-width: 600px) 
+                    .navbar {
+                        overflow: hidden;
+                        background-color: #fafafa;
+                    }
+            
+                    .navbar a {
+                        float: left;
+                        font-size: 16px;
+                        color: rgb(0, 0, 0);
+                        text-align: center;
+                        padding: 14px 16px;
+                        text-decoration: none;
+                    }
+            
+                    .subnav {
+                        float: left;
+                        overflow: hidden;
+                    }
+            
+                    .subnav .subnavbtn {
+                        font-size: 16px;
+                        border: none;
+                        outline: none;
+                        color: rgb(3, 0, 0);
+                        padding: 14px 16px;
+                        background-color: inherit;
+                        font-family: inherit;
+                        margin: 0;
+                    }
+            
+                    .navbar a:hover,
+                    .subnav:hover .subnavbtn {
+                        background-color: #319fda ;
+                    }
+            
+                    .subnav-content {
+                        display: none;
+                        position: absolute;
+                        left: 0;
+                        top: 70%; /* Adjust top position */
+                        background-color: #319fda ;
+                        width: auto; /* Adjust width as needed */
+                        z-index: 10;
+                        margin-top: 0;
+                        padding-top: 10px; /* Adjust padding for better spacing */
+                        border-top: 2px solid rgba(252, 246, 246, 0.995); /* Add a border between navbar and dropdown content */
+                    }
+            
+                    .subnav-content a {
+                        float: left; /* Change float to left for horizontal layout */
+                        color: rgb(254, 251, 251);
+                        text-decoration: none;
+                        padding: 12px 16px; /* Adjust padding for better spacing */
+                        display: block;
+                        text-align: left;
+                    }
+            
+                    .subnav-content a:hover {
+                        background-color: #eee;
+                        color: black;
+                    }
+                    .subnav:hover .subnav-content,
+                    .subnav-content:hover {
+                        display: block;
+                    }
+        
+                                               
+            </style>
+           
+            <div class="navbar">
+                <a href="/index.html">Home</a>
+                <div class="subnav">
+                 <a href="/hotel.html" class="subnavbtn">Hotel <i class="fa fa-caret-down"></i></a>
+                  <div class="subnav-content">
+                      <a href="/hotel/gahiza-island-retreat.html">Gahiza-Island-Retreat</a>
+                      <a href="/hotel/diamonds-lounge.html">Diamonds-Ldounge</a>
+                      <a href="/hotel/ekhaya-crescent-hotel.html">Ekhaya-Crescent-Hotel</a>
+                      <a href="/hotel/hotel-horizon-entebbe.html">Hotel-Horizon-Entebbe</a>
+                      <a href="/hotel/martyrs-motel.html">Martyrs-Motel</a></li>
+                      <a href="/hotel/lake-bunyonyi-rock-resort.html">Lake-Bunyonyi-Rock-Resort</a>
+                      <a href="/hotel/mutanda-lake-resort.html">Mutanda-Lake-Resort</a>
+                      <a href="/hotel/naalya-motel.html">Naalya-Motel</a>
+                      <a href="/hotel/sea-ville-resort-hotel-and-spa.html">Sea-ville-Resort-Hotel-and-Spa</a>
+              
+                  </div>
+                </div> 
+                <div class="subnav">
+                 <a href="/tour.html" class="subnavbtn">Tours <i class="fa fa-caret-down"></i></a>
+                  <div class="subnav-content">
+                    <a href="/tour/fishing-trips-on-lake-victoria.html">Fishing-trips-on-lake-victoria</a>
+                    <a href="/tour/kampala-city-tours.html">Kampala-city-tours</a>
+                    <a href="#package">Package</a>
+                    <a href="#express">Express</a>
+                  </div>
+                </div> 
+                <div class="subnav">
+                 <a href="/space.html" class="subnavbtn">Space <i class="fa fa-caret-down"></i></a>
+                  <div class="subnav-content">
+                    <a href="/space/belleview-apartments-naalya.html">Belleview-apartments-naalya</a>
+                    <a href="/space/furnished-1-bedroom-apartment.html">Furnished-1-bedroom-apartment</a>
+                    <a href="/space/monalisa-homes-furnished-apartments.html">Monalisa-homes-furnished-apartments</a>
+                    <a href="#express">Express</a>
+                  </div>
+                </div>
+                <div class="subnav">
+                 <a href="/car.html" class="subnavbtn">Cars <i class="fa fa-caret-down"></i></a>
+                  <div class="subnav-content">
+                    <a href="/ar/car/martyrs-motel-self-drive.html">martyrs-motel-self-drive</a>                                        
+                    <a href="/ar/car/tour-bus-entebbe-hire-with-fuel.html">Tour-bus-entebbe-hire-with-fuel</a>
+                    <a href="/ar/car/tour-bus-jinja-hire-with-fuel.html"Tour-bus-jinja-hire-with-fuel</a>
+                    <a href="/ar/car/tour-bus-kampala-hire-with-fuel.html">Tour-bus-kampala-hire-with-fuel</a>
+                    <a href="/ar/car/tour-bus-kampala-hire-with-fuel.html">Tour-car-stretcher</a>
+                    <a href="/ar/car/tour-car-stretcher.html">Tour-car-stretcher</a>
+                  </div>
+                </div>
+                <div class="subnav">
+                 <a href="/event.html" class="subnavbtn">Events <i class="fa fa-caret-down"></i></a>
+                  <div class="subnav-content">
+                    <a href="/event/mr-1.html">mr-1</a>
+                    <a href="/event/mr-2.html">Mr-2</a>
+                    <a href="/event/mr-3.html">Mr-3</a>
+                    <a href="/event/mr-4.html">Mr-4</a>
+                    <a href="/event/mr-5.html">Mr-5</a> 
+                    <a href="/event/mr.html">Mr</a> 
+                     
+                  </div>
+                </div>
+              
+                <div class="subnav">
+                 <a href="/boat.html" class="subnavbtn">Boat-Cruise <i class="fa fa-caret-down"></i></a>
+                   <div class="subnav-content">
+                    <a href="/boat-1.html">Bring</a>
+                    <a href="#deliver">Deliver</a>
+                    <a href="#package">Package</a>
+                    <a href="#express">Express</a>
+                  </div> 
+                </div>
+                <div class="subnav">
+                 <a href="/news.html" class="subnavbtn">News <i class="fa fa-caret-down"></i></a>
+                  <div class="subnav-content">
+                    <a href="/news/10-enchanting-places-to-visit-in-uganda-a-hidden-gem-of-east-africa.html">10-enchancing-places</a>
+                    <a href="/news/bird-lovers-welcome-bird-sanctuary-opened-in-entebbe-to-rehabilitate-endangered-species.html">Bird-lovers</a>
+                    <a href="/news/cnn-names-uganda-among-the-best-destinations-to-visit-in-2023.html">cnn-names</a>
+                    <a href="/news/uganda-safe-for-tourism-despite-global-media-misinformation.html">uganda-safe-tourism</a>
+                    <a href="/news/uganda-to-leverage-on-mtn-kampala-marathon-to-market-tourism.html">uganda-to-leverage-on-mtn</a>
+                    <a href="/news/utb-boss-urges-rotarians-to-invest-in-tourism.html">utb-boss</a>
+                    <a href="/news/visit-queen-elizabeth-national-park.html">visit-queen-elizabeth-national-park</a>
+
+                  </div>
+                </div>
+            <!-- ends -->
             <div class="header-right">
                                 <button class="bravo-more-menu">
                     <i class="fa fa-bars"></i>
@@ -236,7 +393,7 @@
                 </a>
                             <ul class="dropdown-menu text-left width-auto">
                                                 <li>
-                        <a href="https://www.lambula.net/news/tag/ebola?set_currency=usd" class="is_login">
+                        <a href="/news/tag/ebola.html?set_currency=usd" class="is_login">
                             USD
                         </a>
                     </li>
@@ -252,13 +409,13 @@
                 </a>
                                                                     <ul class="dropdown-menu text-left">
                                                                             <li>
-                        <a href="https://www.lambula.net/news/tag/ebola?set_lang=fr" class="is_login">
+                        <a href="/news/tag/ebola.html?set_lang=fr" class="is_login">
                                                             <span class="flag-icon flag-icon-fr"></span>
                                                         French
                         </a>
                     </li>
                                                                 <li>
-                        <a href="https://www.lambula.net/news/tag/ebola?set_lang=ar" class="is_login">
+                        <a href="/news/tag/ebola.html?set_lang=ar" class="is_login">
                                                             <span class="flag-icon flag-icon-sa"></span>
                                                         Arabic
                         </a>
@@ -283,9 +440,9 @@
                 <div class="blog-breadcrumb hidden-xs">
         <div class="container">
             <ul>
-                <li><a href="https://www.lambula.net"> Home</a></li>
+                <li><a href="/index.html"> Home</a></li>
                                     <li class="">
-                                                    <a href="https://www.lambula.net/news">News</a>
+                                                    <a href="/news.html">News</a>
                                             </li>
                                     <li class="active">
                                                     Ebola
@@ -308,7 +465,7 @@
                 <div class="cate">
                                                                                         <ul>
                             <li>
-                                <a href="https://www.lambula.net/news/category/news">
+                                <a href="/news/category/news.html">
                                     News
                                 </a>
                             </li>
@@ -365,7 +522,7 @@ Many claim that this type of reporting has resulted in cancellations in the sect
                                                             <li>
                                             <div class="thumb">
                             <a href="/news/10-enchanting-places-to-visit-in-uganda-a-hidden-gem-of-east-africa.html">
-                                <img class=' lazy'  data-src=https://www.lambula.net/uploads/0000/1/2023/06/02/10-enchanting-places-to-visit-in-uganda-a-hidden-gem-of-east-africa-lambula-uganda.jpg  alt='10 Enchanting Places to Visit in Uganda: A Hidden Gem of East Africa'>
+                                <img class=' lazy'  data-src=https://i.postimg.cc/x8M51GmM/10-enchanting-places-to-visit-in-uganda-a-hidden-gem-of-east-africa-Willing-Fleets.jpg  alt='10 Enchanting Places to Visit in Uganda: A Hidden Gem of East Africa'>
                             </a>
                         </div>
                                         <div class="content">

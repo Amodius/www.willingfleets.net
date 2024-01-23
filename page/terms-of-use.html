@@ -7,7 +7,7 @@
     <meta name="csrf-token" content="eYrMxOIx6GVKmirLLzR2sMldshFfTvjiPViICTGo">
                                         <link rel="icon" type="image/png" href="https://i.postimg.cc/3rmsDkbQ/fav.png" />
             
-    <title>Terms of Use - Lambula Uganda</title>
+    <title>Terms of Use - Willing Fleets</title>
     <meta name="description" content="These are the general terms and conditions governing your use the Lambula.net website and our services. By accessing, using or signing up for this website or any other services"/>
     
     <meta property="og:url" content="/page/terms-of-use.html"/>
@@ -28,7 +28,9 @@
     <link href="https://www.lambula.net/libs/select2/css/select2.min.css" rel="stylesheet">
     <link href="https://www.lambula.net/dist/frontend/css/notification.css" rel="newest stylesheet">
     <link href="https://www.lambula.net/dist/frontend/css/app.css?_ver=3.4.0" rel="stylesheet">
-
+<!-- Include FontAwesome CSS from CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <!-- Include IcoFont CSS from CDN -->
     <link rel="stylesheet" type="text/css" href="https://www.lambula.net/libs/daterange/daterangepicker.css" >
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -156,7 +158,7 @@
                 </a>
                                                 <ul class="dropdown-menu text-left width-auto">
                                                                             <li>
-                        <a href="https://www.lambula.net/page/terms-of-use?set_currency=ugx" class="is_login">
+                        <a href="/page/terms-of-use.html?set_currency=ugx" class="is_login">
                             UGX
                         </a>
                     </li>
@@ -170,13 +172,13 @@
                 </a>
                                                                     <ul class="dropdown-menu text-left">
                                                                             <li>
-                        <a href="https://www.lambula.net/page/terms-of-use?set_lang=fr" class="is_login">
+                        <a href="/page/terms-of-use.html?set_lang=fr" class="is_login">
                                                             <span class="flag-icon flag-icon-fr"></span>
                                                         French
                         </a>
                     </li>
                                                                 <li>
-                        <a href="https://www.lambula.net/page/terms-of-use?set_lang=ar" class="is_login">
+                        <a href="/page/terms-of-use.html?set_lang=ar" class="is_login">
                                                             <span class="flag-icon flag-icon-sa"></span>
                                                         Arabic
                         </a>
@@ -199,11 +201,165 @@
         <div class="content">
             <div class="header-left">
                 <a href="/index.html" class="bravo-logo">
-                    <img src="https://i.postimg.cc/MH7gkLjp/lambula-uganda-3.png" alt="Willing Fleets" width="200" height="auto">                                    </a>
+                    <img src="https://i.postimg.cc/MH7gkLjp/lambula-uganda-3.png" alt="Willing Fleets" width="150" height="auto">                                    </a>
                                     </a>
-                <div class="bravo-menu">
+                <!-- <div class="bravo-menu">
                     <ul class="main-menu menu-generated"><li class=" depth-0"><a  target="" href="/" >Home</a></li><li class=" depth-0"><a  target="" href="/hotel" >Hotel</a></li><li class=" depth-0"><a  target="" href="/tour" >Tours</a></li><li class=" depth-0"><a  target="" href="/space" >Space</a></li><li class=" depth-0"><a  target="" href="/car" >Cars</a></li><li class=" depth-0"><a  target="" href="/event" >Events</a></li><li class=" depth-0"><a  target="" href="/boat" >Boat Cruise</a></li><li class=" depth-0"><a  target="" href="/news" >News</a></li></ul>                </div>
-            </div>
+            </div> -->
+            <!-- starts -->
+            <style>
+                @media only screen and (max-width: 600px) 
+                    .navbar {
+                        overflow: hidden;
+                        background-color: #fafafa;
+                    }
+            
+                    .navbar a {
+                        float: left;
+                        font-size: 16px;
+                        color: rgb(0, 0, 0);
+                        text-align: center;
+                        padding: 14px 16px;
+                        text-decoration: none;
+                    }
+            
+                    .subnav {
+                        float: left;
+                        overflow: hidden;
+                    }
+            
+                    .subnav .subnavbtn {
+                        font-size: 16px;
+                        border: none;
+                        outline: none;
+                        color: rgb(3, 0, 0);
+                        padding: 14px 16px;
+                        background-color: inherit;
+                        font-family: inherit;
+                        margin: 0;
+                    }
+            
+                    .navbar a:hover,
+                    .subnav:hover .subnavbtn {
+                        background-color: #319fda ;
+                    }
+            
+                    .subnav-content {
+                        display: none;
+                        position: absolute;
+                        left: 0;
+                        top: 70%; /* Adjust top position */
+                        background-color: #319fda ;
+                        width: auto; /* Adjust width as needed */
+                        z-index: 10;
+                        margin-top: 0;
+                        padding-top: 10px; /* Adjust padding for better spacing */
+                        border-top: 2px solid rgba(252, 246, 246, 0.995); /* Add a border between navbar and dropdown content */
+                    }
+            
+                    .subnav-content a {
+                        float: left; /* Change float to left for horizontal layout */
+                        color: rgb(254, 251, 251);
+                        text-decoration: none;
+                        padding: 12px 16px; /* Adjust padding for better spacing */
+                        display: block;
+                        text-align: left;
+                    }
+            
+                    .subnav-content a:hover {
+                        background-color: #eee;
+                        color: black;
+                    }
+                    .subnav:hover .subnav-content,
+                    .subnav-content:hover {
+                        display: block;
+                    }
+        
+                                               
+            </style>
+           
+            <div class="navbar">
+                <a href="/index.html">Home</a>
+                <div class="subnav">
+                 <a href="/hotel.html" class="subnavbtn">Hotel <i class="fa fa-caret-down"></i></a>
+                  <div class="subnav-content">
+                      <a href="/hotel/gahiza-island-retreat.html">Gahiza-Island-Retreat</a>
+                      <a href="/hotel/diamonds-lounge.html">Diamonds-Ldounge</a>
+                      <a href="/hotel/ekhaya-crescent-hotel.html">Ekhaya-Crescent-Hotel</a>
+                      <a href="/hotel/hotel-horizon-entebbe.html">Hotel-Horizon-Entebbe</a>
+                      <a href="/hotel/martyrs-motel.html">Martyrs-Motel</a></li>
+                      <a href="/hotel/lake-bunyonyi-rock-resort.html">Lake-Bunyonyi-Rock-Resort</a>
+                      <a href="/hotel/mutanda-lake-resort.html">Mutanda-Lake-Resort</a>
+                      <a href="/hotel/naalya-motel.html">Naalya-Motel</a>
+                      <a href="/hotel/sea-ville-resort-hotel-and-spa.html">Sea-ville-Resort-Hotel-and-Spa</a>
+              
+                  </div>
+                </div> 
+                <div class="subnav">
+                 <a href="/tour.html" class="subnavbtn">Tours <i class="fa fa-caret-down"></i></a>
+                  <div class="subnav-content">
+                    <a href="/tour/fishing-trips-on-lake-victoria.html">Fishing-trips-on-lake-victoria</a>
+                    <a href="/tour/kampala-city-tours.html">Kampala-city-tours</a>
+                    <a href="#package">Package</a>
+                    <a href="#express">Express</a>
+                  </div>
+                </div> 
+                <div class="subnav">
+                 <a href="/space.html" class="subnavbtn">Space <i class="fa fa-caret-down"></i></a>
+                  <div class="subnav-content">
+                    <a href="/space/belleview-apartments-naalya.html">Belleview-apartments-naalya</a>
+                    <a href="/space/furnished-1-bedroom-apartment.html">Furnished-1-bedroom-apartment</a>
+                    <a href="/space/monalisa-homes-furnished-apartments.html">Monalisa-homes-furnished-apartments</a>
+                    <a href="#express">Express</a>
+                  </div>
+                </div>
+                <div class="subnav">
+                 <a href="/car.html" class="subnavbtn">Cars <i class="fa fa-caret-down"></i></a>
+                  <div class="subnav-content">
+                    <a href="/ar/car/martyrs-motel-self-drive.html">martyrs-motel-self-drive</a>                                        
+                    <a href="/ar/car/tour-bus-entebbe-hire-with-fuel.html">Tour-bus-entebbe-hire-with-fuel</a>
+                    <a href="/ar/car/tour-bus-jinja-hire-with-fuel.html"Tour-bus-jinja-hire-with-fuel</a>
+                    <a href="/ar/car/tour-bus-kampala-hire-with-fuel.html">Tour-bus-kampala-hire-with-fuel</a>
+                    <a href="/ar/car/tour-bus-kampala-hire-with-fuel.html">Tour-car-stretcher</a>
+                    <a href="/ar/car/tour-car-stretcher.html">Tour-car-stretcher</a>
+                  </div>
+                </div>
+                <div class="subnav">
+                 <a href="/event.html" class="subnavbtn">Events <i class="fa fa-caret-down"></i></a>
+                  <div class="subnav-content">
+                    <a href="/event/mr-1.html">mr-1</a>
+                    <a href="/event/mr-2.html">Mr-2</a>
+                    <a href="/event/mr-3.html">Mr-3</a>
+                    <a href="/event/mr-4.html">Mr-4</a>
+                    <a href="/event/mr-5.html">Mr-5</a> 
+                    <a href="/event/mr.html">Mr</a> 
+                     
+                  </div>
+                </div>
+              
+                <div class="subnav">
+                 <a href="/boat.html" class="subnavbtn">Boat-Cruise <i class="fa fa-caret-down"></i></a>
+                   <div class="subnav-content">
+                    <a href="/boat-1.html">Bring</a>
+                    <a href="#deliver">Deliver</a>
+                    <a href="#package">Package</a>
+                    <a href="#express">Express</a>
+                  </div> 
+                </div>
+                <div class="subnav">
+                 <a href="/news.html" class="subnavbtn">News <i class="fa fa-caret-down"></i></a>
+                  <div class="subnav-content">
+                    <a href="/news/10-enchanting-places-to-visit-in-uganda-a-hidden-gem-of-east-africa.html">10-enchancing-places</a>
+                    <a href="/news/bird-lovers-welcome-bird-sanctuary-opened-in-entebbe-to-rehabilitate-endangered-species.html">Bird-lovers</a>
+                    <a href="/news/cnn-names-uganda-among-the-best-destinations-to-visit-in-2023.html">cnn-names</a>
+                    <a href="/news/uganda-safe-for-tourism-despite-global-media-misinformation.html">uganda-safe-tourism</a>
+                    <a href="/news/uganda-to-leverage-on-mtn-kampala-marathon-to-market-tourism.html">uganda-to-leverage-on-mtn</a>
+                    <a href="/news/utb-boss-urges-rotarians-to-invest-in-tourism.html">utb-boss</a>
+                    <a href="/news/visit-queen-elizabeth-national-park.html">visit-queen-elizabeth-national-park</a>
+
+                  </div>
+                </div>
+            <!-- ends -->
             <div class="header-right">
                                 <button class="bravo-more-menu">
                     <i class="fa fa-bars"></i>
@@ -231,7 +387,7 @@
                 </a>
                                                 <ul class="dropdown-menu text-left width-auto">
                                                                             <li>
-                        <a href="https://www.lambula.net/page/terms-of-use?set_currency=ugx" class="is_login">
+                        <a href="/page/terms-of-use.html?set_currency=ugx" class="is_login">
                             UGX
                         </a>
                     </li>
@@ -247,13 +403,13 @@
                 </a>
                                                                     <ul class="dropdown-menu text-left">
                                                                             <li>
-                        <a href="https://www.lambula.net/page/terms-of-use?set_lang=fr" class="is_login">
+                        <a href="/page/terms-of-use.html?set_lang=fr" class="is_login">
                                                             <span class="flag-icon flag-icon-fr"></span>
                                                         French
                         </a>
                     </li>
                                                                 <li>
-                        <a href="https://www.lambula.net/page/terms-of-use?set_lang=ar" class="is_login">
+                        <a href="/page/terms-of-use.html?set_lang=ar" class="is_login">
                                                             <span class="flag-icon flag-icon-sa"></span>
                                                         Arabic
                         </a>
@@ -272,7 +428,7 @@
             <div class="blog-content">
                 <p></p>
 <p class="MsoNormal"><strong>INTRO</strong></p>
-<p class="MsoNormal">Welcome to the www.lambula.net website ("Website", "website", "Site" or "site"). This website, its pages, the content, services and infrastructure are owned, operated and provided by Lambula ("Lambula", "Us", "us, "We" or "we") or other parties. The website and its content is provided for your personal, non-commercial use only, subject to the terms of use as set out below. These terms of use (this "Agreement") set forth the terms and conditions governing your use of this website.</p>
+<p class="MsoNormal">Welcome to the www.willingfleets.net website ("Website", "website", "Site" or "site"). This website, its pages, the content, services and infrastructure are owned, operated and provided by Willings Solutions ("Willings Solutions", "Us", "us, "We" or "we") or other parties. The website and its content is provided for your personal, non-commercial use only, subject to the terms of use as set out below. These terms of use (this "Agreement") set forth the terms and conditions governing your use of this website.</p>
 <p class="MsoNormal"> </p>
 <p class="MsoNormal"><strong>CHANGES TO THIS AGREEMENT</strong></p>
 <p class="MsoNormal">We may make changes to this Agreement from time to time at our sole discretion. As soon as this page is updated the changes become effective. Please review this Agreement periodically. Your continued use of our website following the change of this Agreement will constitute your acceptance of any such changes.</p>
@@ -295,7 +451,7 @@
 <p class="MsoNormal">You agree not to submit, post or otherwise make available to or through our website any personally identifiable information about other people and/or abusive, obscene, vulgar, slanderous, hateful, threatening, sexually-orientated user content or any other material. You represent and warrant to us that such user content is not confidential and that you have all necessary permission to submit, post and otherwise make available such user content. You agree not to submit, post or otherwise make available to or through our website any commercial, advertising, promotional or spam-like user content or any other material. You also agree not to submit, post or otherwise make available to or through our website any user content that may violate any laws be it of your country, the Netherlands, any other country or international law. Violating any of these conditions may lead to you being immediately and permanently banned- with notification to your Internet Service Provider if deemed required by us, and we could decide to take other legal action. You agree that we have the right to remove, edit, move or close your account and/or any user content at any time should we see fit.</p>
 <p class="MsoNormal"> </p>
 <p class="MsoNormal"><strong>OWNERSHIP AND INTELLECTUAL PROPERTY RIGHTS</strong></p>
-<p class="MsoNormal">This website is owned by Willing Fleets Solutions (WILLING FLEETS). All rights and interest in the content available via the website, the website's look and feel , the designs, trademarks, service marks and trade names displayed on the website and the website URL are the property of Willing Fleets or its licensors, and are protected by copyrights, trademarks, patents or other proprietary rights and laws. You may not use any content available via the website in any manner or for any purpose without the prior written permission of us or, if applicable, our licensors. All rights not expressly granted in this Agreement are expressly reserved to Willing Fleets and its licensors.</p>
+<p class="MsoNormal">This website is owned by Willings Solutions (WILLINGS SOLUTIONS). All rights and interest in the content available via the website, the website's look and feel , the designs, trademarks, service marks and trade names displayed on the website and the website URL are the property of Willing Fleets or its licensors, and are protected by copyrights, trademarks, patents or other proprietary rights and laws. You may not use any content available via the website in any manner or for any purpose without the prior written permission of us or, if applicable, our licensors. All rights not expressly granted in this Agreement are expressly reserved to Willing Fleets and its licensors.</p>
 <p class="MsoNormal"> </p>
 <p class="MsoNormal"><strong>YOUR CONTACT WITH ADVERTISERS OR OTHER THIRD PARTIES</strong></p>
 <p class="MsoNormal">Your dealings with advertisers or other third parties found on or accessible through our website are solely between you and the third party. These dealings include, but are not limited to, your participation in promotions, the payment for and delivery of items such as safari tours if any, and any terms, conditions, warranties, or representations associated with such dealings. You access and use of such sites, including the content, items, or services on those sites, is solely at your own risk. We do not make any representations or warranties with respect to any content or privacy practices, or otherwise with respect to such third parties or any items or services that may be obtained from such third parties, and you agree that we will have no liability with respect to any loss or damage of any kind incurred as a result of any dealings between you and any third party, or as a result of the presence of such third parties on our website.</p>
@@ -332,14 +488,14 @@
 <p class="MsoNormal">If any provision of the Agreement is found by a court or other binding authority to be invalid, you agree that every attempt shall be made to give effect to the parties' intentions as reflected in that provision, and the remaining provisions contained in the Agreement shall continue in full force and effect.</p>
 <p class="MsoNormal"> </p>
 <p class="MsoNormal"><strong>APPLICABLE LAW</strong></p>
-<p class="MsoNormal">This Agreement and the resolution of any dispute related to this Agreement or the website shall be governed by and construed in accordance with the laws of Uganda without giving effect to any principles of conflicts of law. Any legal action or proceeding between Lambula and you related to the Agreement shall be brought exclusively in a court of competent jurisdiction sitting in Uganda and you agree to submit to the personal and exclusive jurisdiction of such courts.</p>
+<p class="MsoNormal">This Agreement and the resolution of any dispute related to this Agreement or the website shall be governed by and construed in accordance with the laws of Uganda without giving effect to any principles of conflicts of law. Any legal action or proceeding between Willing Fleets and you related to the Agreement shall be brought exclusively in a court of competent jurisdiction sitting in Uganda and you agree to submit to the personal and exclusive jurisdiction of such courts.</p>
 <p class="MsoNormal"> </p>
 <p class="MsoNormal"><strong>COMPLAINTS REGARDING CONTENT</strong></p>
 <p class="MsoNormal">For making complaints regarding copyright infringement of our content or regarding our content in general, please send an email to hello@willingfleets.net.</p>
 <p class="MsoNormal"> </p>
 <p class="MsoNormal"><strong>CONTACT </strong></p>
-<p class="MsoNormal">Lambula Digital Solutions is registered under the laws of Uganda and has its offices at Ntinda, Kampala, Uganda.</p>
-<p class="MsoNormal">If you have any suggestions or remarks about this Agreement, please send an email to: info@Lambula.net</p>
+<p class="MsoNormal">Willings Solutions is registered under the laws of Uganda and has its offices at Plot 4-5 Nyabong Road, BMK house.</p>
+<p class="MsoNormal">If you have any suggestions or remarks about this Agreement, please send an email to: wowills@gmail.com</p>
             </div>
         </div>
     
@@ -472,7 +628,7 @@
 			<div class="container context">
 				<div class="row">
 					<div class="col-md-12">
-						<p>Copyright © 2023 Lambula Uganda</p>
+						<p>Copyright © 2024 Willings Solutions Company Limited</p>
 						<div class="f-visa">
 							<p>Powered by <a title="Icradle Innovations Ltd" href="https://www.icradle.dev">Icradle Innovations Ltd</a></p>
 						</div>
