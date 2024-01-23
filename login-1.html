@@ -17,6 +17,10 @@
     <link href="https://www.lambula.net/libs/select2/css/select2.min.css" rel="stylesheet">
     <link href="https://www.lambula.net/dist/frontend/css/notification.css" rel="newest stylesheet">
     <link href="https://www.lambula.net/dist/frontend/css/app.css?_ver=3.4.0" rel="stylesheet">
+<!-- Include FontAwesome CSS from CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <!-- Include IcoFont CSS from CDN -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/icofont/3.0.0/icofont.min.css">
 
     <link rel="stylesheet" type="text/css" href="https://www.lambula.net/libs/daterange/daterangepicker.css" >
     <!-- Fonts -->
@@ -188,11 +192,168 @@
         <div class="content">
             <div class="header-left">
                 <a href="/index.html" class="bravo-logo">
-                    <img src="https://i.postimg.cc/MH7gkLjp/lambula-uganda-3.png" alt="Willing Fleets" width="200" height="auto">
+                    <img src="https://i.postimg.cc/pL11KCDJ/willing-fleets.png" alt="Willings Fleets Uganda" width="150" height="auto">
 
-                    <div class="bravo-menu">
-                    <ul class="main-menu menu-generated"><li class=" depth-0"><a  target="" href="/index.html" >Home</a></li><li class=" depth-0"><a  target="" href="/hotel.html" >Hotel</a></li><li class=" depth-0"><a  target="" href="/tour.html" >Tours</a></li><li class=" depth-0"><a  target="" href="/space.html" >Space</a></li><li class=" depth-0"><a  target="" href="/car.html" >Cars</a></li><li class=" depth-0"><a  target="" href="/event.html" >Events</a></li><li class=" depth-0"><a  target="" href="/boat.html" >Boat Cruise</a></li><li class=" depth-0"><a  target="" href="/news.html" >News</a></li></ul>                </div>
-            </div>
+                </a>
+            
+                <!-- <div class="bravo-menu">
+                    <ul class="main-menu menu-generated"><li class=" depth-0"><a  target="" href="/index.html" >Home</a></li><li class=" depth-0"><a  target="" href="/hotel.html" >Hotel</a></li><li class=" depth-0"><a  target="" href="/tour.html" >Tours</a></li><li class=" depth-0"><a  target="" href="/space.html" >Space</a></li><li class=" depth-0"><a  target="" href="/car.html" >Cars</a></li><li class=" depth-0"><a  target="" href="/event.html" >Events</a></li><li class=" depth-0"><a  target="" href="/boat.html" >Boat Cruise</a></li><li class=" depth-0"><a  target="" href="/news.html" >News</a></li></ul>                </div> -->
+                   <!-- starts -->
+                   <style>
+                    @media only screen and (max-width: 600px) {
+                      .navbar {
+                        display: none;
+                      }}
+                  
+                      .subnav {
+                        position: relative;
+                        display: inline-block;
+                        margin: 0 16px;
+                      }
+                  
+                      .subnavbtn {
+                        font-size: 16px;
+                        border: none;
+                        outline: none;
+                        color: rgb(3, 0, 0);
+                        padding: 14px 16px;
+                        background-color: inherit;
+                        font-family: inherit;
+                        margin: 0;
+                        cursor: pointer;
+                      }
+                  
+                      .subnav:hover .subnavbtn {
+                        background-color: #319fda;
+                      }
+                  
+                      .subnav-content {
+                        display: none;
+                        position: absolute;
+                        left: 0;
+                        top: 100%;
+                        background-color: #319fda;
+                        width: auto;
+                        z-index: 10;
+                        padding: 10px;
+                        border-top: 2px solid rgba(252, 246, 246, 0.995);
+                        white-space: nowrap;
+                        top: 70%;
+                        white-space: normal;
+                      }
+                  
+                      .subnav-content a {
+                        display: inline-block;
+                        color: rgb(254, 251, 251);
+                        text-decoration: none;
+                        padding: 12px 16px;
+                        margin: 0 8px;
+                      }
+                  
+                      .subnav:hover .subnav-content {
+                        display: block;
+                      }
+                  
+                      .subnav-content a:hover {
+                        background-color: #eee;
+                        color: black;
+                      }
+                    
+                  </style>
+                  
+                  <div class="navbar">
+                    <!-- <a href="/index">Home</a> -->
+                  
+                    <div class="subnav">
+                      <button class="subnavbtn">Hotel <i class="fa fa-caret-down"></i></button>
+                      <div class="subnav-content">
+                        <a href="/hotel/gahiza-island-retreat.html">Gahiza-Island-Retreat</a>
+                        <a href="/hotel/diamonds-lounge.html">Diamonds-Lounge</a>
+                        <a href="/hotel/ekhaya-crescent-hotel.html">Ekhaya-Crescent-Hotel</a>
+                        <a href="/hotel/hotel-horizon-entebbe.html">Hotel-Horizon-Entebbe</a>
+                        <a href="/hotel/martyrs-motel.html">Martyrs-Motel</a>
+                        <a href="/hotel/lake-bunyonyi-rock-resort.html">Lake-Bunyonyi-Rock-Resort</a>
+                        <a href="/hotel/mutanda-lake-resort.html">Mutanda-Lake-Resort</a>
+                        <a href="/hotel/naalya-motel.html">Naalya-Motel</a>
+                        <a href="/hotel/sea-ville-resort-hotel-and-spa.html">Sea-Ville-Resort-Hotel-and-Spa</a>
+                      </div>
+                    </div>
+                  
+                    <div class="subnav">
+                      <button class="subnavbtn">Tours <i class="fa fa-caret-down"></i></button>
+                      <div class="subnav-content">
+                        <a href="/tour/fishing-trips-on-lake-victoria.html">Fishing-trips-on-lake-victoria</a>
+                        <a href="/tour/kampala-city-tours.html">Kampala-City-Tours</a>
+                        <a href="#package">Package</a>
+                        <a href="#express">Express</a>
+                      </div>
+                    </div>
+                  
+                    <div class="subnav">
+                      <button class="subnavbtn">Space <i class="fa fa-caret-down"></i></button>
+                      <div class="subnav-content">
+                        <a href="/space/belleview-apartments-naalya.html">Belleview-Apartments-Naalya</a>
+                        <a href="/space/furnished-1-bedroom-apartment.html">Furnished-1-Bedroom-Apartment</a>
+                        <a href="/space/monalisa-homes-furnished-apartments.html">Monalisa-Homes-Furnished-Apartments</a>
+                        <a href="#express">Express</a>
+                      </div>
+                    </div>
+                  
+                    <div class="subnav">
+                      <button class="subnavbtn">Cars <i class="fa fa-caret-down"></i></button>
+                      <div class="subnav-content">
+                        <a href="/ar/car/martyrs-motel-self-drive.html">Martyrs-Motel-Self-Drive</a>
+                        <a href="/ar/car/tour-bus-entebbe-hire-with-fuel.html">Tour-Bus-Entebbe-Hire
+                         <a href="/news/cnn-names-uganda-among-the-best-destinations-to-visit-in-2023.html">CNN-Names</a>
+                        <a href="/news/uganda-safe-for-tourism-despite-global-media-misinformation.html">Uganda-Safe-Tourism</a>
+                        <a href="/news/uganda-to-leverage-on-mtn-kampala-marathon-to-market-tourism.html">Uganda-To-Leverage-On-MTN</a>
+                        <a href="/news/utb-boss-urges-rotarians-to-invest-in-tourism.html">UTB-Boss</a>
+                        <a href="/news/visit-queen-elizabeth-national-park.html">Visit-Queen-Elizabeth-National-Park</a>
+                        </div>
+                    </div>
+                    <div class="subnav">
+                        <button class="subnavbtn">Events <i class="fa fa-caret-down"></i></button>
+                        <div class="subnav-content">
+                          <a href="/event/mr-1.html">mr-1</a>
+                          <a href="/event/mr-2.html">Mr-2</a>
+                          <a href="/event/mr-3.html">Mr-3</a>
+                          <a href="/event/mr-4.html">Mr-4</a>
+                          <a href="/event/mr-5.html">Mr-5</a> 
+<<<<<<< HEAD
+                          <a href="/event/mr.html">Mr</a> 
+=======
+                          <a href="/event/mr.html"Mr</a> 
+>>>>>>> 0dfb9ce0ad2b56385bbc1a8a821e1490e0e3cfd3
+                           
+                        </div>
+                      </div>
+                    
+                      <div class="subnav">
+                        <button class="subnavbtn">Boat-Cruise <i class="fa fa-caret-down"></i></button>
+                         <div class="subnav-content">
+                          <a href="/boat-1.html">Bring</a>
+                          <a href="#deliver">Deliver</a>
+                          <a href="#package">Package</a>
+                          <a href="#express">Express</a>
+                        </div> 
+                      </div>
+                      <div class="subnav">
+                        <button class="subnavbtn">News <i class="fa fa-caret-down"></i></button>
+                        <div class="subnav-content">
+                          <a href="/news/10-enchanting-places-to-visit-in-uganda-a-hidden-gem-of-east-africa.html">10-enchancing-places</a>
+                          <a href="/news/bird-lovers-welcome-bird-sanctuary-opened-in-entebbe-to-rehabilitate-endangered-species.html">Bird-lovers</a>
+                          <a href="/news/cnn-names-uganda-among-the-best-destinations-to-visit-in-2023.html">cnn-names</a>
+                          <a href="/news/uganda-safe-for-tourism-despite-global-media-misinformation.html">uganda-safe-tourism</a>
+                          <a href="/news/uganda-to-leverage-on-mtn-kampala-marathon-to-market-tourism.html">uganda-to-leverage-on-mtn</a>
+                          <a href="/news/utb-boss-urges-rotarians-to-invest-in-tourism.html">utb-boss</a>
+                          <a href="/news/visit-queen-elizabeth-national-park.html">visit-queen-elizabeth-national-park</a>
+      
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- ends -->
+                </div>
             <div class="header-right">
                                 <button class="bravo-more-menu">
                     <i class="fa fa-bars"></i>
