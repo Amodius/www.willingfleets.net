@@ -3,12 +3,64 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .bravo-logo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .bravo-logo img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .header-left {
+            order: -1;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .bravo-logo {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .bravo-menu {
+                display: block;
+            }
+
+            .bravo-more-menu {
+                display: none;
+            }
+
+            .navbar {
+                flex-direction: column;
+            }
+
+            .navbar a, .subnavbtn {
+                text-align: left;
+                width: auto;
+                margin-right: 10px;
+            }
+
+            .subnav-content {
+                position: static;
+                display: none;
+                width: 100%;
+            }
+
+            .subnav:hover .subnav-content,
+            .subnav-content:hover {
+                display: block;
+            }
+        }
+    </style>
     <!-- CSRF Token -->
     <meta name="csrf-token" content="eYrMxOIx6GVKmirLLzR2sMldshFfTvjiPViICTGo">
                                         <link rel="icon" type="image/png" href="https://i.postimg.cc/3rmsDkbQ/fav.png" />
             
     <title>Home Page</title>
-    <meta name="description" content="Willings Solutions Company Limited Uganda is a Platform that helps promote Tourism based services and Tourism Service Providers such as Tour Companies, Hotels, Car Hire Operators and many others"/>
+    <meta name="description" content="Willings Solutions Company is a Platform that helps promote Tourism based services and Tourism Service Providers such as Tour Companies, Hotels, Car Hire Operators and many others"/>
     
     <meta property="og:url" content="https://www.lambula.net"/>
     <meta property="og:type" content="article"/>
@@ -28,7 +80,12 @@
     <link href="https://www.lambula.net/libs/select2/css/select2.min.css" rel="stylesheet">
     <link href="https://www.lambula.net/dist/frontend/css/notification.css" rel="newest stylesheet">
     <link href="https://www.lambula.net/dist/frontend/css/app.css?_ver=3.4.0" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-xGsfa4SElU0f9MgyTkoz4JazVNE7TWDFK4vHbLLoxoTE7s/n/7oVRwuiv4pnuS3C4EhY2SUHZ/Tt5UeOLoAgCA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- Include FontAwesome CSS from CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <!-- Include IcoFont CSS from CDN -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/icofont/3.0.0/icofont.min.css">
     <link rel="stylesheet" type="text/css" href="https://www.lambula.net/libs/daterange/daterangepicker.css" >
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -200,13 +257,168 @@
     <div class="container">
         <div class="content">
             <div class="header-left">
+
                 <a href="/index.html" class="bravo-logo">
-                    <img src="https://i.postimg.cc/MH7gkLjp/lambula-uganda-3.png" alt="Willing Fleets" width="200" height="auto">
+                    <img src="https://i.postimg.cc/pL11KCDJ/willing-fleets.png" alt="Willings Fleets" width="150" height="auto">
+
                 </a>
-                
-                <div class="bravo-menu">
-                    <ul class="main-menu menu-generated"><li class=" depth-0"><a  target="" href="/index.html" >Home</a></li><li class=" depth-0"><a  target="" href="/hotel.html" >Hotel</a></li><li class=" depth-0"><a  target="" href="/tour.html" >Tours</a></li><li class=" depth-0"><a  target="" href="/space.html" >Space</a></li><li class=" depth-0"><a  target="" href="/car.html" >Cars</a></li><li class=" depth-0"><a  target="" href="/event.html" >Events</a></li><li class=" depth-0"><a  target="" href="/boat.html" >Boat Cruise</a></li><li class=" depth-0"><a  target="" href="/news.html" >News</a></li></ul>                </div>
-            </div>
+            
+                <!-- <div class="bravo-menu">
+                    <ul class="main-menu menu-generated"><li class=" depth-0"><a  target="" href="/index.html" >Home</a></li><li class=" depth-0"><a  target="" href="/hotel.html" >Hotel</a></li><li class=" depth-0"><a  target="" href="/tour.html" >Tours</a></li><li class=" depth-0"><a  target="" href="/space.html" >Space</a></li><li class=" depth-0"><a  target="" href="/car.html" >Cars</a></li><li class=" depth-0"><a  target="" href="/event.html" >Events</a></li><li class=" depth-0"><a  target="" href="/boat.html" >Boat Cruise</a></li><li class=" depth-0"><a  target="" href="/news.html" >News</a></li></ul>                </div> -->
+                   <!-- starts -->
+                   <style>
+                    @media only screen and (max-width: 600px) {
+                      .navbar {
+                        display: none;
+                      }}
+                  
+                      .subnav {
+                        position: relative;
+                        display: inline-block;
+                        margin: 0 16px;
+                      }
+                  
+                      .subnavbtn {
+                        font-size: 16px;
+                        border: none;
+                        outline: none;
+                        color: rgb(3, 0, 0);
+                        padding: 14px 16px;
+                        background-color: inherit;
+                        font-family: inherit;
+                        margin: 0;
+                        cursor: pointer;
+                      }
+                  
+                      .subnav:hover .subnavbtn {
+                        background-color: #319fda;
+                      }
+                  
+                      .subnav-content {
+                        display: none;
+                        position: absolute;
+                        left: 0;
+                        top: 100%;
+                        background-color: #319fda;
+                        width: auto;
+                        z-index: 10;
+                        padding: 10px;
+                        border-top: 2px solid rgba(252, 246, 246, 0.995);
+                        white-space: nowrap;
+                        top: 70%;
+                        white-space: normal;
+                      }
+                  
+                      .subnav-content a {
+                        display: inline-block;
+                        color: rgb(254, 251, 251);
+                        text-decoration: none;
+                        padding: 12px 16px;
+                        margin: 0 8px;
+                      }
+                  
+                      .subnav:hover .subnav-content {
+                        display: block;
+                      }
+                  
+                      .subnav-content a:hover {
+                        background-color: #eee;
+                        color: black;
+                      }
+                    
+                  </style>
+                  
+                  <div class="navbar">
+                    <!-- <a href="/index">Home</a> -->
+                  
+                    <div class="subnav">
+                     <a href="/hotel.html" class="subnavbtn">Hotel <i class="fa fa-caret-down"></i></a>
+                      <div class="subnav-content">
+                        <a href="/hotel/gahiza-island-retreat.html">Gahiza-Island-Retreat</a>
+                        <a href="/hotel/diamonds-lounge.html">Diamonds-Lounge</a>
+                        <a href="/hotel/ekhaya-crescent-hotel.html">Ekhaya-Crescent-Hotel</a>
+                        <a href="/hotel/hotel-horizon-entebbe.html">Hotel-Horizon-Entebbe</a>
+                        <a href="/hotel/martyrs-motel.html">Martyrs-Motel</a>
+                        <a href="/hotel/lake-bunyonyi-rock-resort.html">Lake-Bunyonyi-Rock-Resort</a>
+                        <a href="/hotel/mutanda-lake-resort.html">Mutanda-Lake-Resort</a>
+                        <a href="/hotel/naalya-motel.html">Naalya-Motel</a>
+                        <a href="/hotel/sea-ville-resort-hotel-and-spa.html">Sea-Ville-Resort-Hotel-and-Spa</a>
+                      </div>
+                    </div>
+                  
+                    <div class="subnav">
+                     <a href="/tour.html" class="subnavbtn">Tours <i class="fa fa-caret-down"></i></a>
+                      <div class="subnav-content">
+                        <a href="/tour/fishing-trips-on-lake-victoria.html">Fishing-trips-on-lake-victoria</a>
+                        <a href="/tour/kampala-city-tours.html">Kampala-City-Tours</a>
+                        <a href="#package">Package</a>
+                        <a href="#express">Express</a>
+                      </div>
+                    </div>
+                  
+                    <div class="subnav">
+                     <a href="/space.html" class="subnavbtn">Space <i class="fa fa-caret-down"></i></a>
+                      <div class="subnav-content">
+                        <a href="/space/belleview-apartments-naalya.html">Belleview-Apartments-Naalya</a>
+                        <a href="/space/furnished-1-bedroom-apartment.html">Furnished-1-Bedroom-Apartment</a>
+                        <a href="/space/monalisa-homes-furnished-apartments.html">Monalisa-Homes-Furnished-Apartments</a>
+                        <a href="#express">Express</a>
+                      </div>
+                    </div>
+                  
+                    <div class="subnav">
+                     <a href="/car.html" class="subnavbtn">Cars <i class="fa fa-caret-down"></i></a>
+                      <div class="subnav-content">
+                        <a href="/ar/car/martyrs-motel-self-drive.html">Martyrs-Motel-Self-Drive</a>
+                        <a href="/ar/car/tour-bus-entebbe-hire-with-fuel.html">Tour-Bus-Entebbe-Hire
+                         <a href="/news/cnn-names-uganda-among-the-best-destinations-to-visit-in-2023.html">CNN-Names</a>
+                        <a href="/news/uganda-safe-for-tourism-despite-global-media-misinformation.html">Uganda-Safe-Tourism</a>
+                        <a href="/news/uganda-to-leverage-on-mtn-kampala-marathon-to-market-tourism.html">Uganda-To-Leverage-On-MTN</a>
+                        <a href="/news/utb-boss-urges-rotarians-to-invest-in-tourism.html">UTB-Boss</a>
+                        <a href="/news/visit-queen-elizabeth-national-park.html">Visit-Queen-Elizabeth-National-Park</a>
+                        </div>
+                    </div>
+                    <div class="subnav">
+                      <a href="/event.html" class="subnavbtn">Events <i class="fa fa-caret-down"></i></a>
+                        <div class="subnav-content">
+                          <a href="/event/mr-1.html">mr-1</a>
+                          <a href="/event/mr-2.html">Mr-2</a>
+                          <a href="/event/mr-3.html">Mr-3</a>
+                          <a href="/event/mr-4.html">Mr-4</a>
+                          <a href="/event/mr-5.html">Mr-5</a> 
+                          <a href="/event/mr.html"Mr</a> 
+                           
+                        </div>
+                      </div>
+                    
+                      <div class="subnav">
+                        <a href="/boat.html" class="subnavbtn">Boat-Cruise <i class="fa fa-caret-down"></i></a>
+                         <div class="subnav-content">
+                          <a href="/boat-1.html">Bring</a>
+                          <a href="#deliver">Deliver</a>
+                          <a href="#package">Package</a>
+                          <a href="#express">Express</a>
+                        </div> 
+                      </div>
+                      <div class="subnav">
+                        <a href="/news.html" class="subnavbtn">News <i class="fa fa-caret-down"></i></a>
+                        <div class="subnav-content">
+                          <a href="/news/10-enchanting-places-to-visit-in-uganda-a-hidden-gem-of-east-africa.html">10-enchancing-places</a>
+                          <a href="/news/bird-lovers-welcome-bird-sanctuary-opened-in-entebbe-to-rehabilitate-endangered-species.html">Bird-lovers</a>
+                          <a href="/news/cnn-names-uganda-among-the-best-destinations-to-visit-in-2023.html">cnn-names</a>
+                          <a href="/news/uganda-safe-for-tourism-despite-global-media-misinformation.html">uganda-safe-tourism</a>
+                          <a href="/news/uganda-to-leverage-on-mtn-kampala-marathon-to-market-tourism.html">uganda-to-leverage-on-mtn</a>
+                          <a href="/news/utb-boss-urges-rotarians-to-invest-in-tourism.html">utb-boss</a>
+                          <a href="/news/visit-queen-elizabeth-national-park.html">visit-queen-elizabeth-national-park</a>
+      
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- ends -->
+                </div>
+             
+             
             <div class="header-right">
                                 <button class="bravo-more-menu">
                     <i class="fa fa-bars"></i>
@@ -1838,7 +2050,9 @@ A bird sanctuary has been opened at the Uganda Wildlife Education Centre (UWEC),
 					<div class="col-md-12">
 						<p>Copyright © 2024 Willings Solutions Company Limited</p>
 						<div class="f-visa">
-							<p>Powered by Icradle Innovations Ltd <a title="Icradle Innovations Ltd" href="https://www.icradle.dev/">Icradle Innovations Ltd</a></p>
+
+							<p>Powered by Icradle Innovations Ltd <a title="Icradle Innovations Ltd" href="https://www.icradle.dev/">Visit Our Website</a></p>
+
 						</div>
 					</div>
 				</div>
@@ -1906,62 +2120,152 @@ A bird sanctuary has been opened at the Uganda Wildlife Education Centre (UWEC),
                 </span>
             </div>
             <div class="modal-body">
-                <form class="form bravo-form-register" method="post" action="https://www.lambula.net/register">
-    <input type="hidden" name="_token" value="eYrMxOIx6GVKmirLLzR2sMldshFfTvjiPViICTGo">    <div class="row">
-        <div class="col-lg-6 col-md-12">
-            <div class="form-group">
-                <input type="text" class="form-control" name="first_name" autocomplete="off" placeholder="First Name">
-                <i class="input-icon field-icon icofont-waiter-alt"></i>
-                <span class="invalid-feedback error error-first_name"></span>
-            </div>
-        </div>
-        <div class="col-lg-6 col-md-12">
-            <div class="form-group">
-                <input type="text" class="form-control" name="last_name" autocomplete="off" placeholder="Last Name">
-                <i class="input-icon field-icon icofont-waiter-alt"></i>
-                <span class="invalid-feedback error error-last_name"></span>
-            </div>
-        </div>
-    </div>
-    <div class="form-group">
-        <input type="text" class="form-control" name="phone" autocomplete="off" placeholder="Phone">
-        <i class="input-icon field-icon icofont-ui-touch-phone"></i>
-        <span class="invalid-feedback error error-phone"></span>
-    </div>
-    <div class="form-group">
-        <input type="email" class="form-control" name="email" autocomplete="off" placeholder="Email address">
-        <i class="input-icon field-icon icofont-mail"></i>
-        <span class="invalid-feedback error error-email"></span>
-    </div>
-    <div class="form-group">
-        <input type="password" class="form-control" name="password" autocomplete="off" placeholder="Password">
-        <i class="input-icon field-icon icofont-ui-password"></i>
-        <span class="invalid-feedback error error-password"></span>
-    </div>
-    <div class="form-group">
-        <label for="term">
-            <input id="term" type="checkbox" name="term" class="mr5">
-            I have read and accept the <a href='/page/terms-of-use.html' target='_blank'>Terms and Privacy Policy</a>
-            <span class="checkmark fcheckbox"></span>
-        </label>
-        <div><span class="invalid-feedback error error-term"></span></div>
-    </div>
-            <div class="form-group">
-            
-        </div>
-        <div><span class="invalid-feedback error error-g-recaptcha-response"></span></div>
-        <div class="error message-error invalid-feedback"></div>
-    <div class="form-group">
-        <button type="submit" class="btn btn-primary form-submit">
-            Sign Up
-            <span class="spinner-grow spinner-grow-sm icon-loading" role="status" aria-hidden="true"></span>
-        </button>
-    </div>
-        <div class="c-grey f14 text-center">
-        Already have an account?
-        <a href="login-1.html" data-target="#login" data-toggle="modal">Log In</a>
-    </div>
-</form>
+                <!-- <form class="form bravo-form-register" method="post" action="https://www.lambula.net/register"> -->
+                    <form class="form bravo-form-register" method="post" action="https://www.lambula.net/register">
+                        <input type="hidden" name="_token" value="eYrMxOIx6GVKmirLLzR2sMldshFfTvjiPViICTGo">
+                    
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="first_name" autocomplete="off" placeholder="First Name">
+                                    <i class="input-icon field-icon icofont-waiter-alt"></i>
+                                    <span class="invalid-feedback error error-first_name"></span>
+                                </div>
+                            </div>
+                    
+                            <div class="col-lg-6 col-md-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="last_name" autocomplete="off" placeholder="Last Name">
+                                    <i class="input-icon field-icon icofont-waiter-alt"></i>
+                                    <span class="invalid-feedback error error-last_name"></span>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="phone" autocomplete="off" placeholder="Phone">
+                            <i class="input-icon field-icon icofont-ui-touch-phone"></i>
+                            <span class="invalid-feedback error error-phone"></span>
+                        </div>
+                    
+                        <div class="form-group">
+                            <input type="email" class="form-control" name="email" autocomplete="off" placeholder="Email address">
+                            <i class="input-icon field-icon icofont-mail"></i>
+                            <span class="invalid-feedback error error-email"></span>
+                        </div>
+                    
+                        <div class="form-group">
+                            <input type="password" class="form-control" name="password" autocomplete="off" placeholder="Password">
+                            <i class="input-icon field-icon icofont-ui-password"></i>
+                            <span class="invalid-feedback error error-password"></span>
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="serviceType">Service Type:</label>
+                            <select id="serviceType" name="serviceType" required>
+                                <option value="driver">Driver</option>
+                                <option value="guide">Guide</option>
+                                <option value="carHireProvider">Car Hire Provider</option>
+                                <option value="hotel">Hotel</option>
+                                <option value="tourGuide">Tour Guide</option>
+                            </select>
+                        </div>
+                    
+                        <div class="form-group service-type-fields" style="display:none;">
+                            <!-- Additional fields based on service type selection -->
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="tourType">Tour Type:</label>
+                            <select id="tourType" name="tourType">
+                                <option value="sightseeing">Sightseeing</option>
+                                <option value="adventure">Adventure</option>
+                                <option value="cultural">Cultural</option>
+                                <option value="beach">Beach</option>
+                            </select>
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="groupSize">Group Size:</label>
+                            <input type="number" id="groupSize" name="groupSize" min="1">
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="specialRequests">Special Requests:</label>
+                            <textarea id="specialRequests" name="specialRequests" rows="3" placeholder="Any special requests or preferences"></textarea>
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="travelDate">Preferred Travel Date:</label>
+                            <input type="date" id="travelDate" name="travelDate">
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="transportation">Preferred Transportation:</label>
+                            <select id="transportation" name="transportation">
+                                <option value="car">Car</option>
+                                <option value="bus">Bus</option>
+                                <option value="plane">Plane</option>
+                                <option value="boat">Boat</option>
+                            </select>
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="accommodation">Preferred Accommodation:</label>
+                            <select id="accommodation" name="accommodation">
+                                <option value="hotel">Hotel</option>
+                                <option value="resort">Resort</option>
+                                <option value="guesthouse">Guesthouse</option>
+                                <option value="camping">Camping</option>
+                            </select>
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="excursions">Preferred Excursions:</label>
+                            <input type="text" id="excursions" name="excursions" placeholder="List preferred excursions, separated by commas">
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="dietaryPreferences">Dietary Preferences:</label>
+                            <input type="text" id="dietaryPreferences" name="dietaryPreferences" placeholder="Any dietary preferences or restrictions">
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="additionalNotes">Additional Notes:</label>
+                            <textarea id="additionalNotes" name="additionalNotes" rows="3" placeholder="Any additional notes or comments"></textarea>
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="images">Upload Images:</label>
+                            <input type="file" id="images" name="images" accept="image/*">
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="price">Price or Price Range:</label>
+                            <input type="text" id="price" name="price" required>
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="term">
+                                <input id="term" type="checkbox" name="term" class="mr5"> I have read and accept the
+                                <a href='/page/terms-of-use.html' target='_blank'>Terms and Privacy Policy</a>
+                                <span class="checkmark fcheckbox"></span>
+                            </label>
+                            <div><span class="invalid-feedback error error-term"></span></div>
+                        </div>
+                    
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary form-submit">
+                                Sign Up <span class="spinner-grow spinner-grow-sm icon-loading" role="status" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                    
+                        <div class="c-grey f14 text-center">
+                            Already have an account? <a href="#" data-target="#login" data-toggle="modal">Log In</a>
+                        </div>
+                    </form>
+                    
+<!-- </form> -->
             </div>
         </div>
     </div>
@@ -2036,6 +2340,28 @@ A bird sanctuary has been opened at the Uganda Wildlife Education Centre (UWEC),
     </div>
             
         
-    
+    document.addEventListener('DOMContentLoaded', function () {
+    const menuToggleBtn = document.querySelector('.menu-toggle-btn');
+    const leftSideMenu = document.querySelector('.left-side-menu');
+    const content = document.querySelector('.bravo_header');
+
+    menuToggleBtn.addEventListener('click', function () {
+        leftSideMenu.classList.toggle('left-side-menu-open');
+        content.classList.toggle('left-side-menu-open');
+    });
+
+    window.addEventListener('resize', function () {
+        if (window.innerWidth > 600) {
+            leftSideMenu.classList.remove('left-side-menu-open');
+            content.classList.remove('left-side-menu-open');
+        }
+    });
+
+    // Display the menu toggle button on small screens
+    if (window.innerWidth <= 600) {
+        menuToggleBtn.style.display = 'block';
+    }
+});
+
 </body>
 </html>
