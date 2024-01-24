@@ -17,3 +17,8 @@ Email: [wowills@gmail.com](mailto:wowills@gmail.com)
 
 *("WILLINGS SOLUTIONS COMPANY LIMITED" or "Client")*
 [Facebook](https://www.facebook.com/Willingvideos?mibextid=9R9pXO) | [Instagram](https://www.instagram.com/dailytour1?igsh=MTI2OWNkZDlrb2JtcA==)
+
+
+
+O'Jays Motel needs to create a link
+https://www.lambula.net/hotel/ojays-motel
